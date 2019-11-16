@@ -6,8 +6,6 @@ public class Selector : MonoBehaviour
     private RaycastHit hit;
     private GridManager gridManager;
 
-    private GameObject currentNodeGO;
-
     public void Start()
     {
         gridManager = FindObjectOfType<GridManager>();
@@ -15,7 +13,7 @@ public class Selector : MonoBehaviour
 
     public void Update()
     {
-        FollowMouseOnGrid();
+        //FollowMouseOnGrid();
     }
 
     private void FollowMouseOnGrid()
@@ -24,15 +22,8 @@ public class Selector : MonoBehaviour
 
         if (Physics.Raycast(ray, out hit, 100.0f))
         {
-            if (hit.transform != null && hit.transform.tag == "Node")
+            if (hit.transform != null && hit.transform.tag == "Grid")
             {
-                if (currentNodeGO != hit.transform.gameObject)
-                {
-                    if(currentNodeGO != null) gridManager.nodesMaterial[currentNodeGO].color = Color.white;
-                    currentNodeGO = hit.transform.gameObject;
-                    gridManager.nodesMaterial[currentNodeGO].color = Color.red;
-                    transform.localPosition = new Vector3(currentNodeGO.transform.localPosition.x, transform.localPosition.y, currentNodeGO.transform.localPosition.z);
-                }
                 
             }
         }
