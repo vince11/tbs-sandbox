@@ -19,7 +19,10 @@ public class GridManager : MonoBehaviour
 
     public void InitialiseGrid()
     {
-        gameObject.transform.localPosition = new Vector3(nodeSize / 2, nodeSize / 2, 0);
+        gameObject.transform.localPosition = new Vector3(nodeSize / 2,  0, nodeSize / 2);
+        BoxCollider collider = gameObject.GetComponent<BoxCollider>();
+        collider.center = new Vector3((nodeSize * width) / 2 - (nodeSize / 2), 0, (nodeSize * height) / 2 - (nodeSize / 2));
+        collider.size = new Vector3(nodeSize * width, 1, nodeSize * height);
 
         int totalNodes = width * height;
 
@@ -34,8 +37,9 @@ public class GridManager : MonoBehaviour
             float nodeZ = z * nodeSize;
             
             GameObject nodeGO = Instantiate(nodePrefab, transform, false);
-            nodeGO.transform.localPosition = new Vector3(nodeX, nodeZ, 0);
+            nodeGO.transform.localPosition = new Vector3(nodeX, 0, nodeZ);
             nodeGO.transform.localScale = new Vector3(nodeSize - offset, nodeSize - offset, 1);
+            nodeGO.transform.localRotation = nodePrefab.transform.rotation;
 
             Node node = nodeGO.GetComponent<Node>();
             node.index = i;
