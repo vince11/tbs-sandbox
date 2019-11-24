@@ -4,16 +4,10 @@ public class Selector : MonoBehaviour
 {
     private Ray ray;
     private RaycastHit hit;
-    private GridManager gridManager;
 
-    public void Start()
+    public void MoveTo(Vector3 pos)
     {
-        gridManager = FindObjectOfType<GridManager>();
-    }
-
-    public void Update()
-    {
-        //FollowMouseOnGrid();
+        transform.position = pos;
     }
 
     private void FollowMouseOnGrid()

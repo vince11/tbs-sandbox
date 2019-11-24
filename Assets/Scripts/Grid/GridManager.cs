@@ -7,7 +7,7 @@ public class GridManager : MonoBehaviour
 
     public int width;
     public int height;
-    public int nodeSize;
+    public float nodeSize;
     public float offset;
 
     public List<Node> nodes;
@@ -19,6 +19,8 @@ public class GridManager : MonoBehaviour
 
     public void InitialiseGrid()
     {
+        gameObject.transform.localPosition = new Vector3(nodeSize / 2, nodeSize / 2, 0);
+
         int totalNodes = width * height;
 
         nodes = new List<Node>();
@@ -30,9 +32,15 @@ public class GridManager : MonoBehaviour
 
             float nodeX = x * nodeSize;
             float nodeZ = z * nodeSize;
-
-            GameObject nodeGO = Instantiate(nodePrefab, new Vector3(nodeX, 0, nodeZ), nodePrefab.transform.rotation, transform);
+            
+            GameObject nodeGO = Instantiate(nodePrefab, transform, false);
+            nodeGO.transform.localPosition = new Vector3(nodeX, nodeZ, 0);
             nodeGO.transform.localScale = new Vector3(nodeSize - offset, nodeSize - offset, 1);
+
+            Node node = nodeGO.GetComponent<Node>();
+            node.index = i;
+            node.worldPos = nodeGO.transform.position;
+            nodes.Add(node);
         }
     }
 }
