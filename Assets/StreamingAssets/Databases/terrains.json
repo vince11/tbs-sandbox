@@ -1,0 +1,49 @@
+{
+  "entries": [
+    {
+      "terrainName": "Plain",
+      "costs": {
+        "infantry": 1,
+        "cavalry": 1,
+        "armor": 1,
+        "flier": 1
+      }
+    },
+    {
+      "terrainName": "Forest",
+      "costs": {
+        "infantry": 2,
+        "cavalry": 99,
+        "armor": 1,
+        "flier": 1
+      }
+    },
+    {
+      "terrainName": "Sea",
+      "costs": {
+        "infantry": 99,
+        "cavalry": 99,
+        "armor": 99,
+        "flier": 1
+      }
+    },
+    {
+      "terrainName": "Mountain",
+      "costs": {
+        "infantry": 99,
+        "cavalry": 99,
+        "armor": 99,
+        "flier": 1
+      }
+    },
+    {
+      "terrainName": "Obstacle",
+      "costs": {
+        "infantry": 99,
+        "cavalry": 99,
+        "armor": 99,
+        "flier": 99
+      }
+    }
+  ]
+}
