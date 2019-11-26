@@ -9,7 +9,7 @@ public class UnitManager : MonoBehaviour
 
     public List<Unit> playerUnits;
     
-    void Start()
+    void Awake()
     {
         playerUnits = new List<Unit>();
 

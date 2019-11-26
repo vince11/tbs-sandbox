@@ -720,6 +720,8 @@ MonoBehaviour:
     type: 3}
   selectorPrefab: {fileID: 2129038464506948804, guid: c7d2417899f44d54c8bfdd0267c9434c,
     type: 3}
+  arrowPrefab: {fileID: 4910111394229035719, guid: a3fd154fe028fe64ebc6f8147a6cbab6,
+    type: 3}
   width: 10
   height: 10
   nodeSize: 3
@@ -730,6 +732,7 @@ MonoBehaviour:
   - {r: 0.9433962, g: 0.25364897, b: 0.25364897, a: 0}
   nodes: []
   selector: {fileID: 0}
+  arrow: {fileID: 0}
 --- !u!4 &1899558978
 Transform:
   m_ObjectHideFlags: 0

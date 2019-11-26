@@ -4,6 +4,7 @@ using UnityEngine;
 public class UnitSelectedState : State
 {
     public Unit unit;
+    public List<Node> path;
 
     public void Awake()
     {
@@ -28,6 +29,8 @@ public class UnitSelectedState : State
         bsm.grid.Highlight(unit.movementNodes, 1);
         bsm.grid.Highlight(unit.attackNodes, 2);
 
+        bsm.grid.arrow.gameObject.SetActive(true);
+
         bsm.inputManager.onGridMovement = OnGridMovement;
         bsm.inputManager.onSelect = OnSelect;
         bsm.inputManager.onCancel = OnCancel;
@@ -38,6 +41,8 @@ public class UnitSelectedState : State
         if (index != currentIndex && unit.movementNodes.Contains(bsm.grid.nodes[index]))
         {
             bsm.grid.selector.MoveTo(bsm.grid.nodes[index].worldPos);
+            path = bsm.grid.GetPath(bsm.grid.nodes[index]);
+            bsm.grid.DrawArrow(path);
             currentIndex = index;
         }
     }
@@ -45,7 +50,8 @@ public class UnitSelectedState : State
     public override void OnSelect()
     {
         bsm.destinationNode = bsm.grid.nodes[currentIndex];
-        bsm.ChangeState<UnitMovementState>();
+        if(bsm.destinationNode == bsm.selectedNode) bsm.ChangeState<ChooseActionState>();
+        else bsm.ChangeState<UnitMovementState>();
     }
 
     public override void OnCancel()
@@ -57,6 +63,9 @@ public class UnitSelectedState : State
     {
         bsm.grid.Highlight(unit.movementNodes, 0);
         bsm.grid.Highlight(unit.attackNodes, 0);
+
+        bsm.grid.arrow.positionCount = 0;
+        bsm.grid.arrow.gameObject.SetActive(false);
 
         bsm.inputManager.onGridMovement = null;
         bsm.inputManager.onSelect = null;

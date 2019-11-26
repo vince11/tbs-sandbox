@@ -6,6 +6,7 @@ public class GridManager : MonoBehaviour
 {
     public GameObject nodePrefab;
     public GameObject selectorPrefab;
+    public GameObject arrowPrefab;
 
     public int width;
     public int height;
@@ -16,8 +17,9 @@ public class GridManager : MonoBehaviour
 
     public List<Node> nodes;
     public Selector selector;
+    public LineRenderer arrow;
 
-    void Start()
+    void Awake()
     {
         InitialiseGrid();
     }
@@ -32,6 +34,9 @@ public class GridManager : MonoBehaviour
         GameObject selectorGO = Instantiate(selectorPrefab, Vector3.zero, Quaternion.identity, transform);
         selector = selectorGO.GetComponent<Selector>();
 
+        GameObject arrowGO = Instantiate(arrowPrefab, arrowPrefab.transform.position, arrowPrefab.transform.localRotation, transform);
+        arrow = arrowGO.GetComponent<LineRenderer>();
+        arrow.gameObject.SetActive(false);
 
         int totalNodes = width * height;
 
@@ -197,5 +202,17 @@ public class GridManager : MonoBehaviour
         path.Reverse();
 
         return path;
+    }
+
+    public void DrawArrow(List<Node> path)
+    {
+        Vector3[] linesPos = new Vector3[path.Count];
+        for (int i = 0; i < path.Count; i++)
+        {
+            linesPos[i] = new Vector3(path[i].worldPos.x, path[i].worldPos.z, 0);
+        }
+
+        arrow.positionCount = linesPos.Length;
+        arrow.SetPositions(linesPos);
     }
 }

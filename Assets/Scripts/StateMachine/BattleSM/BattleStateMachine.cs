@@ -15,13 +15,11 @@ public class BattleStateMachine : StateMachine
 
     public void Start()
     {
-        StartCoroutine(BattleStart(.5f));
+        BattleStart();
     }
 
-    private IEnumerator BattleStart(float waitTime)
+    private void BattleStart()
     {
-        yield return new WaitForSeconds(waitTime);
-
         grid = FindObjectOfType<GridManager>();
         unitManager = FindObjectOfType<UnitManager>();
         inputManager = FindObjectOfType<InputManager>();
