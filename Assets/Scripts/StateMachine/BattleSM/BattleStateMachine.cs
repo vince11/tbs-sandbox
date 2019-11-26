@@ -5,12 +5,15 @@ using UnityEngine;
 public class BattleStateMachine : StateMachine
 {
     public GridManager grid;
-    public Selector selector;
+    public UnitManager unitManager;
 
     public void Start()
     {
         grid = FindObjectOfType<GridManager>();
-        selector = FindObjectOfType<Selector>();
+        unitManager = FindObjectOfType<UnitManager>();
+
+        grid.PlaceUnits(unitManager.playerUnits);
+
         ChangeState<UnitSelectionState>();
     }
 }

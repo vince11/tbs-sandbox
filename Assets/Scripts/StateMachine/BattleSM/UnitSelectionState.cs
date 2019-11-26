@@ -33,7 +33,7 @@ public class UnitSelectionState : State
                 if (x >= 0 && x < bsm.grid.width && z >= 0 && z < bsm.grid.height)
                 {
                     index = z * bsm.grid.width + x;
-                    bsm.selector.MoveTo(bsm.grid.nodes[index].worldPos);
+                    bsm.grid.selector.MoveTo(bsm.grid.nodes[index].worldPos);
                 }
             }
         }
@@ -60,7 +60,7 @@ public class UnitSelectionState : State
             if (x >= 0 && x < bsm.grid.width && y >= 0 && y < bsm.grid.height)
             {
                 index = y * bsm.grid.width + x;
-                bsm.selector.MoveTo(bsm.grid.nodes[index].worldPos);
+                bsm.grid.selector.MoveTo(bsm.grid.nodes[index].worldPos);
             }
 
         }

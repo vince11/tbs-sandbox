@@ -12,6 +12,7 @@ public class CameraFollow : MonoBehaviour
     public void Start()
     {
         grid = FindObjectOfType<GridManager>();
+        target = FindObjectOfType<Selector>().transform;
     }
 
     void FixedUpdate()
