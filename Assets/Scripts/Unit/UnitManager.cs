@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
+using Enums;
 
 //Spawning units into the battle
 public class UnitManager : MonoBehaviour
@@ -8,7 +9,7 @@ public class UnitManager : MonoBehaviour
 
     public List<Unit> playerUnits;
     
-    void Awake()
+    void Start()
     {
         playerUnits = new List<Unit>();
 
@@ -17,6 +18,7 @@ public class UnitManager : MonoBehaviour
         GameObject unitGO = Instantiate(unitPrefab, unitPrefab.transform.position, Quaternion.identity, transform);
 
         Unit unit = unitGO.GetComponent<Unit>();
+        unit.unitClass = new UnitClass(MovementType.Infantry, WeaponType.Sword, WeaponColor.Red, 2, 1); //testing only TODO
         //initialise unit properties here
 
         playerUnits.Add(unit);
