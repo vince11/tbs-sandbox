@@ -9,6 +9,8 @@ public class BattleStateMachine : StateMachine
     public InputManager inputManager;
 
     public Node selectedNode;
+    public Node destinationNode;
+
     public RectTransform battleMenu;
 
     public void Start()

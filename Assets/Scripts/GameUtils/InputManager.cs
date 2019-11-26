@@ -12,10 +12,12 @@ public class InputManager : MonoBehaviour
     public delegate void GridMovement(int index);
     public delegate void Select();
     public delegate void Cancel();
+    public delegate void WaitPressed();
 
     public GridMovement onGridMovement;
     public Select onSelect;
     public Cancel onCancel;
+    public WaitPressed onWaitPressed;
 
     public void Start()
     {
@@ -58,6 +60,11 @@ public class InputManager : MonoBehaviour
     private void OnCancel()
     {
         if (Input.GetMouseButtonDown(1)) onCancel();
+    }
+
+    public void OnWaitButton()
+    {
+        onWaitPressed?.Invoke();
     }
 
 }

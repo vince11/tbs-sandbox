@@ -505,6 +505,7 @@ MonoBehaviour:
   unitManager: {fileID: 0}
   inputManager: {fileID: 0}
   selectedNode: {fileID: 0}
+  destinationNode: {fileID: 0}
   battleMenu: {fileID: 0}
 --- !u!4 &1471918152
 Transform:
@@ -880,7 +881,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1949264762}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 871938550}
+        m_MethodName: OnWaitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1949264762
 MonoBehaviour:
   m_ObjectHideFlags: 0

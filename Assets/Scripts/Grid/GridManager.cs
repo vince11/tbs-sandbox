@@ -81,6 +81,8 @@ public class GridManager : MonoBehaviour
         List<Node> unvisited = new List<Node>();
         List<Node> visited = new List<Node>();
 
+        node.parent = null;
+
         unvisited.Add(node);
         moveCost.Add(node, 0);
 
@@ -180,5 +182,20 @@ public class GridManager : MonoBehaviour
         {
             node.material.color = colors[index];
         }
+    }
+
+    public List<Node> GetPath(Node destination)
+    {
+        List<Node> path = new List<Node>();
+        Node currentNode = destination;
+        while(currentNode != null)
+        {
+            path.Add(currentNode);
+            currentNode = currentNode.parent;
+        }
+
+        path.Reverse();
+
+        return path;
     }
 }

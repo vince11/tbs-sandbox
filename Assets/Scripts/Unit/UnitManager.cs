@@ -18,7 +18,7 @@ public class UnitManager : MonoBehaviour
         GameObject unitGO = Instantiate(unitPrefab, unitPrefab.transform.position, Quaternion.identity, transform);
 
         Unit unit = unitGO.GetComponent<Unit>();
-        unit.unitClass = new UnitClass(MovementType.Infantry, WeaponType.Sword, WeaponColor.Red, 2, 1); //testing only TODO
+        unit.unitClass = new UnitClass(MovementType.Infantry, WeaponType.Sword, WeaponColor.Red, 7, 1); //testing only TODO
         //initialise unit properties here
 
         playerUnits.Add(unit);

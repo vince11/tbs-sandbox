@@ -23,4 +23,9 @@ public abstract class StateMachine : MonoBehaviour
         }
 
     }
+
+    public void Update()
+    {
+        if(currentState != null) currentState.Execute();
+    }
 }

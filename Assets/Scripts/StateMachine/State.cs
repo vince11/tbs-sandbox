@@ -25,6 +25,11 @@ public abstract class State : MonoBehaviour
 
     }
 
+    public virtual void Execute()
+    {
+
+    }
+
     public virtual void Exit()
     {
 

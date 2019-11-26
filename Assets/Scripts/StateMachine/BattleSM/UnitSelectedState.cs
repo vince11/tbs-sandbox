@@ -12,8 +12,8 @@ public class UnitSelectedState : State
 
     public override void Enter()
     {
-        base.Enter();
         unit = bsm.selectedNode.unit;
+        unit.transform.position = new Vector3(bsm.selectedNode.worldPos.x, unit.transform.position.y, bsm.selectedNode.worldPos.z);
         unit.movementNodes = bsm.grid.GetMovementNodes(bsm.selectedNode);
         unit.attackNodes = new List<Node>();
         foreach(Node mNode in unit.movementNodes)
@@ -35,12 +35,17 @@ public class UnitSelectedState : State
 
     public override void OnGridMovement(int index)
     {
-        if (unit.movementNodes.Contains(bsm.grid.nodes[index])) bsm.grid.selector.MoveTo(bsm.grid.nodes[index].worldPos);
+        if (index != currentIndex && unit.movementNodes.Contains(bsm.grid.nodes[index]))
+        {
+            bsm.grid.selector.MoveTo(bsm.grid.nodes[index].worldPos);
+            currentIndex = index;
+        }
     }
 
     public override void OnSelect()
     {
-        bsm.battleMenu.gameObject.SetActive(true);
+        bsm.destinationNode = bsm.grid.nodes[currentIndex];
+        bsm.ChangeState<UnitMovementState>();
     }
 
     public override void OnCancel()
@@ -50,10 +55,8 @@ public class UnitSelectedState : State
 
     public override void Exit()
     {
-        base.Exit();
         bsm.grid.Highlight(unit.movementNodes, 0);
         bsm.grid.Highlight(unit.attackNodes, 0);
-        bsm.battleMenu.gameObject.SetActive(false);
 
         bsm.inputManager.onGridMovement = null;
         bsm.inputManager.onSelect = null;

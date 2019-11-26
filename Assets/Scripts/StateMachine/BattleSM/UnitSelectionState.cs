@@ -9,7 +9,6 @@ public class UnitSelectionState : State
 
     public override void Enter()
     {
-        base.Enter();
         bsm.inputManager.onGridMovement = OnGridMovement;
         bsm.inputManager.onSelect = OnSelect;
     }
@@ -35,7 +34,6 @@ public class UnitSelectionState : State
 
     public override void Exit()
     {
-        base.Exit();
         bsm.inputManager.onGridMovement = null;
         bsm.inputManager.onSelect = null;
     }
