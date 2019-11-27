@@ -2,20 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitMovementState : State
+public class UnitMovementState : BattleState
 {
     public bool destinationReached;
-
-    public void Awake()
-    {
-        bsm = FindObjectOfType<BattleStateMachine>();
-    }
 
     public override void Enter()
     {
         destinationReached = false;
-        List<Node> path = bsm.grid.GetPath(bsm.destinationNode);
-        StartCoroutine(MoveAlongPath(bsm.selectedNode.unit, path));
+        List<Node> path = Grid.GetPath(DestinationNode);
+        StartCoroutine(MoveAlongPath(SelectedNode.unit, path));
     }
 
     public override void Execute()

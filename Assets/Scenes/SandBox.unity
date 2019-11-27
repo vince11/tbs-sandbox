@@ -718,7 +718,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nodePrefab: {fileID: 2846984484671416658, guid: 8336a1960beec704194dfd459c9ac5ab,
     type: 3}
-  selectorPrefab: {fileID: 2129038464506948804, guid: c7d2417899f44d54c8bfdd0267c9434c,
+  selectorPrefab: {fileID: 5926374372661435282, guid: c7d2417899f44d54c8bfdd0267c9434c,
     type: 3}
   arrowPrefab: {fileID: 3882100493946981870, guid: a5cc75d3d29eccc48a86036437389f79,
     type: 3}

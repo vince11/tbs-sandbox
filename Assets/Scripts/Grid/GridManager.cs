@@ -32,8 +32,10 @@ public class GridManager : MonoBehaviour
         collider.center = new Vector3((nodeSize * width) / 2 - (nodeSize / 2), 0, (nodeSize * height) / 2 - (nodeSize / 2));
         collider.size = new Vector3(nodeSize * width, 1, nodeSize * height);
 
-        GameObject selectorGO = Instantiate(selectorPrefab, Vector3.zero, Quaternion.identity, transform);
+        GameObject selectorGO = Instantiate(selectorPrefab, selectorPrefab.transform.position, selectorPrefab.transform.rotation, transform);
+        selectorGO.transform.localScale = new Vector3(nodeSize, nodeSize, 1);
         selector = selectorGO.GetComponent<Selector>();
+        selector.size = (int) nodeSize;
 
         GameObject arrowParentGO = new GameObject("Arrow");
         arrowParentGO.transform.SetParent(transform);

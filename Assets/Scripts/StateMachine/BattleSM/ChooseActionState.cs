@@ -1,26 +1,17 @@
-﻿using System.Collections.Generic;
-using UnityEngine;
-
-public class ChooseActionState : State
+﻿public class ChooseActionState : BattleState
 {
-    public void Awake()
-    {
-        bsm = FindObjectOfType<BattleStateMachine>();
-    }
-
     public override void Enter()
     {
-        bsm.inputManager.onWaitPressed = OnWaitPressed;
-        bsm.inputManager.onCancel = OnCancel;
-        bsm.battleMenu.gameObject.SetActive(true);
+        base.Enter();
+        InputManager.onWaitPressed = OnWaitPressed;
+        BattleMenu.SetActive(true);
     }
 
     public override void Exit()
     {
-        bsm.inputManager.onWaitPressed = null;
-        bsm.inputManager.onCancel = null;
-        
-        bsm.battleMenu.gameObject.SetActive(false);
+        base.Exit();
+        InputManager.onWaitPressed = null;
+        BattleMenu.SetActive(false);
     }
 
     public override void OnCancel()
@@ -30,12 +21,12 @@ public class ChooseActionState : State
 
     public void OnWaitPressed()
     {
-        Unit unit = bsm.selectedNode.unit;
-        bsm.selectedNode.unit = null;
-        unit.node = bsm.destinationNode;
-        bsm.destinationNode.unit = unit;
+        Unit unit = SelectedNode.unit;
+        SelectedNode.unit = null;
+        unit.node = DestinationNode;
+        DestinationNode.unit = unit;
 
-        bsm.grid.ClearArrows();
+        Grid.ClearArrows();
         bsm.ChangeState<UnitSelectionState>();
     }
 }

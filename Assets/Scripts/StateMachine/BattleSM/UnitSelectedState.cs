@@ -1,71 +1,60 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-public class UnitSelectedState : State
+public class UnitSelectedState : BattleState
 {
     public Unit unit;
     public List<Node> path;
 
-    public void Awake()
-    {
-        bsm = FindObjectOfType<BattleStateMachine>();
-    }
-
     public override void Enter()
     {
-        unit = bsm.selectedNode.unit;
-        unit.transform.position = new Vector3(bsm.selectedNode.worldPos.x, unit.transform.position.y, bsm.selectedNode.worldPos.z);
-        unit.movementNodes = bsm.grid.GetMovementNodes(bsm.selectedNode);
+        base.Enter();
+        unit = SelectedNode.unit;
+        unit.transform.position = new Vector3(SelectedNode.worldPos.x, unit.transform.position.y, SelectedNode.worldPos.z);
+        unit.movementNodes = Grid.GetMovementNodes(SelectedNode);
         unit.attackNodes = new List<Node>();
         foreach(Node mNode in unit.movementNodes)
         {
-            List<Node> attackNodes = bsm.grid.GetAttackNodes(mNode, unit);
+            List<Node> attackNodes = Grid.GetAttackNodes(mNode, unit);
             foreach(Node aNode in attackNodes)
             {
                 if (!unit.movementNodes.Contains(aNode) && !unit.attackNodes.Contains(aNode)) unit.attackNodes.Add(aNode);
             }
         }
 
-        bsm.grid.Highlight(unit.movementNodes, 1);
-        bsm.grid.Highlight(unit.attackNodes, 2);
-
-        bsm.inputManager.onGridMovement = OnGridMovement;
-        bsm.inputManager.onSelect = OnSelect;
-        bsm.inputManager.onCancel = OnCancel;
+        Grid.Highlight(unit.movementNodes, 1);
+        Grid.Highlight(unit.attackNodes, 2);
     }
 
     public override void OnGridMovement(int index)
     {
-        if (index != currentIndex && unit.movementNodes.Contains(bsm.grid.nodes[index]))
+        if (index != currentIndex && unit.movementNodes.Contains(Grid.nodes[index]))
         {
-            bsm.grid.ClearArrows();
-            bsm.grid.selector.MoveTo(bsm.grid.nodes[index].worldPos);
-            path = bsm.grid.GetPath(bsm.grid.nodes[index]);
-            bsm.grid.DrawArrow(path);
+            Grid.ClearArrows();
+            Selector.MoveTo(Grid.nodes[index].worldPos);
+            path = Grid.GetPath(Grid.nodes[index]);
+            Grid.DrawArrow(path);
             currentIndex = index;
         }
     }
 
     public override void OnSelect()
     {
-        bsm.destinationNode = bsm.grid.nodes[currentIndex];
-        if(bsm.destinationNode == bsm.selectedNode) bsm.ChangeState<ChooseActionState>();
+        DestinationNode = Grid.nodes[currentIndex];
+        if(DestinationNode == SelectedNode) bsm.ChangeState<ChooseActionState>();
         else bsm.ChangeState<UnitMovementState>();
     }
 
     public override void OnCancel()
     {
-        bsm.grid.ClearArrows();
+        Grid.ClearArrows();
         bsm.ChangeState<UnitSelectionState>();
     }
 
     public override void Exit()
     {
-        bsm.grid.Highlight(unit.movementNodes, 0);
-        bsm.grid.Highlight(unit.attackNodes, 0);
-
-        bsm.inputManager.onGridMovement = null;
-        bsm.inputManager.onSelect = null;
-        bsm.inputManager.onCancel = null;
+        base.Exit();
+        Grid.Highlight(unit.movementNodes, 0);
+        Grid.Highlight(unit.attackNodes, 0);
     }
 }
