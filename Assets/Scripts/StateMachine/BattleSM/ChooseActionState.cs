@@ -35,6 +35,7 @@ public class ChooseActionState : State
         unit.node = bsm.destinationNode;
         bsm.destinationNode.unit = unit;
 
+        bsm.grid.ClearArrows();
         bsm.ChangeState<UnitSelectionState>();
     }
 }

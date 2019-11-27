@@ -5,6 +5,8 @@ using UnityEngine;
 public class Node : MonoBehaviour
 {
     public int index;
+    public int row;
+    public int column;
     public Vector3 worldPos;
     public Unit unit;
     public NodeTerrain terrain;

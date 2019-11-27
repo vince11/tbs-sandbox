@@ -14,10 +14,11 @@ public class GridManager : MonoBehaviour
     public float offset;
 
     public List<Color> colors;
+    public List<Texture> arrowTextures;
 
     public List<Node> nodes;
+    public List<Arrow> arrows;
     public Selector selector;
-    public LineRenderer arrow;
 
     void Awake()
     {
@@ -34,13 +35,14 @@ public class GridManager : MonoBehaviour
         GameObject selectorGO = Instantiate(selectorPrefab, Vector3.zero, Quaternion.identity, transform);
         selector = selectorGO.GetComponent<Selector>();
 
-        GameObject arrowGO = Instantiate(arrowPrefab, arrowPrefab.transform.position, arrowPrefab.transform.localRotation, transform);
-        arrow = arrowGO.GetComponent<LineRenderer>();
-        arrow.gameObject.SetActive(false);
+        GameObject arrowParentGO = new GameObject("Arrow");
+        arrowParentGO.transform.SetParent(transform);
+        arrowParentGO.transform.position = transform.localPosition;
 
         int totalNodes = width * height;
 
         nodes = new List<Node>();
+        arrows = new List<Arrow>();
 
         for (int i = 0; i < totalNodes; i++)
         {
@@ -58,10 +60,23 @@ public class GridManager : MonoBehaviour
 
             Node node = nodeGO.GetComponent<Node>();
             node.index = i;
+            node.row = (int) z;
+            node.column = (int) x;
             node.worldPos = nodeGO.transform.position;
             node.terrain = GameManager.Instance.terrainsDB.GetTerrain(TerrainType.Plain);
             node.material = nodeGO.GetComponent<Renderer>().material;
             nodes.Add(node);
+
+            GameObject arrowGO = Instantiate(arrowPrefab, arrowParentGO.transform, false);
+            arrowGO.transform.localPosition = new Vector3(nodeX, 0.25f, nodeZ);
+            arrowGO.transform.localScale = new Vector3(nodeSize, nodeSize, 1);
+            arrowGO.transform.localRotation = arrowPrefab.transform.rotation;
+
+            Arrow arrow = arrowGO.GetComponent<Arrow>();
+            arrow.material = arrowGO.GetComponent<Renderer>().material;
+            arrows.Add(arrow);
+            arrowGO.SetActive(false);
+
         }
 
     }
@@ -204,15 +219,90 @@ public class GridManager : MonoBehaviour
         return path;
     }
 
+    //Direction of B from A
+    public NodeDirection GetNeighborDirection(Node A, Node B)
+    {
+        int maxNodes = width * height;
+
+        if (A.index + width == B.index) return NodeDirection.North;
+        else if (A.index - width == B.index) return NodeDirection.South;
+        else if ((A.index) / width == (B.index / width) && A.index + 1 == B.index) return NodeDirection.East;
+        else if ((A.index) / width == (B.index / width) && A.index - 1 == B.index) return NodeDirection.West;
+
+        return NodeDirection.NotNeighbor;
+    }
+
     public void DrawArrow(List<Node> path)
     {
-        Vector3[] linesPos = new Vector3[path.Count];
+        Node current, parent, next;
+        Texture texture;
+        Vector3 rotation;
+        NodeDirection parentDir, nextDir;
+
         for (int i = 0; i < path.Count; i++)
         {
-            linesPos[i] = new Vector3(path[i].worldPos.x, path[i].worldPos.z, 0);
-        }
+            current = path[i];
+            parent = path[i].parent;
+            next = (i + 1) < path.Count ? path[i + 1] : null;
+            rotation = new Vector3(90, 0, 0);
+            if (parent == null && next == null)
+            {
+                texture = arrowTextures[3]; //cursor on unit - platform
+            }
+            else if (parent == null && next != null)
+            {
+                texture = arrowTextures[3]; //arrow tail
+                nextDir = GetNeighborDirection(current, next);
+                if (nextDir == NodeDirection.North) rotation.z = 90;
+                else if (nextDir == NodeDirection.West) rotation.z = 180;
+                else if (nextDir == NodeDirection.South) rotation.z = 270;
 
-        arrow.positionCount = linesPos.Length;
-        arrow.SetPositions(linesPos);
+            }
+            else if (parent != null && next == null)
+            {
+                texture = arrowTextures[0]; //arrow head
+                parentDir = GetNeighborDirection(current, parent);
+                if (parentDir == NodeDirection.North) rotation.z = 270;
+                else if (parentDir == NodeDirection.East) rotation.z = 180;
+                else if (parentDir == NodeDirection.South) rotation.z = 90;
+            }
+            else if (parent.row == next.row || parent.column == next.column)
+            {
+                texture = arrowTextures[1]; //arrow body
+                if (parent.column == next.column) rotation.z = 90;
+
+            }
+            else
+            {
+                texture = arrowTextures[2]; //arrow curve
+                parentDir = GetNeighborDirection(current, parent);
+                nextDir = GetNeighborDirection(current, next);
+
+                if((parentDir == NodeDirection.West && nextDir == NodeDirection.South) ||
+                    (parentDir == NodeDirection.South && nextDir == NodeDirection.West))
+                {
+                    rotation.z = 270;
+                }
+                else if ((parentDir == NodeDirection.West && nextDir == NodeDirection.North) ||
+                        (parentDir == NodeDirection.North && nextDir == NodeDirection.West))
+                {
+                    rotation.z = 180;
+                }
+                else if ((parentDir == NodeDirection.East && nextDir == NodeDirection.North) ||
+                        (parentDir == NodeDirection.North && nextDir == NodeDirection.East))
+                {
+                    rotation.z = 90;
+                }
+            }
+
+            arrows[path[i].index].material.mainTexture = texture;
+            arrows[path[i].index].gameObject.transform.eulerAngles = rotation;
+            arrows[path[i].index].gameObject.SetActive(true);
+        }
+    }
+
+    public void ClearArrows()
+    {
+        foreach (Arrow arrow in arrows) arrow.gameObject.SetActive(false);
     }
 }
