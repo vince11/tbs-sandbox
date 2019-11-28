@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Enums;
 
+[System.Serializable]
 public class UnitClass
 {
     public MovementType movementType;

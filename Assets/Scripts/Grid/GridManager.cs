@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Enums;
+using System.Linq;
 
 public class GridManager : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class GridManager : MonoBehaviour
     public int height;
     public float nodeSize;
     public float offset;
+    public bool testing;
 
     public List<Color> colors;
     public List<Texture> arrowTextures;
@@ -19,6 +21,8 @@ public class GridManager : MonoBehaviour
     public List<Node> nodes;
     public List<Arrow> arrows;
     public Selector selector;
+
+    private List<int> startingPositions;
 
     void Awake()
     {
@@ -28,6 +32,7 @@ public class GridManager : MonoBehaviour
     public void InitialiseGrid()
     {
         gameObject.transform.localPosition = new Vector3(nodeSize / 2,  0, nodeSize / 2);
+
         BoxCollider collider = gameObject.GetComponent<BoxCollider>();
         collider.center = new Vector3((nodeSize * width) / 2 - (nodeSize / 2), 0, (nodeSize * height) / 2 - (nodeSize / 2));
         collider.size = new Vector3(nodeSize * width, 1, nodeSize * height);
@@ -48,8 +53,8 @@ public class GridManager : MonoBehaviour
 
         for (int i = 0; i < totalNodes; i++)
         {
-            float x = (i % width);
-            float z = (i / width);
+            int x = (i % width);
+            int z = (i / width);
 
             float nodeX = x * nodeSize;
             float nodeZ = z * nodeSize;
@@ -62,8 +67,8 @@ public class GridManager : MonoBehaviour
 
             Node node = nodeGO.GetComponent<Node>();
             node.index = i;
-            node.row = (int) z;
-            node.column = (int) x;
+            node.row = z;
+            node.column = x;
             node.worldPos = nodeGO.transform.position;
             node.terrain = GameManager.Instance.terrainsDB.GetTerrain(TerrainType.Plain);
             node.material = nodeGO.GetComponent<Renderer>().material;
@@ -81,20 +86,72 @@ public class GridManager : MonoBehaviour
 
         }
 
+        startingPositions = new List<int> { 0, 1, 2, 3 };
+        if (testing) GenerateMapVisual();
+
+    }
+
+    private void GenerateMapVisual()
+    {
+        ColorUtility.TryParseHtmlString("#006600", out Color forest);
+        ColorUtility.TryParseHtmlString("#4D2600", out Color mountain);
+        ColorUtility.TryParseHtmlString("#00E600", out Color plain);
+        ColorUtility.TryParseHtmlString("#0066CC", out Color sea);
+
+        Dictionary<TerrainType, Color> terrainColors = new Dictionary<TerrainType, Color>();
+        terrainColors.Add(TerrainType.Forest, forest);
+        terrainColors.Add(TerrainType.Mountain, mountain);
+        terrainColors.Add(TerrainType.Plain, plain);
+        terrainColors.Add(TerrainType.Sea, sea);
+        terrainColors.Add(TerrainType.Obstacle, Color.gray);
+        
+        GameObject mapVisual = new GameObject("MapVisual");
+        mapVisual.transform.SetParent(transform);
+
+        GameObject visualGO;
+
+        HashSet<int> randomStarts = new HashSet<int>();
+        while (randomStarts.Count < 4) randomStarts.Add(Random.Range(0, width * height));
+
+        startingPositions = randomStarts.ToList();
+
+        int random;
+        TerrainType t;
+
+        for (int i = 0; i < nodes.Count; i++)
+        {
+            visualGO = Instantiate(nodePrefab, mapVisual.transform, true);
+            visualGO.transform.position = new Vector3(nodes[i].worldPos.x, -.1f, nodes[i].worldPos.z);
+            visualGO.transform.localScale = new Vector3(nodeSize - offset, nodeSize - offset, 1);
+            visualGO.transform.localRotation = nodePrefab.transform.rotation;
+
+            random = Random.Range(0, 5);
+            if (randomStarts.Contains(i)) t = TerrainType.Plain;
+            else t = (TerrainType) random;
+            visualGO.name = GameManager.Instance.terrainsDB.GetTerrain(t).terrainName;
+            visualGO.GetComponent<Renderer>().material.color = terrainColors[t];
+
+            nodes[i].terrain = GameManager.Instance.terrainsDB.GetTerrain(t);
+
+            Destroy(visualGO.GetComponent<Node>());
+        }
+
     }
 
     public void PlaceUnits(List<Unit> units)
     {
         int i = 0;
+        Node node;
         foreach(Unit unit in units)
         {
-            unit.node = nodes[i];
-            unit.transform.position = new Vector3(nodes[i].worldPos.x, unit.transform.position.y, nodes[i].worldPos.z);
-            nodes[i].unit = unit;
+            node = nodes[startingPositions[i]];
+            unit.node = node;
+            unit.transform.position = new Vector3(node.worldPos.x, unit.transform.position.y, node.worldPos.z);
+            node.unit = unit;
             i++;
         }
 
-        selector.MoveTo(nodes[0].worldPos);
+        selector.MoveTo(nodes[startingPositions[0]].worldPos);
     }
 
     public List<Node> GetMovementNodes(Node node)

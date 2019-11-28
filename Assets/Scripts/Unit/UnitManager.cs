@@ -6,6 +6,7 @@ using Enums;
 public class UnitManager : MonoBehaviour
 {
     public GameObject unitPrefab;
+    public List<UnitClass> testClasses;
 
     public List<Unit> playerUnits;
     
@@ -13,15 +14,18 @@ public class UnitManager : MonoBehaviour
     {
         playerUnits = new List<Unit>();
 
-        // TODO: loop -> list of player units and enemy units from data then spawn
-        // just spawn one unit for now
-        GameObject unitGO = Instantiate(unitPrefab, unitPrefab.transform.position, Quaternion.identity, transform);
+        foreach(UnitClass uClass in testClasses)
+        {
+            GameObject unitGO = Instantiate(unitPrefab, unitPrefab.transform.position, Quaternion.identity, transform);
 
-        Unit unit = unitGO.GetComponent<Unit>();
-        unit.unitClass = new UnitClass(MovementType.Infantry, WeaponType.Sword, WeaponColor.Red, 7, 1); //testing only TODO
-        //initialise unit properties here
+            if (uClass.movementType == MovementType.Flier) unitGO.GetComponent<Renderer>().material.color = Color.green;
+            else if (uClass.movementType == MovementType.Armor) unitGO.GetComponent<Renderer>().material.color = Color.black;
+            else if (uClass.movementType == MovementType.Cavalry) unitGO.GetComponent<Renderer>().material.color = Color.blue;
 
-        playerUnits.Add(unit);
-        
+            Unit unit = unitGO.GetComponent<Unit>();
+            unit.unitClass = uClass;
+
+            playerUnits.Add(unit);
+        }
     }
 }

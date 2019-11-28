@@ -40,9 +40,12 @@ public class UnitSelectedState : BattleState
 
     public override void OnSelect()
     {
-        DestinationNode = Grid.nodes[currentIndex];
-        if(DestinationNode == SelectedNode) bsm.ChangeState<ChooseActionState>();
-        else bsm.ChangeState<UnitMovementState>();
+        if(Grid.nodes[currentIndex].unit == null || Grid.nodes[currentIndex] == SelectedNode)
+        {
+            DestinationNode = Grid.nodes[currentIndex];
+            if (DestinationNode == SelectedNode) bsm.ChangeState<ChooseActionState>();
+            else bsm.ChangeState<UnitMovementState>();
+        }
     }
 
     public override void OnCancel()
