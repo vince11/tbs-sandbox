@@ -2,6 +2,7 @@
 using UnityEngine;
 using Enums;
 using System.Linq;
+using System.IO;
 
 public class GridManager : MonoBehaviour
 {
@@ -9,23 +10,37 @@ public class GridManager : MonoBehaviour
     public GameObject selectorPrefab;
     public GameObject arrowPrefab;
 
-    public int width;
-    public int height;
+    public string mapName;
     public float nodeSize;
     public float offset;
     public bool testing;
-
+    
     public List<Color> colors;
     public List<Texture> arrowTextures;
 
+    [System.NonSerialized]
+    public int width, height;
+
+    [System.NonSerialized]
     public List<Node> nodes;
-    public List<Arrow> arrows;
+
+    [System.NonSerialized]
     public Selector selector;
 
-    private List<int> startingPositions;
+    private List<Arrow> arrows;
+    
+    private TerrainDatabase terrainsDB;
+    private GridData gridData;
 
     void Awake()
     {
+        terrainsDB = new TerrainDatabase();
+        string path = Path.Combine(Application.streamingAssetsPath, "Databases/Grids/" + mapName + ".json");
+        string data = File.ReadAllText(path);
+        gridData = JsonUtility.FromJson<GridData>(data);
+        gridData.Initialise();
+        width = gridData.width;
+        height = gridData.height;
         InitialiseGrid();
     }
 
@@ -70,7 +85,7 @@ public class GridManager : MonoBehaviour
             node.row = z;
             node.column = x;
             node.worldPos = nodeGO.transform.position;
-            node.terrain = GameManager.Instance.terrainsDB.GetTerrain(TerrainType.Plain);
+            node.terrain = terrainsDB.GetTerrain(gridData.terrains[i]);
             node.material = nodeGO.GetComponent<Renderer>().material;
             nodes.Add(node);
 
@@ -85,8 +100,7 @@ public class GridManager : MonoBehaviour
             arrowGO.SetActive(false);
 
         }
-
-        startingPositions = new List<int> { 0, 1, 2, 3 };
+        
         if (testing) GenerateMapVisual();
 
     }
@@ -110,28 +124,15 @@ public class GridManager : MonoBehaviour
 
         GameObject visualGO;
 
-        HashSet<int> randomStarts = new HashSet<int>();
-        while (randomStarts.Count < 4) randomStarts.Add(Random.Range(0, width * height));
-
-        startingPositions = randomStarts.ToList();
-
-        int random;
-        TerrainType t;
-
         for (int i = 0; i < nodes.Count; i++)
         {
             visualGO = Instantiate(nodePrefab, mapVisual.transform, true);
             visualGO.transform.position = new Vector3(nodes[i].worldPos.x, -.1f, nodes[i].worldPos.z);
             visualGO.transform.localScale = new Vector3(nodeSize - offset, nodeSize - offset, 1);
             visualGO.transform.localRotation = nodePrefab.transform.rotation;
-
-            random = Random.Range(0, 5);
-            if (randomStarts.Contains(i)) t = TerrainType.Plain;
-            else t = (TerrainType) random;
-            visualGO.name = GameManager.Instance.terrainsDB.GetTerrain(t).terrainName;
-            visualGO.GetComponent<Renderer>().material.color = terrainColors[t];
-
-            nodes[i].terrain = GameManager.Instance.terrainsDB.GetTerrain(t);
+            
+            visualGO.name = terrainsDB.GetTerrain(gridData.terrains[i]).terrainName;
+            visualGO.GetComponent<Renderer>().material.color = terrainColors[gridData.terrains[i]];
 
             Destroy(visualGO.GetComponent<Node>());
         }
@@ -140,18 +141,22 @@ public class GridManager : MonoBehaviour
 
     public void PlaceUnits(List<Unit> units)
     {
-        int i = 0;
         Node node;
-        foreach(Unit unit in units)
+        Unit unit;
+        for(int i = 0; i < gridData.startPositions.Length; i++)
         {
-            node = nodes[startingPositions[i]];
-            unit.node = node;
-            unit.transform.position = new Vector3(node.worldPos.x, unit.transform.position.y, node.worldPos.z);
-            node.unit = unit;
-            i++;
+            if(i < units.Count)
+            {
+                node = nodes[gridData.startPositions[i]];
+                unit = units[i];
+
+                unit.node = node;
+                unit.transform.position = new Vector3(node.worldPos.x, unit.transform.position.y, node.worldPos.z);
+                node.unit = unit;
+            }
         }
 
-        selector.MoveTo(nodes[startingPositions[0]].worldPos);
+        selector.MoveTo(nodes[gridData.startPositions[0]].worldPos);
     }
 
     public List<Node> GetMovementNodes(Node node)

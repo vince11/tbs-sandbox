@@ -1,17 +1,31 @@
 ﻿using Enums;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class GridData
 {
-    public string mapName;
+    public string name;
     public int width;
     public int height;
     public int[] startPositions;
-    public string[] terrains;
-    public string mapSprite;
+    public string[] map;
 
-    public TerrainType GetTerrainAt(int index)
+    [System.NonSerialized]
+    public List<TerrainType> terrains;
+
+    public void Initialise()
     {
-        return (TerrainType)System.Enum.Parse(typeof(TerrainType), terrains[index]);
+        TerrainType t;
+        terrains = new List<TerrainType>();
+        for(int i = map.Length - 1; i >= 0; i--)
+        {
+            string[] row = map[i].Split('-');
+            for(int j = 0; j < row.Length; j++)
+            {
+                t = (TerrainType) int.Parse(row[j]);
+                terrains.Add(t);
+            }
+        }
     }
+
 }

@@ -4,13 +4,22 @@ using UnityEngine;
 
 public class BattleStateMachine : StateMachine
 {
+    [System.NonSerialized]
     public GridManager grid;
+
+    [System.NonSerialized]
     public UnitManager unitManager;
+
+    [System.NonSerialized]
     public InputManager inputManager;
 
+    [System.NonSerialized]
     public Node selectedNode;
+
+    [System.NonSerialized]
     public Node destinationNode;
 
+    [System.NonSerialized]
     public RectTransform battleMenu;
 
     public void Start()

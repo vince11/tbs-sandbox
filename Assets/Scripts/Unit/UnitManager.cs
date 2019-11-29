@@ -8,6 +8,7 @@ public class UnitManager : MonoBehaviour
     public GameObject unitPrefab;
     public List<UnitClass> testClasses;
 
+    [System.NonSerialized]
     public List<Unit> playerUnits;
     
     void Awake()

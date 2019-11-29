@@ -5,13 +5,13 @@ public abstract class BattleState : State
     protected BattleStateMachine bsm;
     protected int currentIndex;
 
-    public GridManager Grid { get { return bsm.grid; } }
-    public Selector Selector { get { return bsm.grid.selector; } }
-    public InputManager InputManager { get { return bsm.inputManager; } }
-    public GameObject BattleMenu { get { return bsm.battleMenu.gameObject; } }
+    protected GridManager Grid { get { return bsm.grid; } }
+    protected Selector Selector { get { return bsm.grid.selector; } }
+    protected InputManager InputManager { get { return bsm.inputManager; } }
+    protected GameObject BattleMenu { get { return bsm.battleMenu.gameObject; } }
 
-    public Node SelectedNode {get { return bsm.selectedNode; } set { bsm.selectedNode = value; }}
-    public Node DestinationNode { get { return bsm.destinationNode; } set { bsm.destinationNode = value; } }
+    protected Node SelectedNode {get { return bsm.selectedNode; } set { bsm.selectedNode = value; }}
+    protected Node DestinationNode { get { return bsm.destinationNode; } set { bsm.destinationNode = value; } }
 
     public void Awake()
     {

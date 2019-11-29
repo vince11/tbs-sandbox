@@ -387,24 +387,23 @@ MonoBehaviour:
   - movementType: 0
     weaponType: 0
     weaponColor: 0
-    movementRange: 2
+    movementRange: 5
     attackRange: 1
   - movementType: 1
     weaponType: 2
     weaponColor: 2
-    movementRange: 2
+    movementRange: 5
     attackRange: 1
   - movementType: 2
     weaponType: 3
     weaponColor: 0
-    movementRange: 3
+    movementRange: 7
     attackRange: 2
   - movementType: 3
     weaponType: 0
     weaponColor: 0
-    movementRange: 1
+    movementRange: 4
     attackRange: 1
-  playerUnits: []
 --- !u!4 &1109471285
 Transform:
   m_ObjectHideFlags: 0
@@ -522,12 +521,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258dd82ef47b32c4d9b99d7c441ff4a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  grid: {fileID: 0}
-  unitManager: {fileID: 0}
-  inputManager: {fileID: 0}
-  selectedNode: {fileID: 0}
-  destinationNode: {fileID: 0}
-  battleMenu: {fileID: 0}
 --- !u!4 &1471918152
 Transform:
   m_ObjectHideFlags: 0
@@ -743,8 +736,7 @@ MonoBehaviour:
     type: 3}
   arrowPrefab: {fileID: 3882100493946981870, guid: a5cc75d3d29eccc48a86036437389f79,
     type: 3}
-  width: 6
-  height: 8
+  mapName: test_map
   nodeSize: 3
   offset: 0.05
   testing: 1
@@ -757,9 +749,6 @@ MonoBehaviour:
   - {fileID: 2800000, guid: f7a8bc56128a97941adf1c7bb4257e80, type: 3}
   - {fileID: 2800000, guid: 419cf164a4b770b449ccef97b2c06a0f, type: 3}
   - {fileID: 2800000, guid: 61f8344069690da4bae043c154697ae9, type: 3}
-  nodes: []
-  arrows: []
-  selector: {fileID: 0}
 --- !u!4 &1899558978
 Transform:
   m_ObjectHideFlags: 0

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class UnitMovementState : BattleState
 {
-    public bool destinationReached;
+    private bool destinationReached;
 
     public override void Enter()
     {

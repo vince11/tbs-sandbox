@@ -3,8 +3,6 @@ using UnityEngine;
 
 public class GameManager : ISingleton<GameManager>
 {
-    public TerrainDatabase terrainsDB;
-
     void Awake()
     {
         InitialiseDatabases();
@@ -12,6 +10,6 @@ public class GameManager : ISingleton<GameManager>
 
     private void InitialiseDatabases()
     {
-        terrainsDB = new TerrainDatabase();
+
     }
 }

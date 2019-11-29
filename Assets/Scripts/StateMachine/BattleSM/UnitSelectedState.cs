@@ -3,8 +3,8 @@ using UnityEngine;
 
 public class UnitSelectedState : BattleState
 {
-    public Unit unit;
-    public List<Node> path;
+    private Unit unit;
+    private List<Node> path;
 
     public override void Enter()
     {
