@@ -20,7 +20,9 @@ public class BattleStateMachine : StateMachine
     public Node destinationNode;
 
     [System.NonSerialized]
-    public RectTransform battleMenu;
+    public ForecastUI forecastUI;
+
+    public GameObject actionMenu;
 
     public void Start()
     {
@@ -32,9 +34,10 @@ public class BattleStateMachine : StateMachine
         grid = FindObjectOfType<GridManager>();
         unitManager = FindObjectOfType<UnitManager>();
         inputManager = FindObjectOfType<InputManager>();
+        forecastUI = FindObjectOfType<ForecastUI>();
 
-        battleMenu = GameObject.Find("BattleMenu").GetComponent<RectTransform>();
-        battleMenu.gameObject.SetActive(false);
+        actionMenu.SetActive(false);
+        forecastUI.gameObject.SetActive(false);
 
         grid.PlaceUnits(unitManager.playerUnits);
 

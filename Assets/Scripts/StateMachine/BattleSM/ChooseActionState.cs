@@ -4,14 +4,14 @@
     {
         base.Enter();
         InputManager.onWaitPressed = OnWaitPressed;
-        BattleMenu.SetActive(true);
+        ActionMenu.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
         InputManager.onWaitPressed = null;
-        BattleMenu.SetActive(false);
+        ActionMenu.SetActive(false);
     }
 
     public override void OnCancel()
