@@ -180,8 +180,8 @@ public class GridManager : MonoBehaviour
             {
                 if (!visited.Contains(neighbour))
                 {
-                    int costToNeighbour = moveCost[currentNode] + neighbour.terrain.GetCost(node.unit.GetMovementType());
-                    if (costToNeighbour <= node.unit.GetMovementRange())
+                    int costToNeighbour = moveCost[currentNode] + neighbour.terrain.GetCost(node.unit.MoveType);
+                    if (costToNeighbour <= node.unit.MoveRange)
                     {
                         if (!unvisited.Contains(neighbour)) unvisited.Add(neighbour);
 
@@ -230,7 +230,7 @@ public class GridManager : MonoBehaviour
                 if (!visited.Contains(neighbour))
                 {
                     int distance = GetDistance(node, neighbour);
-                    int attackRange = unit.GetAttackRange();
+                    int attackRange = unit.AttackRange;
 
                     if (distance <= attackRange)
                     {

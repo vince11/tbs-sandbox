@@ -6,7 +6,7 @@ using Enums;
 public class UnitManager : MonoBehaviour
 {
     public GameObject unitPrefab;
-    public List<UnitClass> testClasses;
+    public List<UnitData> testUnits;
 
     [System.NonSerialized]
     public List<Unit> playerUnits;
@@ -15,16 +15,17 @@ public class UnitManager : MonoBehaviour
     {
         playerUnits = new List<Unit>();
 
-        foreach(UnitClass uClass in testClasses)
+        foreach(UnitData unitData in testUnits)
         {
             GameObject unitGO = Instantiate(unitPrefab, unitPrefab.transform.position, Quaternion.identity, transform);
 
-            if (uClass.movementType == MovementType.Flier) unitGO.GetComponent<Renderer>().material.color = Color.green;
-            else if (uClass.movementType == MovementType.Armor) unitGO.GetComponent<Renderer>().material.color = Color.black;
-            else if (uClass.movementType == MovementType.Cavalry) unitGO.GetComponent<Renderer>().material.color = Color.blue;
+            if (unitData.unitClass.movementType == MovementType.Flier) unitGO.GetComponent<Renderer>().material.color = Color.green;
+            else if (unitData.unitClass.movementType == MovementType.Armor) unitGO.GetComponent<Renderer>().material.color = Color.black;
+            else if (unitData.unitClass.movementType == MovementType.Cavalry) unitGO.GetComponent<Renderer>().material.color = Color.blue;
 
             Unit unit = unitGO.GetComponent<Unit>();
-            unit.unitClass = uClass;
+            unit.unitData = unitData;
+            unit.specialCooldown = unit.OriginalSpecialCD;
 
             playerUnits.Add(unit);
         }

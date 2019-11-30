@@ -4,18 +4,20 @@ public class UnitStat
     public int baseValue;
     public int currentValue;
 
+    [System.NonSerialized]
     public int buff; // visible stat bonus, can be positive or negative, only highest applied, update on turn start
+
+    [System.NonSerialized]
     public int debuff; // visible stat reduction, only highest applied, update on turn start
+
+    [System.NonSerialized]
     public int inCombatBonus; // can stack, can become negative
 
+    [System.NonSerialized]
     public bool useBuff;
-    public bool useDebuff;
 
-    public UnitStat(int startValue, int extraValue)
-    {
-        baseValue = startValue + extraValue;
-        currentValue = baseValue;
-    }
+    [System.NonSerialized]
+    public bool useDebuff;
 
     public int GetCombatValue()
     {

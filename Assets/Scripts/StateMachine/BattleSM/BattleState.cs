@@ -10,7 +10,7 @@ public abstract class BattleState : State
     protected InputManager InputManager { get { return bsm.inputManager; } }
     protected ForecastUI ForecastUI { get { return bsm.forecastUI; } }
     protected GameObject ActionMenu { get { return bsm.actionMenu; } }
-
+    protected CombatManager CombatManager { get { return bsm.combatManager; } }
 
     protected Node SelectedNode {get { return bsm.selectedNode; } set { bsm.selectedNode = value; }}
     protected Node DestinationNode { get { return bsm.destinationNode; } set { bsm.destinationNode = value; } }
