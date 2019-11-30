@@ -9,6 +9,7 @@ public abstract class BattleState : State
     protected Selector Selector { get { return bsm.grid.selector; } }
     protected InputManager InputManager { get { return bsm.inputManager; } }
     protected ForecastUI ForecastUI { get { return bsm.forecastUI; } }
+    protected BattleLog BattleLog { get { return bsm.battleLog; } }
     protected GameObject ActionMenu { get { return bsm.actionMenu; } }
     protected CombatManager CombatManager { get { return bsm.combatManager; } }
 

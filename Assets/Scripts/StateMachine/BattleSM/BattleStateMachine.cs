@@ -23,6 +23,9 @@ public class BattleStateMachine : StateMachine
     public ForecastUI forecastUI;
 
     [System.NonSerialized]
+    public BattleLog battleLog;
+
+    [System.NonSerialized]
     public CombatManager combatManager;
 
     public GameObject actionMenu;
@@ -38,10 +41,12 @@ public class BattleStateMachine : StateMachine
         unitManager = FindObjectOfType<UnitManager>();
         inputManager = FindObjectOfType<InputManager>();
         forecastUI = FindObjectOfType<ForecastUI>();
+        battleLog = FindObjectOfType<BattleLog>();
         combatManager = FindObjectOfType<CombatManager>();
 
         actionMenu.SetActive(false);
         forecastUI.gameObject.SetActive(false);
+        battleLog.gameObject.SetActive(false);
 
         grid.PlaceUnits(unitManager.playerUnits);
 
