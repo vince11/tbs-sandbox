@@ -7,6 +7,14 @@
       "weaponType": "Sword",
       "moveRange": "5",
       "attackRange": "1"
+    },
+    {
+      "name": "Lance-Cavalry",
+      "moveType": "Cavalry",
+      "weaponColor": "Blue",
+      "weaponType": "Lance",
+      "moveRange": "7",
+      "attackRange": "1"
     }
   ]
 }

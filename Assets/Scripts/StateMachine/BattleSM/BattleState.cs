@@ -10,6 +10,7 @@ public abstract class BattleState : State
     protected InputManager InputManager { get { return bsm.inputManager; } }
     protected ForecastUI ForecastUI { get { return bsm.forecastUI; } }
     protected BattleLog BattleLog { get { return bsm.battleLog; } }
+    protected UnitHUD UnitHUD { get { return bsm.unitHUD; } }
     protected GameObject ActionMenu { get { return bsm.actionMenu; } }
     protected CombatManager CombatManager { get { return bsm.combatManager; } }
 

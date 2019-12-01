@@ -28,6 +28,7 @@ public class UnitManager : MonoBehaviour
 
             unitData = new UnitData();
             character = GameManager.Instance.characters.GetCharacterData(name);
+            character.LoadSprite();
             unitData.characterData = character;
             unitData.unitClass = GameManager.Instance.unitClasses.GetUnitClass(character.baseClass);
             unitData.InitialiseStats(character.maxStats);

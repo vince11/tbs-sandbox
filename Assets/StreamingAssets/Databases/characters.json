@@ -11,6 +11,18 @@
         "defense":  30,
         "resistance":  30
       }
+    },
+    {
+      "name": "Ephraim",
+      "spritePath": "Sprites/CharacterSprites/ephraim",
+      "baseClass": "Lance-Cavalry",
+      "maxStats": {
+        "hp":  60,
+        "attack":  56,
+        "speed":  23,
+        "defense":  36,
+        "resistance":  24
+      }
     }
   ]
 }
