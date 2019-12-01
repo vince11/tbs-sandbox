@@ -6,7 +6,7 @@ using Enums;
 public class UnitManager : MonoBehaviour
 {
     public GameObject unitPrefab;
-    public List<UnitData> testUnits;
+    public List<string> unitNames;
 
     [System.NonSerialized]
     public List<Unit> playerUnits;
@@ -15,17 +15,25 @@ public class UnitManager : MonoBehaviour
     {
         playerUnits = new List<Unit>();
 
-        foreach(UnitData unitData in testUnits)
+        GameObject unitGO;
+        Unit unit;
+        CharacterData character;
+        UnitData unitData;
+
+        foreach (string name in unitNames)
         {
-            GameObject unitGO = Instantiate(unitPrefab, unitPrefab.transform.position, Quaternion.identity, transform);
+            unitGO = Instantiate(unitPrefab, unitPrefab.transform.position, Quaternion.identity, transform);
 
-            if (unitData.unitClass.movementType == MovementType.Flier) unitGO.GetComponent<Renderer>().material.color = Color.green;
-            else if (unitData.unitClass.movementType == MovementType.Armor) unitGO.GetComponent<Renderer>().material.color = Color.black;
-            else if (unitData.unitClass.movementType == MovementType.Cavalry) unitGO.GetComponent<Renderer>().material.color = Color.blue;
+            unit = unitGO.GetComponent<Unit>();
 
-            Unit unit = unitGO.GetComponent<Unit>();
+            unitData = new UnitData();
+            character = GameManager.Instance.characters.GetCharacterData(name);
+            unitData.characterData = character;
+            unitData.unitClass = GameManager.Instance.unitClasses.GetUnitClass(character.baseClass);
+            unitData.InitialiseStats(character.maxStats);
+
             unit.unitData = unitData;
-            unit.specialCooldown = unit.OriginalSpecialCD;
+            //unit.specialCooldown = unit.OriginalSpecialCD;
 
             playerUnits.Add(unit);
         }

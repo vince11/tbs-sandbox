@@ -1,23 +1,16 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using Enums;
+﻿using Enums;
 
 [System.Serializable]
 public class UnitClass
 {
-    public MovementType movementType;
-    public WeaponType weaponType;
-    public WeaponColor weaponColor;
-    public int movementRange;
+    public string name;
+    public string moveType;
+    public string weaponColor;
+    public string weaponType;
+    public int moveRange;
     public int attackRange;
-
-    public UnitClass(MovementType movementType, WeaponType weaponType, WeaponColor weaponColor, int movementRange, int attackRange)
-    {
-        this.movementType = movementType;
-        this.weaponType = weaponType;
-        this.weaponColor = weaponColor;
-        this.movementRange = movementRange;
-        this.attackRange = attackRange;
-    }
+    
+    public MovementType MoveType { get { return (MovementType) System.Enum.Parse(typeof(MovementType), moveType); } }
+    public WeaponType WeaponType { get { return (WeaponType)System.Enum.Parse(typeof(WeaponType), weaponType); } }
+    public WeaponColor WeaponColor { get { return (WeaponColor)System.Enum.Parse(typeof(WeaponColor), weaponColor); } }
 }

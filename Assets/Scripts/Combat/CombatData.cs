@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ForecastData
+public class CombatData
 {
     public int? resultingHP;
     public int? heal;

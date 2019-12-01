@@ -101,7 +101,7 @@ public class CombatManager : MonoBehaviour
 
     private void CalculateDamage(Unit attacker, Unit target)
     {
-        int mit = attacker.TargetedStat == Stat.Defense ? target.Defense.GetCombatValue() : target.Resistance.GetCombatValue();
+        int mit = target.Stats[attacker.TargetedStat].GetCombatValue();
         int wta = (int) Mathf.Sign(attacker.TriangleAdvantage) * Mathf.FloorToInt(Mathf.Abs(attacker.Attack.GetCombatValue() * attacker.TriangleAdvantage));
 
         // Base Damage

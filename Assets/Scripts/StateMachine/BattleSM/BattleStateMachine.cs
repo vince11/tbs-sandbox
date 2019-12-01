@@ -46,7 +46,7 @@ public class BattleStateMachine : StateMachine
 
         actionMenu.SetActive(false);
         forecastUI.gameObject.SetActive(false);
-        battleLog.gameObject.SetActive(false);
+        //battleLog.gameObject.SetActive(false);
 
         grid.PlaceUnits(unitManager.playerUnits);
 

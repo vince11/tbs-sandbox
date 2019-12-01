@@ -16,13 +16,13 @@ public class BattleLog : MonoBehaviour
         texts = new List<Text>();
     }
 
-    public void LogBattle(List<ForecastData> forecastDatas)
+    public void LogBattle(List<CombatData> combatDatas)
     {
         GameObject textGO;
         Text t;
         int i = 0;
 
-        foreach(ForecastData fData in forecastDatas)
+        foreach(CombatData fData in combatDatas)
         {
             if(i < texts.Count)
             {

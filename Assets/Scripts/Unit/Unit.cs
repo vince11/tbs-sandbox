@@ -6,10 +6,10 @@ public class Unit : MonoBehaviour
 {
     public UnitData unitData;
 
-    public WeaponColor WeapColor { get { return unitData.unitClass.weaponColor; } }
-    public MovementType MoveType { get { return unitData.unitClass.movementType; } }
+    public WeaponColor WeapColor { get { return unitData.unitClass.WeaponColor; } }
+    public MovementType MoveType { get { return unitData.unitClass.MoveType; } }
     public int AttackRange { get { return unitData.unitClass.attackRange; } }
-    public int MoveRange { get { return unitData.unitClass.movementRange; } }
+    public int MoveRange { get { return unitData.unitClass.moveRange; } }
 
     public float TriangleAdvantage { get { return combatProperties.triangleAdvantage; } set { combatProperties.triangleAdvantage = value; } }
     public int AttacksPerRound { get { return combatProperties.attacksPerRound; } set { combatProperties.attacksPerRound = value; } }
@@ -32,11 +32,12 @@ public class Unit : MonoBehaviour
     public int TotalDamage { get { return combatProperties.totalDamage; } set { combatProperties.totalDamage = value; } }
     public int Effectiveness { get { return combatProperties.effectiveness; } set { combatProperties.effectiveness = value; } }
 
-    public UnitStat HP { get { return unitData.HP; } }
-    public UnitStat Attack { get { return unitData.Attack; } }
-    public UnitStat Speed { get { return unitData.Speed; } }
-    public UnitStat Defense { get { return unitData.Defense; } }
-    public UnitStat Resistance { get { return unitData.Resistance; } }
+    public Dictionary<Stat, UnitStat> Stats { get { return unitData.stats; }}
+    public UnitStat HP { get { return Stats[Stat.HP]; } }
+    public UnitStat Attack { get { return Stats[Stat.Attack]; } }
+    public UnitStat Speed { get { return Stats[Stat.Speed]; } }
+    public UnitStat Defense { get { return Stats[Stat.Defense]; } }
+    public UnitStat Resistance { get { return Stats[Stat.Resistance]; } }
     public int? OriginalSpecialCD { get { return unitData.specialCooldown; } } // null if no special equipped
 
     //actual special cooldown you see in battle -- set with originalspecialCD at the start of every battle

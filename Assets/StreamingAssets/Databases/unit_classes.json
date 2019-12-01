@@ -1,0 +1,12 @@
+{
+  "entries": [
+    {
+      "name": "Sword-Infantry",
+      "moveType": "Infantry",
+      "weaponColor": "Red",
+      "weaponType": "Sword",
+      "moveRange": "5",
+      "attackRange": "1"
+    }
+  ]
+}

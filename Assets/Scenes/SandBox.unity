@@ -788,51 +788,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   unitPrefab: {fileID: 4708623106516353152, guid: 1463eded92735fa4998b439d3b263e18,
     type: 3}
-  testUnits:
-  - unitClass:
-      movementType: 2
-      weaponType: 3
-      weaponColor: 1
-      movementRange: 7
-      attackRange: 2
-    HP:
-      baseValue: 50
-      currentValue: 50
-    Attack:
-      baseValue: 50
-      currentValue: 50
-    Speed:
-      baseValue: 25
-      currentValue: 30
-    Defense:
-      baseValue: 30
-      currentValue: 30
-    Resistance:
-      baseValue: 30
-      currentValue: 30
-    specialCooldown: 0
-  - unitClass:
-      movementType: 1
-      weaponType: 2
-      weaponColor: 2
-      movementRange: 5
-      attackRange: 1
-    HP:
-      baseValue: 45
-      currentValue: 45
-    Attack:
-      baseValue: 43
-      currentValue: 43
-    Speed:
-      baseValue: 44
-      currentValue: 44
-    Defense:
-      baseValue: 23
-      currentValue: 23
-    Resistance:
-      baseValue: 34
-      currentValue: 34
-    specialCooldown: 0
+  unitNames:
+  - Eirika
 --- !u!4 &1109471285
 Transform:
   m_ObjectHideFlags: 0

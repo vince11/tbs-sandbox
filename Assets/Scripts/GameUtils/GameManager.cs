@@ -3,6 +3,9 @@ using UnityEngine;
 
 public class GameManager : ISingleton<GameManager>
 {
+    public CharacterDatabase characters;
+    public UnitClassDatabase unitClasses;
+
     void Awake()
     {
         InitialiseDatabases();
@@ -10,6 +13,7 @@ public class GameManager : ISingleton<GameManager>
 
     private void InitialiseDatabases()
     {
-
+        characters = new CharacterDatabase();
+        unitClasses = new UnitClassDatabase();
     }
 }

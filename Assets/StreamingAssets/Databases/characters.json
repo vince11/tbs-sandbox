@@ -1,0 +1,16 @@
+{
+  "entries": [
+    {
+      "name": "Eirika",
+      "spritePath": "Sprites/CharacterSprites/eirika",
+      "baseClass": "Sword-Infantry",
+      "maxStats": {
+        "hp":  50,
+        "attack":  44,
+        "speed":  45,
+        "defense":  30,
+        "resistance":  30
+      }
+    }
+  ]
+}
