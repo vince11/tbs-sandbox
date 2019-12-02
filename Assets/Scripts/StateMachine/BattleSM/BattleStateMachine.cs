@@ -32,6 +32,8 @@ public class BattleStateMachine : StateMachine
     public CombatManager combatManager;
 
     public GameObject actionMenu;
+    public GameObject unitEditor;
+    public GameObject sandBoxMenu;
 
     public void Start()
     {
@@ -49,6 +51,7 @@ public class BattleStateMachine : StateMachine
         combatManager = FindObjectOfType<CombatManager>();
 
         actionMenu.SetActive(false);
+        unitEditor.SetActive(false);
         forecastUI.gameObject.SetActive(false);
         unitHUD.gameObject.SetActive(false);
         //battleLog.gameObject.SetActive(false);

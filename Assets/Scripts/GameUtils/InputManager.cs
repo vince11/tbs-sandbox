@@ -13,11 +13,13 @@ public class InputManager : MonoBehaviour
     public delegate void Select();
     public delegate void Cancel();
     public delegate void WaitPressed();
+    public delegate void EditPressed();
 
     public GridMovement onGridMovement;
     public Select onSelect;
     public Cancel onCancel;
     public WaitPressed onWaitPressed;
+    public EditPressed onEditPressed;
 
     public void Start()
     {
@@ -47,14 +49,15 @@ public class InputManager : MonoBehaviour
                     index = z * grid.width + x;
                     onGridMovement(index);
                 }
-                
+
             }
         }
+        else index = -1;
     }
 
     private void OnSelect()
     {
-        if (Input.GetMouseButtonDown(0)) onSelect();
+        if (Input.GetMouseButtonDown(0) && index != -1) onSelect();
     }
 
     private void OnCancel()
@@ -65,6 +68,11 @@ public class InputManager : MonoBehaviour
     public void OnWaitButton()
     {
         onWaitPressed?.Invoke();
+    }
+
+    public void OnEditPressed()
+    {
+        onEditPressed?.Invoke();
     }
 
 }

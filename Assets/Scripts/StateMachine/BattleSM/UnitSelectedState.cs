@@ -10,7 +10,6 @@ public class UnitSelectedState : BattleState
     {
         base.Enter();
         unit = SelectedNode.unit;
-        unit.transform.position = new Vector3(SelectedNode.worldPos.x, unit.transform.position.y, SelectedNode.worldPos.z);
         unit.movementNodes = Grid.GetMovementNodes(SelectedNode);
         unit.attackNodes = new List<Node>();
         foreach(Node mNode in unit.movementNodes)

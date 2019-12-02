@@ -12,6 +12,8 @@ public abstract class BattleState : State
     protected BattleLog BattleLog { get { return bsm.battleLog; } }
     protected UnitHUD UnitHUD { get { return bsm.unitHUD; } }
     protected GameObject ActionMenu { get { return bsm.actionMenu; } }
+    protected GameObject UnitEditor { get { return bsm.unitEditor; } }
+    protected GameObject SandBoxMenu { get { return bsm.sandBoxMenu; } }
     protected CombatManager CombatManager { get { return bsm.combatManager; } }
 
     protected Node SelectedNode {get { return bsm.selectedNode; } set { bsm.selectedNode = value; }}
@@ -52,6 +54,7 @@ public abstract class BattleState : State
         InputManager.onGridMovement = OnGridMovement;
         InputManager.onSelect = OnSelect;
         InputManager.onCancel = OnCancel;
+        InputManager.onEditPressed = () => bsm.ChangeState<UnitEditState>();
     }
 
     protected virtual void RemoveDelegates()
@@ -59,5 +62,6 @@ public abstract class BattleState : State
         InputManager.onGridMovement = null;
         InputManager.onSelect = null;
         InputManager.onCancel = null;
+        InputManager.onEditPressed = null;
     }
 }

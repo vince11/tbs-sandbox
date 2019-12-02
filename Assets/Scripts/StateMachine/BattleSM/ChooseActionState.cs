@@ -1,4 +1,6 @@
-﻿public class ChooseActionState : BattleState
+﻿using UnityEngine;
+
+public class ChooseActionState : BattleState
 {
     public override void Enter()
     {
@@ -12,6 +14,10 @@
         base.Exit();
         InputManager.onWaitPressed = null;
         ActionMenu.SetActive(false);
+        if(SelectedNode.unit != null)
+        {
+            SelectedNode.unit.transform.position = new Vector3(SelectedNode.worldPos.x, SelectedNode.unit.transform.position.y, SelectedNode.worldPos.z);
+        }
     }
 
     public override void OnCancel()
