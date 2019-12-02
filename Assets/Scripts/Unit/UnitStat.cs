@@ -37,4 +37,10 @@
         useBuff = true;
         useDebuff = true;
     }
+
+    public void UpdateValues(int value)
+    {
+        baseValue = value;
+        currentValue = value;
+    }
 }

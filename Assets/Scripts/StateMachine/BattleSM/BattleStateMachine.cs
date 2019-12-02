@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class BattleStateMachine : StateMachine
 {
@@ -29,11 +30,14 @@ public class BattleStateMachine : StateMachine
     public UnitHUD unitHUD;
 
     [System.NonSerialized]
+    public UnitEditor unitEditor;
+
+    [System.NonSerialized]
     public CombatManager combatManager;
 
     public GameObject actionMenu;
-    public GameObject unitEditor;
     public GameObject sandBoxMenu;
+    public EventSystem eventSystem;
 
     public void Start()
     {
@@ -49,9 +53,10 @@ public class BattleStateMachine : StateMachine
         battleLog = FindObjectOfType<BattleLog>();
         unitHUD = FindObjectOfType<UnitHUD>();
         combatManager = FindObjectOfType<CombatManager>();
+        unitEditor = FindObjectOfType<UnitEditor>();
 
         actionMenu.SetActive(false);
-        unitEditor.SetActive(false);
+        unitEditor.gameObject.SetActive(false);
         forecastUI.gameObject.SetActive(false);
         unitHUD.gameObject.SetActive(false);
         //battleLog.gameObject.SetActive(false);

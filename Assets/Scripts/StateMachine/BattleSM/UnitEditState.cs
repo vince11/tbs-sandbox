@@ -9,13 +9,15 @@ public class UnitEditState : BattleState
         base.Enter();
         Grid.ClearArrows();
         SandBoxMenu.SetActive(false);
+        InputManager.onStatEdited = OnStatEdited;
     }
 
     public override void Exit()
     {
         base.Exit();
-        UnitEditor.SetActive(false);
+        UnitEditor.gameObject.SetActive(false);
         SandBoxMenu.SetActive(true);
+        InputManager.onStatEdited = null;
     }
 
     public override void OnGridMovement(int index)
@@ -24,6 +26,13 @@ public class UnitEditState : BattleState
         {
             Selector.MoveTo(Grid.nodes[index].worldPos);
             currentIndex = index;
+
+            if (Grid.nodes[index].unit != null)
+            {
+                UnitHUD.gameObject.SetActive(true);
+                UnitHUD.UpdateHUD(Grid.nodes[index].unit);
+            }
+            else UnitHUD.gameObject.SetActive(false);
         }
     }
 
@@ -31,14 +40,28 @@ public class UnitEditState : BattleState
     {
         if (Grid.nodes[currentIndex].unit != null)
         {
-            UnitEditor.SetActive(true);
+            UnitEditor.gameObject.SetActive(true);
             InputManager.onGridMovement = null;
             InputManager.onSelect = null;
+
+            SelectedNode = Grid.nodes[currentIndex];
+            UnitEditor.UpdateStatsView(Grid.nodes[currentIndex].unit);
         }
     }
 
     public override void OnCancel()
     {
-        bsm.ChangeState<UnitSelectionState>();
+        if (UnitEditor.gameObject.activeSelf)
+        {
+            UnitEditor.gameObject.SetActive(false);
+            InputManager.onGridMovement = OnGridMovement;
+            InputManager.onSelect = OnSelect;
+        }
+        else bsm.ChangeState<UnitSelectionState>();
+    }
+
+    public void OnStatEdited()
+    {
+        UnitEditor.UpdateUnitStat(SelectedNode.unit);
     }
 }
