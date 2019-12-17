@@ -1,0 +1,976 @@
+{
+  "entries": [
+    {
+      "name": "Alondite",
+      "description": "Unit can counterattack regardless of foe's range.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Amiti",
+      "description": "Inflicts Spd-2. If unit initiates combat, unit attacks twice.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 11,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Ardent Durandal",
+      "description": "Grants Atk+3. At start of turn, grants 【Bonus Doubler】to ally with the highest Atk. 【Bonus Doubler】 Grants bonus to Atk/Spd/Def/Res during combat = current bonus on each of unit's stats for 1 turn. Calculates each stat bonus independently.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Armorslayer+",
+      "description": "Effective against armored foes.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 12,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Armorslayer",
+      "description": "Effective against armored foes.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 8,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Armorsmasher+",
+      "description": "Effective against armored foes.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Armorsmasher",
+      "description": "Effective against armored foes.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Astra Blade",
+      "description": "Grants Atk+3. If unit's Atk > foe's Def, deals damage = 50% of unit's Atk minus foe's Def.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Audhulma",
+      "description": "Accelerates Special trigger (cooldown count-1). Grants Res+5.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Ayra's Blade",
+      "description": "Grants Spd+3. If unit's Spd > foe's Spd, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Barrier Blade+",
+      "description": "If foe initiates combat, grants Res+7 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Barrier Blade",
+      "description": "If foe initiates combat, grants Res+7 during combat .",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Bellringer+",
+      "description": "When unit deals damage to foe during combat, restores 5 HP to unit. (Triggers even if 0 damage is dealt.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Bellringer",
+      "description": "When unit deals damage to foe during combat, restores 5 HP to unit. (Triggers even if 0 damage is dealt.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Beloved Zofia",
+      "description": "Grants Def+3. At start of combat, if unit's HP = 100%, grants Atk/Spd/Def/Res+4, but after combat, if unit attacked, deals 4 damage to unit.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Binding Blade",
+      "description": "If foe initiates combat, grants Def/Res+2 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Blazing Durandal",
+      "description": "Grants Atk+3. If unit's Atk > foe's Atk, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Brave Sword+",
+      "description": "Inflicts Spd-5. If unit initiates combat, unit attacks twice.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 8,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Brave Sword",
+      "description": "Inflicts Spd-5. If unit initiates combat, unit attacks twice.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 5,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Bull Blade",
+      "description": "During combat, boosts unit's Atk/Def by number of allies within 2 spaces × 2. (Maximum bonus of +6 to each stat.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Cake Cutter+",
+      "description": "If unit initiates combat, grants Atk/Spd+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Cake Cutter",
+      "description": "If unit initiates combat, grants Atk/Spd+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Concealed Blade",
+      "description": "Deals +10 damage when Special triggers.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Conjurer Curios",
+      "description": "Effective against armored foes. Grants Atk+3. If it is an odd-numbered turn or if foe's HP < 100% at start of combat, grants Atk/Spd/Def/Res+4 to unit during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Creator Sword",
+      "description": "Accelerates Special trigger (cooldown count-1). During combat, neutralizes effects that guarantee foe's follow-up attacks, prevent unit's follow-up attacks, grant \"Special cooldown charge +X\" to foe, or inflict \"Special cooldown charge -X\" on unit.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Dark Greatsword",
+      "description": "If unit initiates combat, grants Atk/Spd+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Dark Mystletainn",
+      "description": "Accelerates Special trigger (cooldown count-1). If Special triggers before or during combat, grants Special cooldown count-2 after combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Divine Tyrfing",
+      "description": "Grants Res+3. Reduces damage from magic foe's first attack by 50%.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Dracofalchion",
+      "description": "Effective against dragon foes. Grants Atk+3. If the number of foes within 2 spaces (excluding target) ≥ the number of allies within 2 spaces (excluding unit), grants Atk/Spd/Def/Res+5 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Dragonbind",
+      "description": "Effective against dragon foes. Unit can counterattack regardless of foe's range.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Durandal",
+      "description": "If unit initiates combat, grants Atk+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Eckesachs",
+      "description": "At start of turn, inflicts Def-4 on foes within 2 spaces through their next actions.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Exalted Falchion",
+      "description": "Effective against dragon foes. Grants Spd+3. Grants bonus to Atk/Spd/Def/Res during combat = current bonus on each of unit's stats. Calculates each stat bonus independently.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Falchion",
+      "description": "Effective against dragon foes. At the start of every third turn, restores 10 HP.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Firesweep S+",
+      "description": "Unit and foe cannot counterattack.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 15,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Firesweep S",
+      "description": "Unit and foe cannot counterattack.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 11,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Fólkvangr",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Atk+5 for 1 turn.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Geishun+",
+      "description": "At start of turn, inflicts Atk-7 on foe on the enemy team with the highest Atk through its next action.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Geishun",
+      "description": "At start of turn, inflicts Atk-7 on foe on the enemy team with the highest Atk through its next action.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Gjöll",
+      "description": "Grants Atk+3. If a penalty inflicted by a skill like Panic or Threaten and/or a negative status effect (preventing counterattacks or restricting movement) is active on foe, unit makes a guaranteed follow-up attack and foe cannot.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Gladiator's Blade",
+      "description": "If unit’s Atk > foe’s Atk, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Golden Dagger",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Guard Sword+",
+      "description": "Inflicts Special cooldown charge -1 on foe per attack during combat. (Only highest value applied. Does not stack.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Guard Sword",
+      "description": "Inflicts Special cooldown charge -1 on foe per attack during combat. (Only highest value applied. Does not stack.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Hana's Katana",
+      "description": "Effective against armored foes.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Heart's Blade+",
+      "description": "If unit is adjacent to an ally, grants Atk/Spd/Def/Res+3 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Heart's Blade",
+      "description": "If unit is adjacent to an ally, grants Atk/Spd/Def/Res+3 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Hikami",
+      "description": "Grants Spd+3. At start of turn, inflicts Atk/Spd/Def/Res-4 on nearest foes within 4 spaces through their next actions.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Hinata's Katana",
+      "description": "If foe initiates combat, grants Atk/Def+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Iron Sword",
+      "description": "",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 6,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Kadomatsu+",
+      "description": "Grants Def/Res+2 to allies within 2 spaces during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Kadomatsu",
+      "description": "Grants Def/Res+2 to allies within 2 spaces during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Killing Edge+",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 11,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Killing Edge",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 7,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Laevatein",
+      "description": "Grants Atk+3. Grants bonus to unit’s Atk = total bonuses on unit during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Light Brand",
+      "description": "Grants Def+3. If foe's Def ≥ foe's Res+5, deals +7 damage.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Mareeta's Sword",
+      "description": "Accelerates Special trigger (cooldown count-1). If unit is not adjacent to an ally, grants Atk/Spd/Def/Res+4 and neutralizes effects that guarantee foe's follow-up attacks and effects that prevent unit's follow-up attacks during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Meisterschwert",
+      "description": "Inflicts Spd-5. Unit attacks twice. (Even if foe initiates combat, unit attacks twice.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 11,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Mercurius",
+      "description": "Grants Atk+3. At start of turn, if unit's HP ≥ 50%, grants Atk/Spd/Def/Res+4 to unit and sword, lance, axe, bow, dagger, or beast allies within 2 spaces for 1 turn. (Bonus granted to unit even if no allies are within 2 spaces.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Missiletainn",
+      "description": "Accelerates Special trigger (cooldown count-1). Grants Special cooldown charge +1 per foe's attack during combat. (Only highest value applied. Does not stack. Special cooldown charge granted even if foe's attack deals 0 damage.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Mystletainn",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Nameless Blade",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Níu",
+      "description": "Grants Spd+3. Adds 50% of total bonuses on foe to unit's Atk/Spd/Def/Res during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Panther Sword",
+      "description": "If unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Petal Parasol+",
+      "description": "If【Penalty】is active on foe, grants Atk/Spd+5 during combat. 【Penalty】 All effects that last \"on foe through its next action.\" Includes penalties inflicted by a skill like Panic or Threaten and negative status effects (preventing counterattacks, restricting movement, or the effects of a skill like Triangle Adept or Guard).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Petal Parasol",
+      "description": "If【Penalty】is active on foe, grants Atk/Spd+5 during combat. 【Penalty】 All effects that last \"on foe through its next action.\" Includes penalties inflicted by a skill like Panic or Threaten and negative status effects (preventing counterattacks, restricting movement, or the effects of a skill like Triangle Adept or Guard).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Ragnell",
+      "description": "Unit can counterattack regardless of foe's range.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Ragnell·Alondite",
+      "description": "Unit can counterattack regardless of foe's range. Inflicts Spd-5. Unit attacks twice (even if foe initiates combat).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Raijinto",
+      "description": "Unit can counterattack regardless of foe's range.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Rapier",
+      "description": "Effective against armored and cavalry foes. Grants Spd+3. If unit’s HP ≤ 75% and foe initiates combat, unit can counterattack before foe's first attack.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Regal Blade",
+      "description": "At start of combat, if foe’s HP = 100%, grants Atk/Spd+2 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Resolute Blade",
+      "description": "Grants Atk+3. Deals +10 damage when Special triggers.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Rowdy Sword",
+      "description": "Inflicts Spd-5. If unit initiates combat, unit attacks twice.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 11,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Royal Sword",
+      "description": "Grants Spd+3. If unit is within 2 spaces of an ally, grants unit Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Ruby Sword+",
+      "description": "If unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 12,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Ruby Sword",
+      "description": "If unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 8,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Safeguard+",
+      "description": "If foe initiates combat, grants Def+7 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Safeguard",
+      "description": "If foe initiates combat, grants Def+7 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Sandfort Spade+",
+      "description": "If a bonus granted by a skill like Rally or Hone is active on unit, grants Atk/Def+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Sandfort Spade",
+      "description": "If a bonus granted by a skill like Rally or Hone is active on unit, grants Atk/Def+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Scarlet Sword",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Sealed Falchion",
+      "description": "Effective against dragon foes. At start of combat, if unit's HP < 100%, grants Atk/Spd/Def/Res+5 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Selena's Blade",
+      "description": "Effective against armored foes. At start of combat, if foe's Atk ≥ unit's Atk +3, grants Atk/Spd/Def/Res+3 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Shadow Sword",
+      "description": "Accelerates Special trigger (cooldown count-1). If unit's HP ≥ 50% and unit initiates combat, unit can make a follow-up attack before foe can counterattack .",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Siegfried",
+      "description": "Unit can counterattack regardless of foe's range.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Sieglinde",
+      "description": "At start of turn, grants Atk+3 to adjacent allies for 1 turn.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Silver Sword+",
+      "description": "",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 15,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Silver Sword",
+      "description": "",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 11,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Silverbrand",
+      "description": "If unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Skuld",
+      "description": "If Sing or Dance is used, grants Atk/Spd/Def/Res+3 to target.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Slaying Edge+",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Slaying Edge",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Sökkvabekkr",
+      "description": "If unit is within 3 spaces of an ally, grants Atk/Spd/Def/Res+4 during combat, and unit makes a guaranteed follow-up attack, but after combat, if unit attacked, deals 20 damage to nearest ally.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Sol Katti",
+      "description": "If unit's HP ≤ 50% and unit initiates combat, unit can make a follow-up attack before foe can counterattack.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Solitary Blade",
+      "description": "Accelerates Special trigger (cooldown count-1).",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Steel Sword",
+      "description": "",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 8,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Storm Sieglinde",
+      "description": "Grants Atk+3. If the number of foes within 2 spaces (excluding target) ≥ the number of allies within 2 spaces (excluding unit), grants Def/Res+3 and Special cooldown charge +1 per unit's attack during combat. (Only highest value applied. Does not stack.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Tyrfing",
+      "description": "If unit's HP ≤ 50%, grants Def+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Umbra Burst",
+      "description": "Unit can counterattack regardless of foe's range. Deals a minimum of 1 damage.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Vassal's Blade",
+      "description": "Accelerates Special trigger (cooldown count-1). If unit's Spd > foe's Spd, deals damage = 70% of difference between stats. (Maximum bonus of +7 damage. Combos with Phantom Spd.)",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Venin Edge",
+      "description": "Grants Def+3. After combat, if unit attacked, deals 10 damage to target and foes within 2 spaces of target, and inflicts status on those foes preventing counterattacks through their next actions.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Whitewing Blade",
+      "description": "If unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Wing Sword",
+      "description": "Effective against armored and cavalry foes.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Wo Dao+",
+      "description": "Deals +10 damage when Special triggers.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 13,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Wo Dao",
+      "description": "Deals +10 damage when Special triggers.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 9,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Yato",
+      "description": "If unit initiates combat, grants Spd+4 during combat.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 16,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Zanbato+",
+      "description": "Effective against cavalry foes.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 14,
+      "targetStat": "Defense",
+      "effects": []
+    },
+    {
+      "name": "Zanbato",
+      "description": "Effective against cavalry foes.",
+      "type": "Weapon",
+      "priority": 0,
+      "might": 10,
+      "targetStat": "Defense",
+      "effects": []
+    }
+  ]
+}

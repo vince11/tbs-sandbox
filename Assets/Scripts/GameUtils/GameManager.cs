@@ -5,6 +5,7 @@ public class GameManager : ISingleton<GameManager>
 {
     public CharacterDatabase characters;
     public UnitClassDatabase unitClasses;
+    public SkillDatabase skillDatabase;
 
     void Awake()
     {
@@ -15,5 +16,6 @@ public class GameManager : ISingleton<GameManager>
     {
         characters = new CharacterDatabase();
         unitClasses = new UnitClassDatabase();
+        skillDatabase = new SkillDatabase();
     }
 }
