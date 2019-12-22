@@ -360,7 +360,6 @@ GameObject:
   - component: {fileID: 55370651}
   - component: {fileID: 55370650}
   - component: {fileID: 55370649}
-  - component: {fileID: 55370652}
   m_Layer: 5
   m_Name: BattleLog
   m_TagString: Untagged
@@ -455,21 +454,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 55370647}
   m_CullTransparentMesh: 0
---- !u!114 &55370652
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 55370647}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a8f35ad906ae0ff438cb6fbd4dffd8f6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  textPrefab: {fileID: 8032186181948701084, guid: b3e6a7ddac243fa4fac722a0b78db266,
-    type: 3}
-  contentArea: {fileID: 1671039250}
 --- !u!1 &85778503
 GameObject:
   m_ObjectHideFlags: 0
@@ -877,7 +861,6 @@ GameObject:
   - component: {fileID: 312518619}
   - component: {fileID: 312518621}
   - component: {fileID: 312518620}
-  - component: {fileID: 312518622}
   m_Layer: 5
   m_Name: UnitHUD
   m_TagString: Untagged
@@ -947,25 +930,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 312518618}
   m_CullTransparentMesh: 0
---- !u!114 &312518622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 312518618}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b5c3ab08e7034f4a9dd69c8ec681fe6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  unitImage: {fileID: 2039227310}
-  unitName: {fileID: 606024799}
-  hp: {fileID: 672372709}
-  atk: {fileID: 1051280325}
-  spd: {fileID: 580910145}
-  def: {fileID: 778133361}
-  res: {fileID: 1368232641}
 --- !u!1 &357346583
 GameObject:
   m_ObjectHideFlags: 0
@@ -1356,7 +1320,6 @@ GameObject:
   - component: {fileID: 490231982}
   - component: {fileID: 490231984}
   - component: {fileID: 490231983}
-  - component: {fileID: 490231985}
   m_Layer: 5
   m_Name: ForecastHUD
   m_TagString: Untagged
@@ -1419,18 +1382,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 490231981}
   m_CullTransparentMesh: 0
---- !u!114 &490231985
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 490231981}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9ef4a42fdacc5244ab1779188fa5ea47, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &494520282
 GameObject:
   m_ObjectHideFlags: 0
@@ -2869,7 +2820,6 @@ GameObject:
   - component: {fileID: 913842196}
   - component: {fileID: 913842198}
   - component: {fileID: 913842197}
-  - component: {fileID: 913842199}
   m_Layer: 5
   m_Name: UnitEditor
   m_TagString: Untagged
@@ -2938,26 +2888,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 913842195}
   m_CullTransparentMesh: 0
---- !u!114 &913842199
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 913842195}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2003aeea1ecaa9040ae5310bbc09a3f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statInputFields:
-  - {fileID: 674822537}
-  - {fileID: 494520284}
-  - {fileID: 19675952}
-  - {fileID: 780102247}
-  - {fileID: 399781419}
-  - {fileID: 676407437}
-  eventSystem: {fileID: 1747618929}
 --- !u!1 &963194225
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,9 +3610,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 258dd82ef47b32c4d9b99d7c441ff4a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  actionMenu: {fileID: 1297944391}
-  sandBoxMenu: {fileID: 482065133}
-  eventSystem: {fileID: 1747618929}
 --- !u!4 &1471918152
 Transform:
   m_ObjectHideFlags: 0
@@ -4016,6 +3943,7 @@ GameObject:
   - component: {fileID: 1712384374}
   - component: {fileID: 1712384373}
   - component: {fileID: 1712384372}
+  - component: {fileID: 1712384376}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -4108,6 +4036,42 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1712384376
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1712384371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d7e8e5814cb79741bc74d6aa5fbee71, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  unitHUD: {fileID: 312518618}
+  unitImage: {fileID: 2039227310}
+  unitName: {fileID: 606024799}
+  hp: {fileID: 672372709}
+  atk: {fileID: 1051280325}
+  spd: {fileID: 580910145}
+  def: {fileID: 778133361}
+  res: {fileID: 1368232641}
+  battleLog: {fileID: 55370647}
+  battleLogText: {fileID: 8032186181948701084, guid: b3e6a7ddac243fa4fac722a0b78db266,
+    type: 3}
+  battleLogContentArea: {fileID: 1671039250}
+  forecastUI: {fileID: 490231981}
+  unitEditor: {fileID: 913842195}
+  statInputFields:
+  - {fileID: 674822537}
+  - {fileID: 494520284}
+  - {fileID: 19675952}
+  - {fileID: 780102247}
+  - {fileID: 399781419}
+  - {fileID: 676407437}
+  actionMenu: {fileID: 1297944391}
+  sandBoxMenu: {fileID: 482065133}
+  eventSystem: {fileID: 1747618929}
 --- !u!1 &1747618927
 GameObject:
   m_ObjectHideFlags: 0

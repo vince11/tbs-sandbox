@@ -6,14 +6,14 @@ public class ChooseActionState : BattleState
     {
         base.Enter();
         InputManager.onWaitPressed = OnWaitPressed;
-        ActionMenu.SetActive(true);
+        UIManager.actionMenu.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
         InputManager.onWaitPressed = null;
-        ActionMenu.SetActive(false);
+        UIManager.actionMenu.SetActive(false);
         if(SelectedNode.unit != null)
         {
             SelectedNode.unit.transform.position = new Vector3(SelectedNode.worldPos.x, SelectedNode.unit.transform.position.y, SelectedNode.worldPos.z);

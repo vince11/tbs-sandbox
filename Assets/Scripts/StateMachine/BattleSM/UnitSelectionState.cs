@@ -9,10 +9,10 @@
 
             if (Grid.nodes[index].unit != null)
             {
-                UnitHUD.gameObject.SetActive(true);
-                UnitHUD.UpdateHUD(Grid.nodes[index].unit);
+                UIManager.unitHUD.SetActive(true);
+                UIManager.UpdateUnitHUD(Grid.nodes[index].unit);
             }
-            else UnitHUD.gameObject.SetActive(false);
+            else UIManager.unitHUD.SetActive(false);
         }
     }
 

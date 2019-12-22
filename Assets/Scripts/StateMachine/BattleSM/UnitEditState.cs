@@ -8,15 +8,15 @@ public class UnitEditState : BattleState
     {
         base.Enter();
         Grid.ClearArrows();
-        SandBoxMenu.SetActive(false);
+        UIManager.sandBoxMenu.SetActive(false);
         InputManager.onStatEdited = OnStatEdited;
     }
 
     public override void Exit()
     {
         base.Exit();
-        UnitEditor.gameObject.SetActive(false);
-        SandBoxMenu.SetActive(true);
+        UIManager.unitEditor.SetActive(false);
+        UIManager.sandBoxMenu.SetActive(true);
         InputManager.onStatEdited = null;
     }
 
@@ -29,10 +29,10 @@ public class UnitEditState : BattleState
 
             if (Grid.nodes[index].unit != null)
             {
-                UnitHUD.gameObject.SetActive(true);
-                UnitHUD.UpdateHUD(Grid.nodes[index].unit);
+                UIManager.unitHUD.SetActive(true);
+                UIManager.UpdateUnitHUD(Grid.nodes[index].unit);
             }
-            else UnitHUD.gameObject.SetActive(false);
+            else UIManager.unitHUD.SetActive(false);
         }
     }
 
@@ -40,20 +40,20 @@ public class UnitEditState : BattleState
     {
         if (Grid.nodes[currentIndex].unit != null)
         {
-            UnitEditor.gameObject.SetActive(true);
+            UIManager.unitEditor.SetActive(true);
             InputManager.onGridMovement = null;
             InputManager.onSelect = null;
 
             SelectedNode = Grid.nodes[currentIndex];
-            UnitEditor.UpdateStatsView(Grid.nodes[currentIndex].unit);
+            UIManager.UpdateStatsView(Grid.nodes[currentIndex].unit);
         }
     }
 
     public override void OnCancel()
     {
-        if (UnitEditor.gameObject.activeSelf)
+        if (UIManager.unitEditor.activeSelf)
         {
-            UnitEditor.gameObject.SetActive(false);
+            UIManager.unitEditor.SetActive(false);
             InputManager.onGridMovement = OnGridMovement;
             InputManager.onSelect = OnSelect;
         }
@@ -62,6 +62,6 @@ public class UnitEditState : BattleState
 
     public void OnStatEdited()
     {
-        UnitEditor.UpdateUnitStat(SelectedNode.unit);
+        UIManager.UpdateUnitStat(SelectedNode.unit);
     }
 }
