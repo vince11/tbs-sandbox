@@ -7,6 +7,8 @@ public class UnitData
     public UnitClass unitClass;
 
     public Dictionary<Stat, UnitStat> stats;
+    public Dictionary<SkillType, Skill> skills;
+    public int specialCooldown;
 
     public void InitialiseStats(Stats currentStats)
     {
@@ -20,5 +22,17 @@ public class UnitData
         };
     }
 
-    public int specialCooldown;
+    public void InitialiseSkills(string weapon, string assist, string special, string a, string b, string c, string seal)
+    {
+        skills = new Dictionary<SkillType, Skill>
+        {
+            { SkillType.Weapon, GameManager.Instance.skillDatabase.GetSkill(weapon)},
+            { SkillType.Assist, GameManager.Instance.skillDatabase.GetSkill(assist)},
+            { SkillType.Special, GameManager.Instance.skillDatabase.GetSkill(special)},
+            { SkillType.A, GameManager.Instance.skillDatabase.GetSkill(a)},
+            { SkillType.B, GameManager.Instance.skillDatabase.GetSkill(b)},
+            { SkillType.C, GameManager.Instance.skillDatabase.GetSkill(c)},
+            { SkillType.Seal, GameManager.Instance.skillDatabase.GetSkill(seal)}
+        };
+    }
 }

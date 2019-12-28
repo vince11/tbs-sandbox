@@ -14,14 +14,12 @@ public class InputManager : MonoBehaviour
     public delegate void Cancel();
     public delegate void WaitPressed();
     public delegate void EditPressed();
-    public delegate void StatEdited();
 
     public GridMovement onGridMovement;
     public Select onSelect;
     public Cancel onCancel;
     public WaitPressed onWaitPressed;
     public EditPressed onEditPressed;
-    public StatEdited onStatEdited;
 
     public void Start()
     {
@@ -75,11 +73,6 @@ public class InputManager : MonoBehaviour
     public void OnEditPressed()
     {
         onEditPressed?.Invoke();
-    }
-
-    public void OnStatEdited()
-    {
-        onStatEdited?.Invoke();
     }
 
 }

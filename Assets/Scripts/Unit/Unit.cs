@@ -43,6 +43,8 @@ public class Unit : MonoBehaviour
     public UnitStat Resistance { get { return Stats[Stat.Resistance]; } }
     public int? OriginalSpecialCD { get { return unitData.specialCooldown; } } // null if no special equipped
 
+    public Dictionary<SkillType, Skill> Skills { get { return unitData.skills; } }
+
     //actual special cooldown you see in battle -- set with originalspecialCD at the start of every battle
     [System.NonSerialized]
     public int? specialCooldown; 

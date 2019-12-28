@@ -32,6 +32,7 @@ public class UnitManager : MonoBehaviour
             unitData.characterData = character;
             unitData.unitClass = GameManager.Instance.unitClasses.GetUnitClass(character.baseClass);
             unitData.InitialiseStats(character.maxStats);
+            unitData.InitialiseSkills(null, null, null, null, null, null, null);
 
             unit.unitData = unitData;
             //unit.specialCooldown = unit.OriginalSpecialCD;

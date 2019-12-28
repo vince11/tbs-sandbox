@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using UnityEngine;
 
 public class SkillDatabase
@@ -74,7 +75,16 @@ public class SkillDatabase
 
     public Skill GetSkill(string skillName)
     {
-        return skills[skillName];
+        if (skillName != null) return skills[skillName];
+
+        return null;
+    }
+
+    public List<string> GetSkillNames(Enums.SkillType skillType)
+    {
+        List<string> names = skills.Values.ToList().Where(skill => skill.type == skillType).Select(skill => skill.name).ToList();
+        names.Add("None");
+        return names;
     }
 }
 

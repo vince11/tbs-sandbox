@@ -2,12 +2,12 @@
 {
     public enum SkillType
     {
+        Weapon,
+        Assist,
+        Special,
         A,
         B,
         C,
-        Seal,
-        Weapon,
-        Assist,
-        Special
+        Seal
     }
 }

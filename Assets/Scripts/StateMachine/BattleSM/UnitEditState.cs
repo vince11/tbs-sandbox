@@ -1,15 +1,32 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Enums;
+using System;
+using System.Linq;
 
 public class UnitEditState : BattleState
 {
+    private readonly List<SkillType> skillTypes = Enum.GetValues(typeof(SkillType)).Cast<SkillType>().ToList();
+    private readonly List<Stat> stats = Enum.GetValues(typeof(Stat)).Cast<Stat>().ToList();
+
     public override void Enter()
     {
         base.Enter();
         Grid.ClearArrows();
         UIManager.sandBoxMenu.SetActive(false);
-        InputManager.onStatEdited = OnStatEdited;
+
+        for (int i = 0; i < UIManager.skillDropdowns.Count; i++)
+        {
+            int index = i;
+            UIManager.skillDropdowns[i].onValueChanged.AddListener((option) => OnSkillChanged(option, index));
+        }
+
+        for (int i = 0; i < UIManager.statInputFields.Count; i++)
+        {
+            int index = i;
+            UIManager.statInputFields[i].onEndEdit.AddListener((input) => OnStatChanged(input, index));
+        }
     }
 
     public override void Exit()
@@ -17,7 +34,6 @@ public class UnitEditState : BattleState
         base.Exit();
         UIManager.unitEditor.SetActive(false);
         UIManager.sandBoxMenu.SetActive(true);
-        InputManager.onStatEdited = null;
     }
 
     public override void OnGridMovement(int index)
@@ -60,8 +76,22 @@ public class UnitEditState : BattleState
         else bsm.ChangeState<UnitSelectionState>();
     }
 
-    public void OnStatEdited()
+    private void OnStatChanged(string input, int inputFieldIndex)
     {
-        UIManager.UpdateUnitStat(SelectedNode.unit);
+        Unit unit = SelectedNode.unit;
+        bool isParsed = int.TryParse(input, out int value);
+        if (isParsed)
+        {
+            if(inputFieldIndex == 0) unit.Stats[stats[0]].currentValue = value;
+            else if(inputFieldIndex == 1) unit.Stats[stats[0]].baseValue = value;
+            else unit.Stats[stats[inputFieldIndex - 1]].UpdateValues(value);
+        }
+    }
+
+    private void OnSkillChanged(int selectedIndex, int dropdownIndex)
+    {
+        string selected = UIManager.skillDropdowns[dropdownIndex].options[selectedIndex].text;
+        if (selected.Equals("None")) SelectedNode.unit.Skills[skillTypes[dropdownIndex]] = null;
+        else SelectedNode.unit.Skills[skillTypes[dropdownIndex]] = GameManager.Instance.skillDatabase.GetSkill(selected);
     }
 }
