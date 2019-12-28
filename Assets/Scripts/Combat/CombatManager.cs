@@ -1,11 +1,14 @@
 ﻿using UnityEngine;
 using Enums;
 using System.Linq;
+using System.Collections.Generic;
 
 public class CombatManager : MonoBehaviour
 {
-    public void Combat(Unit attacker, Unit target)
+    public List<CombatData> Combat(Unit attacker, Unit target)
     {
+        List<CombatData> combatDatas = new List<CombatData>();
+
         Unit currentAttacker = attacker;
         Unit currentDefender = target;
 
@@ -68,6 +71,8 @@ public class CombatManager : MonoBehaviour
                 currentAttacker.HitsPerAttack--;
                 currentAttacker.FirstHit = false;
                 currentAttacker.ConsecutiveHit = true;
+
+                combatDatas.Add(GenerateCombatData(currentAttacker, currentDefender));
             }
 
             currentAttacker.AttacksPerRound--;
@@ -80,7 +85,8 @@ public class CombatManager : MonoBehaviour
             }
         }
 
-        Debug.Log("Combat End");
+        Debug.Log("Combat Calculated!");
+        return combatDatas;
     }
 
     private void Swap(ref Unit A, ref Unit B)
@@ -114,5 +120,21 @@ public class CombatManager : MonoBehaviour
 
         // Apply Effectiveness
         attacker.TotalDamage *= attacker.Effectiveness;
+    }
+
+    private CombatData GenerateCombatData(Unit attacker, Unit defender)
+    {
+        CombatData combatData = new CombatData
+        {
+            attacker = attacker.name,
+            defender = defender.name,
+            attackerHP = attacker.CurrentHP,
+            defenderHP = defender.CurrentHP,
+            attackerDamage = attacker.TotalDamage,
+            attackerSpecialTriggered = attacker.SpecialCDCount == 0,
+            defenderSpecialTriggered = defender.SpecialCDCount == 0
+        };
+
+        return combatData;
     }
 }

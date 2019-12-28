@@ -4,8 +4,14 @@ using UnityEngine;
 
 public class CombatData
 {
-    public int? resultingHP;
-    public int? heal;
-    public int? damage;
-    public bool? specialTriggered;
+    public string attacker;
+    public string defender;
+
+    public int attackerHP;
+    public int defenderHP;
+
+    public int attackerDamage;
+
+    public bool attackerSpecialTriggered;
+    public bool defenderSpecialTriggered;
 }

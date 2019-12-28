@@ -5,23 +5,22 @@ public class ChooseActionState : BattleState
     public override void Enter()
     {
         base.Enter();
-        InputManager.onWaitPressed = OnWaitPressed;
+        UIManager.waitButton.onClick.AddListener(OnWaitPressed);
+        UIManager.attackButton.onClick.AddListener(OnAttackPressed);
         UIManager.actionMenu.SetActive(true);
     }
 
     public override void Exit()
     {
         base.Exit();
-        InputManager.onWaitPressed = null;
+        UIManager.waitButton.onClick.RemoveListener(OnWaitPressed);
+        UIManager.attackButton.onClick.RemoveListener(OnAttackPressed);
         UIManager.actionMenu.SetActive(false);
-        if(SelectedNode.unit != null)
-        {
-            SelectedNode.unit.transform.position = new Vector3(SelectedNode.worldPos.x, SelectedNode.unit.transform.position.y, SelectedNode.worldPos.z);
-        }
     }
 
     public override void OnCancel()
     {
+        SelectedNode.unit.transform.position = new Vector3(SelectedNode.worldPos.x, SelectedNode.unit.transform.position.y, SelectedNode.worldPos.z);
         bsm.ChangeState<UnitSelectedState>();
     }
 
@@ -34,5 +33,11 @@ public class ChooseActionState : BattleState
 
         Grid.ClearArrows();
         bsm.ChangeState<UnitSelectionState>();
+    }
+
+    public void OnAttackPressed()
+    {
+        SelectedNode.unit.attackNodes = bsm.grid.GetAttackNodes(DestinationNode, SelectedNode.unit);
+        if(SelectedNode.unit.attackNodes.Exists((node) => node != SelectedNode && node.unit != null)) bsm.ChangeState<ChooseTargetState>();
     }
 }

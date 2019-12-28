@@ -15,6 +15,7 @@ public class UnitEditState : BattleState
         base.Enter();
         Grid.ClearArrows();
         UIManager.sandBoxMenu.SetActive(false);
+        SelectedNode.unit.transform.position = new Vector3(SelectedNode.worldPos.x, SelectedNode.unit.transform.position.y, SelectedNode.worldPos.z);
 
         for (int i = 0; i < UIManager.skillDropdowns.Count; i++)
         {

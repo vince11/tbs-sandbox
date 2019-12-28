@@ -1,10 +1,12 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.EventSystems;
 
 public abstract class BattleState : State
 {
     protected BattleStateMachine bsm;
     protected int currentIndex;
+    protected List<CombatData> combatDatas;
 
     protected GridManager Grid { get { return bsm.grid; } }
     protected Selector Selector { get { return bsm.grid.selector; } }
@@ -18,6 +20,7 @@ public abstract class BattleState : State
     public void Awake()
     {
         bsm = FindObjectOfType<BattleStateMachine>();
+        currentIndex = -1;
     }
 
     public override void Enter()

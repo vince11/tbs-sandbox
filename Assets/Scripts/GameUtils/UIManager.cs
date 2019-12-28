@@ -34,7 +34,11 @@ public class UIManager : MonoBehaviour
     public List<InputField> statInputFields;
     public List<Dropdown> skillDropdowns;
 
+    //Action Menu
     public GameObject actionMenu;
+    public Button attackButton;
+    public Button waitButton; 
+
     public GameObject sandBoxMenu;
 
     public EventSystem eventSystem;
