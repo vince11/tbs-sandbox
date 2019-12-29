@@ -13,7 +13,6 @@ public class GridManager : MonoBehaviour
     public string mapName;
     public float nodeSize;
     public float offset;
-    public bool testing;
     
     public List<Color> colors;
     public List<Texture> arrowTextures;
@@ -100,43 +99,6 @@ public class GridManager : MonoBehaviour
             arrowGO.SetActive(false);
 
         }
-        
-        if (testing) GenerateMapVisual();
-
-    }
-
-    private void GenerateMapVisual()
-    {
-        ColorUtility.TryParseHtmlString("#006600", out Color forest);
-        ColorUtility.TryParseHtmlString("#4D2600", out Color mountain);
-        ColorUtility.TryParseHtmlString("#00E600", out Color plain);
-        ColorUtility.TryParseHtmlString("#0066CC", out Color sea);
-
-        Dictionary<TerrainType, Color> terrainColors = new Dictionary<TerrainType, Color>();
-        terrainColors.Add(TerrainType.Forest, forest);
-        terrainColors.Add(TerrainType.Mountain, mountain);
-        terrainColors.Add(TerrainType.Plain, plain);
-        terrainColors.Add(TerrainType.Sea, sea);
-        terrainColors.Add(TerrainType.Obstacle, Color.gray);
-        
-        GameObject mapVisual = new GameObject("MapVisual");
-        mapVisual.transform.SetParent(transform);
-
-        GameObject visualGO;
-
-        for (int i = 0; i < nodes.Count; i++)
-        {
-            visualGO = Instantiate(nodePrefab, mapVisual.transform, true);
-            visualGO.transform.position = new Vector3(nodes[i].worldPos.x, -.1f, nodes[i].worldPos.z);
-            visualGO.transform.localScale = new Vector3(nodeSize - offset, nodeSize - offset, 1);
-            visualGO.transform.localRotation = nodePrefab.transform.rotation;
-            
-            visualGO.name = terrainsDB.GetTerrain(gridData.terrains[i]).terrainName;
-            visualGO.GetComponent<Renderer>().material.color = terrainColors[gridData.terrains[i]];
-
-            Destroy(visualGO.GetComponent<Node>());
-        }
-
     }
 
     public void PlaceUnits(List<Unit> units)
