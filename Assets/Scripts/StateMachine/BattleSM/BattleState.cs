@@ -6,7 +6,6 @@ public abstract class BattleState : State
 {
     protected BattleStateMachine bsm;
     protected int currentIndex;
-    protected List<CombatData> combatDatas;
 
     protected GridManager Grid { get { return bsm.grid; } }
     protected Selector Selector { get { return bsm.grid.selector; } }
@@ -16,6 +15,7 @@ public abstract class BattleState : State
 
     protected Node SelectedNode {get { return bsm.selectedNode; } set { bsm.selectedNode = value; }}
     protected Node DestinationNode { get { return bsm.destinationNode; } set { bsm.destinationNode = value; } }
+    protected List<CombatData> CombatDatas { get { return bsm.combatDatas; } set { bsm.combatDatas = value; } }
 
     public void Awake()
     {

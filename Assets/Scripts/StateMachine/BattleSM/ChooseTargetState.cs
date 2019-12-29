@@ -28,7 +28,7 @@ public class ChooseTargetState : BattleState
             Selector.MoveTo(Grid.nodes[index].worldPos);
             currentIndex = index;
 
-            combatDatas = CombatManager.Combat(SelectedNode.unit, Grid.nodes[index].unit);
+            CombatDatas = CombatManager.Combat(SelectedNode.unit, Grid.nodes[index].unit);
             UIManager.forecastUI.SetActive(true);
 
         }
@@ -37,9 +37,9 @@ public class ChooseTargetState : BattleState
 
     public override void OnSelect()
     {
-        if (Grid.nodes[currentIndex].unit == null)
+        if (Grid.nodes[currentIndex].unit != null)
         {
-
+            bsm.ChangeState<CombatState>();
         }
     }
 }

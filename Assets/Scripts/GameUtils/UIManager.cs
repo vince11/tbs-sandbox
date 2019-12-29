@@ -93,16 +93,23 @@ public class UIManager : MonoBehaviour
 
         foreach (CombatData fData in combatDatas)
         {
-            if (i < texts.Count)
+            string info = string.Format(
+                "[{0}][{1}] attacks [{2}]\n" +
+                "[{1}] HP: {3} BaseDmg: {4} BoostedDmg: {5} TrueDmg: {6} TotalDamage: {7} Heal: {8} TA: {9} Special: {10} Eff: {11}\n" +
+                "[{2}] HP: {12} Special: {13} DmgReduction: {14}", 
+                i + 1, fData.attacker.Name, fData.defender.Name, fData.attackerHP, "X", "X", "X", fData.attackerDamage, "X", "X",
+                "X", "X", fData.defenderHP, "X", "X");
+
+            if (texts.Count <= i)
             {
                 textGO = Instantiate(battleLogText, battleLogContentArea.transform);
                 t = textGO.GetComponent<Text>();
-                t.text = "";
+                t.text = info;
                 texts.Add(t);
             }
             else
             {
-                texts[i].text = "";
+                texts[i].text = info;
             }
 
             i++;

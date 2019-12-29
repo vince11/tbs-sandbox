@@ -68,6 +68,11 @@ public class Unit : MonoBehaviour
         combatProperties.specialCooldownCount = specialCooldown; //forecast value
         combatProperties.currentHP = HP.currentValue; // forecast value
         combatProperties.isInitiator = isInitiator;
+
+        foreach(UnitStat stat in Stats.Values)
+        {
+            stat.ResetCombatModifiers();
+        }
     }
 
     public void ResetDamages()

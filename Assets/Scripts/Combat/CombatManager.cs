@@ -59,16 +59,19 @@ public class CombatManager : MonoBehaviour
         }
 
         // Combat Loop
+        int hitsPerAttack;
         while (currentAttacker.AttacksPerRound > 0 && currentAttacker.CurrentHP > 0 && currentDefender.CurrentHP > 0)
         {
             currentAttacker.ResetDamages();
-            while(currentAttacker.HitsPerAttack > 0)
+            hitsPerAttack = currentAttacker.HitsPerAttack;
+            while (hitsPerAttack > 0 && currentDefender.CurrentHP > 0)
             {
                 CalculateDamage(currentAttacker, currentDefender);
+                currentDefender.CurrentHP -= currentAttacker.TotalDamage;
                 UpdateSpecialCooldown(currentAttacker);
                 UpdateSpecialCooldown(currentDefender);
 
-                currentAttacker.HitsPerAttack--;
+                hitsPerAttack--;
                 currentAttacker.FirstHit = false;
                 currentAttacker.ConsecutiveHit = true;
 
@@ -77,7 +80,7 @@ public class CombatManager : MonoBehaviour
 
             currentAttacker.AttacksPerRound--;
 
-            if((currentAttacker.HasFollowUpPriority || currentAttacker.AttacksPerRound == 0) &&
+            if((!currentAttacker.HasFollowUpPriority || currentAttacker.AttacksPerRound == 0) &&
                ((currentDefender.CanCounter || currentDefender.IsInitiator) && currentDefender.AttacksPerRound > 0))
             {
                 currentAttacker.ConsecutiveHit = false;
@@ -126,8 +129,8 @@ public class CombatManager : MonoBehaviour
     {
         CombatData combatData = new CombatData
         {
-            attacker = attacker.name,
-            defender = defender.name,
+            attacker = attacker,
+            defender = defender,
             attackerHP = attacker.CurrentHP,
             defenderHP = defender.CurrentHP,
             attackerDamage = attacker.TotalDamage,

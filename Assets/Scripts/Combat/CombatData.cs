@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CombatData
 {
-    public string attacker;
-    public string defender;
+    public Unit attacker;
+    public Unit defender;
 
     public int attackerHP;
     public int defenderHP;

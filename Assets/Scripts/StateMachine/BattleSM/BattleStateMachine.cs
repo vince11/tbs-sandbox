@@ -24,6 +24,9 @@ public class BattleStateMachine : StateMachine
     [System.NonSerialized]
     public Node destinationNode;
 
+    [System.NonSerialized]
+    public List<CombatData> combatDatas;
+
     public void Start()
     {
         BattleStart();
