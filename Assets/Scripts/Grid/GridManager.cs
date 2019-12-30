@@ -209,7 +209,7 @@ public class GridManager : MonoBehaviour
         return attackNodes;
     }
 
-    private int GetDistance(Node A, Node B)
+    public int GetDistance(Node A, Node B)
     {
         int distanceX = (int)Mathf.Abs(A.worldPos.x - B.worldPos.x);
         int distanceZ = (int)Mathf.Abs(A.worldPos.z - B.worldPos.z);

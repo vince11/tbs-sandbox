@@ -3,6 +3,7 @@
     public enum ActivationType
     {
         OnEquip,
+        OnUnEquip,
 
         OnAssist,
         OnTurnStart,
@@ -10,9 +11,10 @@
         PostAssist,
         OnUnitSelected,
 
+        PreCombat,
         InCombat,
-        InCombatSupport, //effects for supporting allies
-        InCombatDebuff, //effects for debuffing enemies
+        CombatSupport, //effects for supporting allies
+        CombatDebuff, //effects for debuffing enemies
         PreDamage,
         PostDamage
     }

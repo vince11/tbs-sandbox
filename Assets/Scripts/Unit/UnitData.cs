@@ -8,6 +8,7 @@ public class UnitData
 
     public Dictionary<Stat, UnitStat> stats;
     public Dictionary<SkillType, Skill> skills;
+    public List<Skill> status;
     public int specialCooldown;
 
     public void InitialiseStats(Stats currentStats)

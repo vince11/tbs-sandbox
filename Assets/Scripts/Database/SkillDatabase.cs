@@ -36,6 +36,7 @@ public class SkillDatabase
     {
         effectsDB = new SkillEffectDatabase();
         skills = new Dictionary<string, Skill>();
+        LoadSkills(Path.Combine(Application.streamingAssetsPath, "Databases/Skills/Passives/a_skills.json"));
         LoadSkills(Path.Combine(Application.streamingAssetsPath, "Databases/Skills/Weapons/swords.json"));
     }
 

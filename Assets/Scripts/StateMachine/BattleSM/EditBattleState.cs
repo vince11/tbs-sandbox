@@ -99,8 +99,21 @@ public class EditBattleState : BattleState
 
     private void OnSkillChanged(int selectedIndex, int dropdownIndex)
     {
+        if(SelectedNode.unit.Skills[skillTypes[dropdownIndex]] != null)
+        {
+            SelectedNode.unit.Skills[skillTypes[dropdownIndex]].ApplyEffects(SelectedNode.unit, null, ActivationType.OnUnEquip, bsm);
+        }
+
         string skill = UIManager.skillDropdowns[dropdownIndex].options[selectedIndex].text;
-        if (skill.Equals("None")) SelectedNode.unit.Skills[skillTypes[dropdownIndex]] = null;
-        else SelectedNode.unit.Skills[skillTypes[dropdownIndex]] = GameManager.Instance.skillDatabase.GetSkill(skill);
+
+        if (skill.Equals("None"))
+        {
+            SelectedNode.unit.Skills[skillTypes[dropdownIndex]] = null;
+        }
+        else
+        {
+            SelectedNode.unit.Skills[skillTypes[dropdownIndex]] = GameManager.Instance.skillDatabase.GetSkill(skill);
+            SelectedNode.unit.Skills[skillTypes[dropdownIndex]].ApplyEffects(SelectedNode.unit, null, ActivationType.OnEquip, bsm);
+        }
     }
 }

@@ -1,0 +1,1738 @@
+{
+  "entries": [
+    {
+      "name": "AR-D Atk/Def 1",
+      "description": "If defending in Aether Raids, grants Atk/Def+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +4; 4 grants +3; 3 grants +2; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Atk/Def 2",
+      "description": "If defending in Aether Raids, grants Atk/Def+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +7; 4 grants +5; 3 grants +3; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Atk/Def 3",
+      "description": "If defending in Aether Raids, grants Atk/Def+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +10; 4 grants +7; 3 grants +4; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Atk/Res 1",
+      "description": "If defending in Aether Raids, grants Atk/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +4; 4 grants +3; 3 grants +2; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Atk/Res 2",
+      "description": "If defending in Aether Raids, grants Atk/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +7; 4 grants +5; 3 grants +3; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Atk/Res 3",
+      "description": "If defending in Aether Raids, grants Atk/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +10; 4 grants +7; 3 grants +4; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Def/Res 1",
+      "description": "If defending in Aether Raids, grants Def/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +4; 4 grants +3; 3 grants +2; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Def/Res 2",
+      "description": "If defending in Aether Raids, grants Def/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +7; 4 grants +5; 3 grants +3; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Def/Res 3",
+      "description": "If defending in Aether Raids, grants Def/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +10; 4 grants +7; 3 grants +4; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Spd/Def 1",
+      "description": "If defending in Aether Raids, grants Spd/Def+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +4; 4 grants +3; 3 grants +2; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Spd/Def 2",
+      "description": "If defending in Aether Raids, grants Spd/Def+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +7; 4 grants +5; 3 grants +3; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Spd/Def 3",
+      "description": "If defending in Aether Raids, grants Spd/Def+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +10; 4 grants +7; 3 grants +4; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Spd/Res 1",
+      "description": "If defending in Aether Raids, grants Spd/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +4; 4 grants +3; 3 grants +2; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Spd/Res 2",
+      "description": "If defending in Aether Raids, grants Spd/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +7; 4 grants +5; 3 grants +3; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-D Spd/Res 3",
+      "description": "If defending in Aether Raids, grants Spd/Res+X during combat. (Calculates X based on number of your defensive structures: ≥5 structures grants +10; 4 grants +7; 3 grants +4; ≤2 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Atk/Def 1",
+      "description": "If attacking in Aether Raids, grants Atk/Def+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +4; 3 grants +3; 4 grants +2; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Atk/Def 2",
+      "description": "If attacking in Aether Raids, grants Atk/Def+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +7; 3 grants +5; 4 grants +3; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Atk/Def 3",
+      "description": "If attacking in Aether Raids, grants Atk/Def+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +10; 3 grants +7; 4 grants +4; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Atk/Spd 1",
+      "description": "If attacking in Aether Raids, grants Atk/Spd+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +4; 3 grants +3; 4 grants +2; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Atk/Spd 2",
+      "description": "If attacking in Aether Raids, grants Atk/Spd+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +7; 3 grants +5; 4 grants +3; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Atk/Spd 3",
+      "description": "If attacking in Aether Raids, grants Atk/Spd+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +10; 3 grants +7; 4 grants +4; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Spd/Res 1",
+      "description": "If attacking in Aether Raids, grants Spd/Res+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +4; 3 grants +3; 4 grants +2; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Spd/Res 2",
+      "description": "If attacking in Aether Raids, grants Spd/Res+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +7; 3 grants +5; 4 grants +3; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "AR-O Spd/Res 3",
+      "description": "If attacking in Aether Raids, grants Spd/Res+X during combat. (Calculates X based on number of foe's defensive structures: ≤2 structures grants +10; 3 grants +7; 4 grants +4; ≥5 grants +1. Destroyed defensive structures are not counted.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Armored Blow 1",
+      "description": "If unit initiates combat, grants Def+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Armored Blow 2",
+      "description": "If unit initiates combat, grants Def+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Armored Blow 3",
+      "description": "If unit initiates combat, grants Def+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Ashera's Chosen",
+      "description": "Neutralizes \"effective against flying\" bonuses. If unit is adjacent to only beast or dragon allies or if unit is not adjacent to any ally, grants Atk/Def+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Bond 1",
+      "description": "If unit is adjacent to an ally, grants Atk/Def+3 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Bond 2",
+      "description": "If unit is adjacent to an ally, grants Atk/Def+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Bond 3",
+      "description": "If unit is adjacent to an ally, grants Atk/Def+5 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Form 1",
+      "description": "Grants Atk/Def+X to unit during combat. (X = number of allies within 2 spaces; max 3.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Form 2",
+      "description": "Grants Atk/Def+X to unit during combat. (X = number of allies within 2 spaces + 2; max 5.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Form 3",
+      "description": "Grants Atk/Def+X to unit during combat. (X = 2 × number of allies within 2 spaces, + 1; max 7.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Push 1",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Def+3, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Push 2",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Def+4, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Push 3",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Def+5, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Solo 1",
+      "description": "If unit is not adjacent to an ally, grants Atk/Def+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Solo 2",
+      "description": "If unit is not adjacent to an ally, grants Atk/Def+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Def Solo 3",
+      "description": "If unit is not adjacent to an ally, grants Atk/Def+6 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Bond 1",
+      "description": "If unit is adjacent to an ally, grants Atk/Res+3 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Bond 2",
+      "description": "If unit is adjacent to an ally, grants Atk/Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Bond 3",
+      "description": "If unit is adjacent to an ally, grants Atk/Res+5 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Bond 4",
+      "description": "If unit is adjacent to an ally, grants Atk/Res+7 to unit and neutralizes unit's penalties to Atk/Res during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Push 1",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Res+3, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Push 2",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Res+4, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Push 3",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Res+5, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Push 4",
+      "description": "At start of combat, if unit's HP ≥ 25%, grants Atk/Res+7, but after combat, if unit attacked, deals 5 damage to unit.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Solo 1",
+      "description": "If unit is not adjacent to an ally, grants Atk/Res+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Solo 2",
+      "description": "If unit is not adjacent to an ally, grants Atk/Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Res Solo 3",
+      "description": "If unit is not adjacent to an ally, grants Atk/Res+6 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd 1",
+      "description": "Grants Atk/Spd+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd 2",
+      "description": "Grants Atk/Spd+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Bond 1",
+      "description": "If unit is adjacent to an ally, grants Atk/Spd+3 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Bond 2",
+      "description": "If unit is adjacent to an ally, grants Atk/Spd+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Bond 3",
+      "description": "If unit is adjacent to an ally, grants Atk/Spd+5 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Bond 4",
+      "description": "If unit is adjacent to an ally, grants Atk/Spd+7 to unit and neutralizes unit's penalties to Atk/Spd during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Form 1",
+      "description": "Grants Atk/Spd+X to unit during combat. (X = number of allies within 2 spaces; max 3.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Form 2",
+      "description": "Grants Atk/Spd+X to unit during combat. (X = number of allies within 2 spaces + 2; max 5.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Form 3",
+      "description": "Grants Atk/Spd+X to unit during combat. (X = 2 × number of allies within 2 spaces, + 1; max 7.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Push 1",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Spd+3, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Push 2",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Spd+4, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Push 3",
+      "description": "At start of combat, if unit's HP = 100%, grants Atk/Spd+5, but if unit attacked, deals 1 damage to unit after combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Push 4",
+      "description": "At start of combat, if unit's HP ≥ 25%, grants Atk/Spd+7, but after combat, if unit attacked, deals 5 damage to unit.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Solo 1",
+      "description": "If unit is not adjacent to an ally, grants Atk/Spd+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Solo 2",
+      "description": "If unit is not adjacent to an ally, grants Atk/Spd+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Atk/Spd Solo 3",
+      "description": "If unit is not adjacent to an ally, grants Atk/Spd+6 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Attack/Def +1",
+      "description": "Grants Atk/Def+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Attack/Def +2",
+      "description": "Grants Atk/Def+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Attack +1",
+      "description": "Grants Atk+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Attack +2",
+      "description": "Grants Atk+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Attack +3",
+      "description": "Grants Atk+3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Attack/Res 1",
+      "description": "Grants Atk/Res+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Attack/Res 2",
+      "description": "Grants Atk/Res+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "B Duel Flying 1",
+      "description": "Grants HP+3. If unit is 5★ and level 40 and unit's stats total less than 160, treats unit's stats as 160 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "B Duel Flying 2",
+      "description": "Grants HP+4. If unit is 5★ and level 40 and unit's stats total less than 165, treats unit's stats as 165 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "B Duel Flying 3",
+      "description": "Grants HP+5. If unit is 5★ and level 40 and unit's stats total less than 170, treats unit's stats as 170 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "B Duel Infantry 1",
+      "description": "Grants HP+3. If unit is 5★ and level 40 and unit's stats total less than 160, treats unit's stats as 160 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "B Duel Infantry 2",
+      "description": "Grants HP+4. If unit is 5★ and level 40 and unit's stats total less than 165, treats unit's stats as 165 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "B Duel Infantry 3",
+      "description": "Grants HP+5. If unit is 5★ and level 40 and unit's stats total less than 170, treats unit's stats as 170 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Bonus Doubler 1",
+      "description": "Grants bonus to Atk/Spd/Def/Res during combat = 50% of current bonus on each of unit's stats. Calculates each stat bonus independently.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Bonus Doubler 2",
+      "description": "Grants bonus to Atk/Spd/Def/Res during combat = 75% of current bonus on each of unit's stats. Calculates each stat bonus independently.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Bonus Doubler 3",
+      "description": "Grants bonus to Atk/Spd/Def/Res during combat = current bonus on each of unit's stats. Calculates each stat bonus independently.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Bracing Blow 1",
+      "description": "If unit initiates combat, grants Def/Res+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Bracing Blow 2",
+      "description": "If unit initiates combat, grants Def/Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Bracing Stance 1",
+      "description": "If foe initiates combat, grants Def/Res+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Bracing Stance 2",
+      "description": "If foe initiates combat, grants Def/Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Def 1",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Def+3 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Def 2",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Def+5 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Def 3",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Def+7 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Res 1",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Res+3 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Res 2",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Res+5 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Res 3",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Res+7 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Spd 1",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Spd+3 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Spd 2",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Spd+5 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Spd 3",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk/Spd+7 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Atk/Spd 4",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Atk+9 and Spd+10 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Def/Res 1",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Def/Res+3 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Def/Res 2",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Def/Res+5 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Def/Res 3",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Def/Res+7 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Spd/Def 1",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Spd/Def+3 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Spd/Def 2",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Spd/Def+5 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Spd/Def 3",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Spd/Def+7 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Spd/Res 1",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Spd/Res+3 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Spd/Res 2",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Spd/Res+5 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Brazen Spd/Res 3",
+      "description": "At start of combat, if unit's HP ≤ 80%, grants Spd/Res+7 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "C Duel Infantry 1",
+      "description": "Grants HP+3. If unit is 5★ and level 40 and unit's stats total less than 160, treats unit's stats as 160 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "C Duel Infantry 2",
+      "description": "Grants HP+4. If unit is 5★ and level 40 and unit's stats total less than 165, treats unit's stats as 165 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "C Duel Infantry 3",
+      "description": "Grants HP+5. If unit is 5★ and level 40 and unit's stats total less than 170, treats unit's stats as 170 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Close Counter",
+      "description": "Unit can counterattack regardless of foe's range.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Close Def 1",
+      "description": "If foe initiates combat and uses sword, lance, axe, dragonstone, or beast damage, grants Def/Res+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Close Def 2",
+      "description": "If foe initiates combat and uses sword, lance, axe, dragonstone, or beast damage, grants Def/Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Close Def 3",
+      "description": "If foe initiates combat and uses sword, lance, axe, dragonstone, or beast damage, grants Def/Res+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Darting Blow 1",
+      "description": "If unit initiates combat, grants Spd+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Darting Blow 2",
+      "description": "If unit initiates combat, grants Spd+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Darting Blow 3",
+      "description": "If unit initiates combat, grants Spd+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Darting Blow 4",
+      "description": "If unit initiates combat, grants Spd+9 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Darting Stance 1",
+      "description": "If foe initiates combat, grants Spd+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Darting Stance 2",
+      "description": "If foe initiates combat, grants Spd+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Darting Stance 3",
+      "description": "If foe initiates combat, grants Spd+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Death Blow 1",
+      "description": "If unit initiates combat, grants Atk+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Death Blow 2",
+      "description": "If unit initiates combat, grants Atk+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Death Blow 3",
+      "description": "If unit initiates combat, grants Atk+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Death Blow 4",
+      "description": "If unit initiates combat, grants Atk+8 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Def/Res 1",
+      "description": "Grants Def/Res+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Def/Res 2",
+      "description": "Grants Def/Res+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Def/Res Bond 1",
+      "description": "If unit is adjacent to an ally, grants Def/Res+3 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Def/Res Bond 2",
+      "description": "If unit is adjacent to an ally, grants Def/Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Def/Res Bond 3",
+      "description": "If unit is adjacent to an ally, grants Def/Res+5 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Def/Res Solo 1",
+      "description": "If unit is not adjacent to an ally, grants Def/Res+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Def/Res Solo 2",
+      "description": "If unit is not adjacent to an ally, grants Def/Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Def/Res Solo 3",
+      "description": "If unit is not adjacent to an ally, grants Def/Res+6 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defense +1",
+      "description": "Grants Def+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defense +2",
+      "description": "Grants Def+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defense +3",
+      "description": "Grants Def+3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Atk 1",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Atk+3 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Atk 2",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Atk+5 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Atk 3",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Atk+7 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Def 1",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Def+3 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Def 2",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Def+5 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Def 3",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Def+7 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Res 1",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Res+3 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Res 2",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Res+5 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Res 3",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Res+7 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Spd 1",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Spd+3 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Spd 2",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Spd+5 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Defiant Spd 3",
+      "description": "At start of turn, if unit's HP ≤ 50%, grants Spd+7 for 1 turn.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Distant Counter",
+      "description": "Unit can counterattack regardless of foe's range.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Distant Def 1",
+      "description": "If foe initiates combat and uses bow, dagger, magic, or staff, grants Def/Res+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Distant Def 2",
+      "description": "If foe initiates combat and uses bow, dagger, magic, or staff, grants Def/Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Distant Def 3",
+      "description": "If foe initiates combat and uses bow, dagger, magic, or staff, grants Def/Res+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Distant Def 4",
+      "description": "If foe initiates combat and uses bow, dagger, magic, or staff, grants Def/Res+8 and neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Distant Ward",
+      "description": "If magic, staff, or dragonstone foe initiates combat, grants Atk/Res+5 to unit during combat and unit can counterattack regardless of foe's range.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Dragonskin",
+      "description": "Neutralizes \"effective against flying\" bonuses. If foe initiates combat, grants Def/Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Earth Boost 1",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Def+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Earth Boost 2",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Def+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Earth Boost 3",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Def+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fierce Breath",
+      "description": "If foe initiates combat, grants Atk+4 during combat and Special cooldown charge +1 per attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fierce Stance 1",
+      "description": "If foe initiates combat, grants Atk+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fierce Stance 2",
+      "description": "If foe initiates combat, grants Atk+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fierce Stance 3",
+      "description": "If foe initiates combat, grants Atk+6 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fire Boost 1",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Atk+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fire Boost 2",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Atk+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fire Boost 3",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Atk+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Flashing Blade 1",
+      "description": "If unit's Spd ≥ foe's Spd+5, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Flashing Blade 2",
+      "description": "If unit's Spd ≥ foe's Spd+3, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Flashing Blade 3",
+      "description": "If unit's Spd > foe's Spd, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Flashing Blade 4",
+      "description": "If unit's Spd > foe's Spd, grants Special cooldown charge +1 and deals +5 damage per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fort. Def/Res 1",
+      "description": "Grants Def/Res+3. Inflicts Atk-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fort. Def/Res 2",
+      "description": "Grants Def/Res+4. Inflicts Atk-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fort. Def/Res 3",
+      "description": "Grants Def/Res+6. Inflicts Atk-2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fortress Def 1",
+      "description": "Grants Def+3. Inflicts Atk-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fortress Def 2",
+      "description": "Grants Def+4. Inflicts Atk-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fortress Def 3",
+      "description": "Grants Def+5. Inflicts Atk-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fortress Res 1",
+      "description": "Grants Res+3. Inflicts Atk-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fortress Res 2",
+      "description": "Grants Res+4. Inflicts Atk-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fortress Res 3",
+      "description": "Grants Res+5. Inflicts Atk-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fury 1",
+      "description": "Grants Atk/Spd/Def/Res+1. After combat, deals 2 damage to unit.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fury 2",
+      "description": "Grants Atk/Spd/Def/Res+2. After combat, deals 4 damage to unit.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fury 3",
+      "description": "Grants Atk/Spd/Def/Res+3. After combat, deals 6 damage to unit.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Fury 4",
+      "description": "Grants Atk/Spd/Def/Res+4. After combat, deals 8 damage to unit.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "G Duel Flying 1",
+      "description": "Grants HP+3. If unit is 5★ and level 40 and unit's stats total less than 160, treats unit's stats as 160 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "G Duel Flying 2",
+      "description": "Grants HP+4. If unit is 5★ and level 40 and unit's stats total less than 165, treats unit's stats as 165 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "G Duel Flying 3",
+      "description": "Grants HP+5. If unit is 5★ and level 40 and unit's stats total less than 170, treats unit's stats as 170 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "G Duel Infantry 1",
+      "description": "Grants HP+3. If unit is 5★ and level 40 and unit's stats total less than 160, treats unit's stats as 160 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "G Duel Infantry 2",
+      "description": "Grants HP+4. If unit is 5★ and level 40 and unit's stats total less than 165, treats unit's stats as 165 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "G Duel Infantry 3",
+      "description": "Grants HP+5. If unit is 5★ and level 40 and unit's stats total less than 170, treats unit's stats as 170 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Grani's Shield",
+      "description": "Neutralizes \"effective against cavalry\" bonuses.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Heavy Blade 1",
+      "description": "If unit's Atk ≥ foe's Atk+5, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Heavy Blade 2",
+      "description": "If unit's Atk ≥ foe's Atk+3, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Heavy Blade 3",
+      "description": "If unit's Atk > foe's Atk, grants Special cooldown charge +1 per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Heavy Blade 4",
+      "description": "If unit's Atk > foe's Atk, grants Special cooldown charge +1 and deals +5 damage to foe per unit's attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP/Atk 1",
+      "description": "Grants HP+3, Atk+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP/Atk 2",
+      "description": "Grants HP+4, Atk+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP/Def 1",
+      "description": "Grants HP+3, Def+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP/Def 2",
+      "description": "Grants HP+4, Def+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP +3",
+      "description": "Grants HP+3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP +4",
+      "description": "Grants HP+4.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP +5",
+      "description": "Grants HP+5.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP/Res 1",
+      "description": "Grants HP+3, Res+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP/Res 2",
+      "description": "Grants HP+4, Res+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP/Spd 1",
+      "description": "Grants HP+3, Spd+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "HP/Spd 2",
+      "description": "Grants HP+4, Spd+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Iote's Shield",
+      "description": "Neutralizes \"effective against flying\" bonuses.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Kestrel Stance 1",
+      "description": "If foe initiates combat, grants Atk/Spd+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Kestrel Stance 2",
+      "description": "If foe initiates combat, grants Atk/Spd+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Laws of Sacae",
+      "description": "If foe initiates combat and the number of allies within 2 spaces ≥ 2, grants Atk/Spd/Def/Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Life and Death 1",
+      "description": "Grants Atk/Spd+3. Inflicts Def/Res-3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Life and Death 2",
+      "description": "Grants Atk/Spd+4. Inflicts Def/Res-4.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Life and Death 3",
+      "description": "Grants Atk/Spd+5. Inflicts Def/Res-5.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Life and Death 4",
+      "description": "Grants Atk/Spd+7. Inflicts Def/Res-5.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Mirror Impact",
+      "description": "If unit initiates combat, grants Atk+6, Res+10 during combat and foe cannot make a follow-up attack.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Mirror Stance 1",
+      "description": "If foe initiates combat, grants Atk/Res+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Mirror Stance 2",
+      "description": "If foe initiates combat, grants Atk/Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Mirror Stance 3",
+      "description": "If foe initiates combat, grants Atk/Res+6 during combat and inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Mirror Strike 1",
+      "description": "If unit initiates combat, grants Atk/Res+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Mirror Strike 2",
+      "description": "If unit initiates combat, grants Atk/Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Ostian Counter",
+      "description": "Unit can counterattack regardless of foe's range. If foe initiates combat, grants Atk/Def+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "R Duel Flying 1",
+      "description": "Grants HP+3. If unit is 5★ and level 40 and unit's stats total less than 160, treats unit's stats as 160 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "R Duel Flying 2",
+      "description": "Grants HP+4. If unit is 5★ and level 40 and unit's stats total less than 165, treats unit's stats as 165 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "R Duel Flying 3",
+      "description": "Grants HP+5. If unit is 5★ and level 40 and unit's stats total less than 170, treats unit's stats as 170 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "R Duel Infantry 1",
+      "description": "Grants HP+3. If unit is 5★ and level 40 and unit's stats total less than 160, treats unit's stats as 160 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "R Duel Infantry 2",
+      "description": "Grants HP+4. If unit is 5★ and level 40 and unit's stats total less than 165, treats unit's stats as 165 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "R Duel Infantry 3",
+      "description": "Grants HP+5. If unit is 5★ and level 40 and unit's stats total less than 170, treats unit's stats as 170 in modes like Arena. (Higher-scoring opponents will appear. Stat total calculation excludes any values added by merges and skills.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Resistance +1",
+      "description": "Grants Res+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Resistance +2",
+      "description": "Grants Res+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Resistance +3",
+      "description": "Grants Res+3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Scendscale",
+      "description": "Deals damage = 25% of unit's Atk, but after combat, if unit attacked, deals 7 damage to unit.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Sorcery Blade 1",
+      "description": "At start of combat, if unit's HP = 100% and unit is adjacent to a magic ally, calculates damage using the lower of foe's Def or Res.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Sorcery Blade 2",
+      "description": "At start of combat, if unit's HP ≥ 50% and unit is adjacent to a magic ally, calculates damage using the lower of foe's Def or Res.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Sorcery Blade 3",
+      "description": "At start of combat, if unit is adjacent to a magic ally, calculates damage using the lower of foe's Def or Res.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def 1",
+      "description": "Grants Spd/Def+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def 2",
+      "description": "Grants Spd/Def+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Bond 1",
+      "description": "If unit is adjacent to an ally, grants Spd/Def+3 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Bond 2",
+      "description": "If unit is adjacent to an ally, grants Spd/Def+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Bond 3",
+      "description": "If unit is adjacent to an ally, grants Spd/Def+5 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Form 1",
+      "description": "Grants Spd/Def+X to unit during combat. (X = number of allies within 2 spaces; max 3.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Form 2",
+      "description": "Grants Spd/Def+X to unit during combat. (X = number of allies within 2 spaces + 2; max 5.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Form 3",
+      "description": "Grants Spd/Def+X to unit during combat. (X = 2 × number of allies within 2 spaces, + 1; max 7.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Solo 1",
+      "description": "If unit is not adjacent to an ally, grants Spd/Def+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Solo 2",
+      "description": "If unit is not adjacent to an ally, grants Spd/Def+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Def Solo 3",
+      "description": "If unit is not adjacent to an ally, grants Spd/Def+6 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Res 1",
+      "description": "Grants Spd/Res+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Res 2",
+      "description": "Grants Spd/Res+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Res Bond 1",
+      "description": "If unit is adjacent to an ally, grants Spd/Res+3 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Res Bond 2",
+      "description": "If unit is adjacent to an ally, grants Spd/Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Spd/Res Bond 3",
+      "description": "If unit is adjacent to an ally, grants Spd/Res+5 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Speed +1",
+      "description": "Grants Spd+1.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Speed +2",
+      "description": "Grants Spd+2.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Speed +3",
+      "description": "Grants Spd+3.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Blow 1",
+      "description": "If unit initiates combat, grants Spd/Def+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Blow 2",
+      "description": "If unit initiates combat, grants Spd/Def+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Breath",
+      "description": "If foe initiates combat, grants Def+4 during combat and Special cooldown charge +1 per attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Posture 1",
+      "description": "If foe initiates combat, grants Spd/Def+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Posture 2",
+      "description": "If foe initiates combat, grants Spd/Def+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Stance 1",
+      "description": "If foe initiates combat, grants Def+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Stance 2",
+      "description": "If foe initiates combat, grants Def+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Stance 3",
+      "description": "If foe initiates combat, grants Def+6 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Steady Stance 4",
+      "description": "If foe initiates combat, grants Def+8 during combat and inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Sturdy Blow 1",
+      "description": "If unit initiates combat, grants Atk/Def+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Sturdy Blow 2",
+      "description": "If unit initiates combat, grants Atk/Def+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Sturdy Impact",
+      "description": "If unit initiates combat, grants Atk+6, Def+10 during combat and foe cannot make a follow-up attack.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Sturdy Stance 1",
+      "description": "If foe initiates combat, grants Atk/Def+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Sturdy Stance 2",
+      "description": "If foe initiates combat, grants Atk/Def+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Svalinn Shield",
+      "description": "Neutralizes \"effective against armored\" bonuses.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Swift Sparrow 1",
+      "description": "If unit initiates combat, grants Atk/Spd+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Swift Sparrow 2",
+      "description": "If unit initiates combat, grants Atk/Spd+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Swift Sparrow 3",
+      "description": "If unit initiates combat, grants Atk+6, Spd+7 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Swift Stance 1",
+      "description": "If foe initiates combat, grants Spd/Res+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Swift Stance 2",
+      "description": "If foe initiates combat, grants Spd/Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Swift Strike 1",
+      "description": "If unit initiates combat, grants Spd/Res+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Swift Strike 2",
+      "description": "If unit initiates combat, grants Spd/Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Triangle Adept 1",
+      "description": "If unit has weapon-triangle advantage, boosts Atk by 10%. If unit has weapon-triangle disadvantage, reduces Atk by 10%.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Triangle Adept 2",
+      "description": "If unit has weapon-triangle advantage, boosts Atk by 15%. If unit has weapon-triangle disadvantage, reduces Atk by 15%.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Triangle Adept 3",
+      "description": "If unit has weapon-triangle advantage, boosts Atk by 20%. If unit has weapon-triangle disadvantage, reduces Atk by 20%.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Warding Blow 1",
+      "description": "If unit initiates combat, grants Res+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Warding Blow 2",
+      "description": "If unit initiates combat, grants Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Warding Blow 3",
+      "description": "If unit initiates combat, grants Res+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Warding Breath",
+      "description": "If foe initiates combat, grants Res+4 during combat and Special cooldown charge +1 per attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Warding Stance 1",
+      "description": "If foe initiates combat, grants Res+2 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Warding Stance 2",
+      "description": "If foe initiates combat, grants Res+4 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Warding Stance 3",
+      "description": "If foe initiates combat, grants Res+6 during combat .",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Warding Stance 4",
+      "description": "If foe initiates combat, grants Res+8 during combat and inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Water Boost 1",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Res+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Water Boost 2",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Res+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Water Boost 3",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Res+6 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Wind Boost 1",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Spd+2 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Wind Boost 2",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Spd+4 during combat.",
+      "type": "A",
+      "effects": []
+    },
+    {
+      "name": "Wind Boost 3",
+      "description": "At start of combat, if unit's HP ≥ foe's HP+3, grants Spd+6 during combat.",
+      "type": "A",
+      "effects": []
+    }
+  ]
+}

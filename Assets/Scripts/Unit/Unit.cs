@@ -9,6 +9,7 @@ public class Unit : MonoBehaviour
     public string Name { get { return unitData.characterData.name; } }
     public Sprite Sprite { get { return unitData.characterData.sprite; } }
 
+    public WeaponType WeapType { get { return unitData.unitClass.WeaponType; } }
     public WeaponColor WeapColor { get { return unitData.unitClass.WeaponColor; } }
     public MovementType MoveType { get { return unitData.unitClass.MoveType; } }
     public int AttackRange { get { return unitData.unitClass.attackRange; } }

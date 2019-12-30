@@ -26,6 +26,9 @@ public class BattleStateMachine : StateMachine
 
     [System.NonSerialized]
     public List<CombatData> combatDatas;
+    
+    public string battleMode;
+    public int turn;
 
     public void Start()
     {
