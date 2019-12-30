@@ -5,7 +5,6 @@ using UnityEngine.EventSystems;
 public abstract class BattleState : State
 {
     protected BattleStateMachine bsm;
-    protected int currentIndex;
 
     protected GridManager Grid { get { return bsm.grid; } }
     protected Selector Selector { get { return bsm.grid.selector; } }
@@ -20,7 +19,6 @@ public abstract class BattleState : State
     public void Awake()
     {
         bsm = FindObjectOfType<BattleStateMachine>();
-        currentIndex = -1;
     }
 
     public override void Enter()
@@ -33,7 +31,7 @@ public abstract class BattleState : State
         RemoveDelegates();
     }
 
-    public virtual void OnGridMovement(int index)
+    public virtual void OnMouseMovement(int index)
     {
 
     }
@@ -48,19 +46,41 @@ public abstract class BattleState : State
 
     }
 
+    public virtual void OnReturn()
+    {
+
+    }
+
+    public virtual void OnEscape()
+    {
+        bsm.ChangeState<EditBattleState>();
+    }
+
     protected virtual void AddDelegates()
     {
-        InputManager.onGridMovement = OnGridMovement;
+        InputManager.onMouseMovement = OnMouseMovement;
         InputManager.onSelect = OnSelect;
         InputManager.onCancel = OnCancel;
-        InputManager.onEditPressed = () => bsm.ChangeState<UnitEditState>();
+        InputManager.onEscape = OnEscape;
+        InputManager.onReturn = OnReturn;
     }
 
     protected virtual void RemoveDelegates()
     {
-        InputManager.onGridMovement = null;
+        InputManager.onMouseMovement = null;
         InputManager.onSelect = null;
         InputManager.onCancel = null;
-        InputManager.onEditPressed = null;
+        InputManager.onEscape = null;
+        InputManager.onReturn = null;
+    }
+
+    protected void DisplayUnitHUD(Unit unit)
+    {
+        if (unit != null)
+        {
+            UIManager.unitHUD.SetActive(true);
+            UIManager.UpdateUnitHUD(unit);
+        }
+        else UIManager.unitHUD.SetActive(false);
     }
 }

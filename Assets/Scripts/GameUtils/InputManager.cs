@@ -9,15 +9,17 @@ public class InputManager : MonoBehaviour
     private int x, z, index;
     private GridManager grid;
 
-    public delegate void GridMovement(int index);
+    public delegate void MouseMovement(int index);
     public delegate void Select();
     public delegate void Cancel();
-    public delegate void EditPressed();
+    public delegate void Return();
+    public delegate void Escape();
 
-    public GridMovement onGridMovement;
+    public MouseMovement onMouseMovement;
     public Select onSelect;
     public Cancel onCancel;
-    public EditPressed onEditPressed;
+    public Return onReturn;
+    public Escape onEscape;
 
     public void Start()
     {
@@ -26,12 +28,14 @@ public class InputManager : MonoBehaviour
 
     public void Update()
     {
-        if (onGridMovement != null) OnGridMovement();
-        if (onSelect != null) OnSelect();
-        if (onCancel != null) OnCancel();
+        if (onMouseMovement != null) OnMouseMovement();
+        if (onSelect != null && Input.GetMouseButtonDown(0) && index != -1) onSelect();
+        if (onCancel != null && Input.GetMouseButtonDown(1)) onCancel();
+        if (Input.GetKeyDown(KeyCode.Escape)) onEscape();
+        if (Input.GetKeyDown(KeyCode.Return)) onReturn();
     }
 
-    private void OnGridMovement()
+    private void OnMouseMovement()
     {
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
@@ -45,27 +49,11 @@ public class InputManager : MonoBehaviour
                 if (x >= 0 && x < grid.width && z >= 0 && z < grid.height)
                 {
                     index = z * grid.width + x;
-                    onGridMovement(index);
+                    onMouseMovement(index);
                 }
 
             }
         }
         else index = -1;
     }
-
-    private void OnSelect()
-    {
-        if (Input.GetMouseButtonDown(0) && index != -1) onSelect();
-    }
-
-    private void OnCancel()
-    {
-        if (Input.GetMouseButtonDown(1)) onCancel();
-    }
-
-    public void OnEditPressed()
-    {
-        onEditPressed?.Invoke();
-    }
-
 }

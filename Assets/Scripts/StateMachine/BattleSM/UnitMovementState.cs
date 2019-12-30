@@ -18,11 +18,6 @@ public class UnitMovementState : BattleState
         if (destinationReached) bsm.ChangeState<ChooseActionState>();
     }
 
-    public override void Exit()
-    {
-
-    }
-
     private IEnumerator MoveAlongPath(Unit unit, List<Node> path)
     {
         int index = 1;

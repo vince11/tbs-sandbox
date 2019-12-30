@@ -44,6 +44,6 @@ public class BattleStateMachine : StateMachine
 
         grid.PlaceUnits(unitManager.playerUnits);
 
-        ChangeState<UnitSelectionState>();
+        ChangeState<EditBattleState>();
     }
 }

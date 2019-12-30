@@ -1,26 +1,21 @@
 ﻿public class UnitSelectionState : BattleState
 {
-    public override void OnGridMovement(int index)
+    public override void OnMouseMovement(int index)
     {
-        if(index != currentIndex)
+        if (index != Selector.index)
         {
             Selector.MoveTo(Grid.nodes[index].worldPos);
-            currentIndex = index;
+            Selector.index = index;
 
-            if (Grid.nodes[index].unit != null)
-            {
-                UIManager.unitHUD.SetActive(true);
-                UIManager.UpdateUnitHUD(Grid.nodes[index].unit);
-            }
-            else UIManager.unitHUD.SetActive(false);
+            DisplayUnitHUD(Grid.nodes[index].unit);
         }
     }
 
     public override void OnSelect()
     {
-        if(Grid.nodes[currentIndex].unit != null)
+        if(Grid.nodes[Selector.index].unit != null)
         {
-            SelectedNode = Grid.nodes[currentIndex];
+            SelectedNode = Grid.nodes[Selector.index];
             bsm.ChangeState<UnitSelectedState>();
         }
     }

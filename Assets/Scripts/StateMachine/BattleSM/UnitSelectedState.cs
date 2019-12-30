@@ -25,25 +25,36 @@ public class UnitSelectedState : BattleState
         Grid.Highlight(unit.attackNodes, 2);
     }
 
-    public override void OnGridMovement(int index)
+    public override void Exit()
     {
-        if (index != currentIndex && unit.movementNodes.Contains(Grid.nodes[index]))
+        base.Exit();
+        Grid.Highlight(unit.movementNodes, 0);
+        Grid.Highlight(unit.attackNodes, 0);
+    }
+
+    public override void OnMouseMovement(int index)
+    {
+        if (index != Selector.index && unit.movementNodes.Contains(Grid.nodes[index]))
         {
             Grid.ClearArrows();
             Selector.MoveTo(Grid.nodes[index].worldPos);
             path = Grid.GetPath(Grid.nodes[index]);
             Grid.DrawArrow(path);
-            currentIndex = index;
+            Selector.index = index;
         }
     }
 
     public override void OnSelect()
     {
-        if(Grid.nodes[currentIndex].unit == null || Grid.nodes[currentIndex] == SelectedNode)
+        if (Grid.nodes[Selector.index].unit == null)
         {
-            DestinationNode = Grid.nodes[currentIndex];
-            if (DestinationNode == SelectedNode) bsm.ChangeState<ChooseActionState>();
-            else bsm.ChangeState<UnitMovementState>();
+            DestinationNode = Grid.nodes[Selector.index];
+            bsm.ChangeState<UnitMovementState>();
+        }
+        else if (Grid.nodes[Selector.index] == SelectedNode)
+        {
+            DestinationNode = Grid.nodes[Selector.index];
+            bsm.ChangeState<ChooseActionState>();
         }
     }
 
@@ -53,10 +64,9 @@ public class UnitSelectedState : BattleState
         bsm.ChangeState<UnitSelectionState>();
     }
 
-    public override void Exit()
+    public override void OnEscape()
     {
-        base.Exit();
-        Grid.Highlight(unit.movementNodes, 0);
-        Grid.Highlight(unit.attackNodes, 0);
+        Grid.ClearArrows();
+        base.OnEscape();
     }
 }

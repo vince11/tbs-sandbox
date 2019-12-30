@@ -24,6 +24,13 @@ public class ChooseActionState : BattleState
         bsm.ChangeState<UnitSelectedState>();
     }
 
+    public override void OnEscape()
+    {
+        Grid.ClearArrows();
+        SelectedNode.unit.transform.position = new Vector3(SelectedNode.worldPos.x, SelectedNode.unit.transform.position.y, SelectedNode.worldPos.z);
+        base.OnEscape();
+    }
+
     public void OnWaitPressed()
     {
         Unit unit = SelectedNode.unit;

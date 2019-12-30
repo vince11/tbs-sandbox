@@ -21,12 +21,19 @@ public class ChooseTargetState : BattleState
         bsm.ChangeState<ChooseActionState>();
     }
 
-    public override void OnGridMovement(int index)
+    public override void OnEscape()
     {
-        if (index != currentIndex && SelectedNode.unit.attackNodes.Contains(Grid.nodes[index]) && Grid.nodes[index].unit != null && Grid.nodes[index] != SelectedNode)
+        Grid.ClearArrows();
+        SelectedNode.unit.transform.position = new Vector3(SelectedNode.worldPos.x, SelectedNode.unit.transform.position.y, SelectedNode.worldPos.z);
+        base.OnEscape();
+    }
+
+    public override void OnMouseMovement(int index)
+    {
+        if (index != Selector.index && SelectedNode.unit.attackNodes.Contains(Grid.nodes[index]) && Grid.nodes[index].unit != null && Grid.nodes[index] != SelectedNode)
         {
             Selector.MoveTo(Grid.nodes[index].worldPos);
-            currentIndex = index;
+            Selector.index = index;
 
             CombatDatas = CombatManager.Combat(SelectedNode.unit, Grid.nodes[index].unit);
             UIManager.forecastUI.SetActive(true);
@@ -37,7 +44,7 @@ public class ChooseTargetState : BattleState
 
     public override void OnSelect()
     {
-        if (Grid.nodes[currentIndex].unit != null)
+        if (Grid.nodes[Selector.index].unit != null)
         {
             bsm.ChangeState<CombatState>();
         }

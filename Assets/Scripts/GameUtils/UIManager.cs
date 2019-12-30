@@ -60,9 +60,10 @@ public class UIManager : MonoBehaviour
         battleLog.SetActive(false);
         unitHUD.SetActive(false);
         actionMenu.SetActive(false);
+        sandBoxMenu.SetActive(false);
     }
 
-    public void UpdateStatsView(Unit unit)
+    public void UpdateUnitEditor(Unit unit)
     {
         foreach (InputField input in statInputFields)
         {
@@ -112,13 +113,13 @@ public class UIManager : MonoBehaviour
                 texts[i].text = info;
             }
 
+            texts[i].gameObject.SetActive(true);
             i++;
         }
 
         for (int j = i; j < texts.Count; j++)
         {
-            Destroy(texts[j].gameObject);
-            texts.Remove(texts[j]);
+            texts[j].gameObject.SetActive(false);
         }
     }
 

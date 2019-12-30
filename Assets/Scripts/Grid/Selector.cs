@@ -3,6 +3,9 @@
 public class Selector : MonoBehaviour
 {
     public int size;
+    public int index;
+    public bool isMouseOver;
+
     private float sinVal;
 
     public void MoveTo(Vector3 pos)
