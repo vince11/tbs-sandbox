@@ -61,4 +61,10 @@ public class UnitManager : MonoBehaviour
         if (playerUnits.Contains(unit)) return playerUnits.Where((x) => grid.GetDistance(x.node, unit.node) == range).ToList();
         else return enemyUnits.Where((x) => grid.GetDistance(x.node, unit.node) == range).ToList();
     }
+
+    public List<Unit> GetFoes(Unit unit, int range)
+    {
+        if (!playerUnits.Contains(unit)) return playerUnits.Where((x) => grid.GetDistance(x.node, unit.node) == range).ToList();
+        else return enemyUnits.Where((x) => grid.GetDistance(x.node, unit.node) == range).ToList();
+    }
 }

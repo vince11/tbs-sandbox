@@ -29,7 +29,7 @@ public class Unit : MonoBehaviour
     public bool IsInitiator { get { return combatProperties.isInitiator; } }
     public List<bool> CounterAttackBuffer { get { return combatProperties.counterAttack; } }
     public List<int> FollowUpBuffer { get { return combatProperties.followUp; } }
-    public Stat TargetedStat { get { return combatProperties.targetedStat; } }
+    public Stat TargetedStat { get { return combatProperties.targetedStat; } set { combatProperties.targetedStat = value; } }
     public int BaseDamage { get { return combatProperties.baseDamage; } set { combatProperties.baseDamage = value; } }
     public int BoostedDamage { get { return combatProperties.boostedDamage; } set { combatProperties.boostedDamage = value; } }
     public int TrueDamage { get { return combatProperties.trueDamage; } set { combatProperties.trueDamage = value; } }

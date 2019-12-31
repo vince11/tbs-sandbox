@@ -331,4 +331,10 @@ public class GridManager : MonoBehaviour
     {
         foreach (Arrow arrow in arrows) arrow.gameObject.SetActive(false);
     }
+
+    public bool IsCardinal(Unit unitA, Unit unitB)
+    {
+        //TODO::
+        return false;
+    }
 }
