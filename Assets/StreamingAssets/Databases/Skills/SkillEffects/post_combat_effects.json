@@ -1,0 +1,6 @@
+{
+  "entries": [
+    { "name":  "1 PostCombatDamage (Initiator 100%)",  "conditions":  ["IsInitiator", "HP=100%"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-1", ""]  },
+    { "name":  "5 PostCombatDamage (Initiator 25%)",  "conditions":  ["IsInitiator", "HP>=25%"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-5", ""]  }
+  ]
+}

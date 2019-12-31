@@ -1,0 +1,15 @@
+{
+    "entries": [
+          { "name":  "Atk/Def Push 1",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Defense", "3/3", ""]  },
+          { "name":  "Atk/Def Push 2",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Defense", "4/4", ""]  },
+          { "name":  "Atk/Def Push 3",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Defense", "5/5", ""]  },
+          { "name":  "Atk/Res Push 1",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Resistance", "3/3", ""]  },
+          { "name":  "Atk/Res Push 2",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Resistance", "4/4", ""]  },
+          { "name":  "Atk/Res Push 3",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Resistance", "5/5", ""]  },
+          { "name":  "Atk/Res Push 4",  "conditions":  ["HP>=25%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Resistance", "7/7", ""]  },
+          { "name":  "Atk/Spd Push 1",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed", "3/3", ""]  },
+          { "name":  "Atk/Spd Push 2",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed", "4/4", ""]  },
+          { "name":  "Atk/Spd Push 3",  "conditions":  ["HP=100%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed", "5/5", ""]  },
+          { "name":  "Atk/Spd Push 4",  "conditions":  ["HP>=25%"],  "activationType": "PreCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed", "7/7", ""]  }
+    ]
+}

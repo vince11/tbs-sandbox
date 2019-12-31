@@ -27,7 +27,8 @@ public class Skill
     {
         foreach (SkillEffect e in effects)
         {
-            if(activationType == e.activationType) e.Activate(user, target, bsm);
+            if(activationType == ActivationType.OnUnEquip && e.GetType() == typeof(EquipStat)) ((EquipStat)e).Revert(user, target, bsm);
+            else if (activationType == e.activationType) e.Activate(user, target, bsm);
         }
     }
 }

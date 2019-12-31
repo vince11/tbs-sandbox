@@ -1,0 +1,42 @@
+{
+  "entries": [
+    { "name":  "Atk +1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack", "1"]  },
+    { "name":  "Atk +2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack", "2"]  },
+    { "name":  "Atk +3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack", "3"]  },
+
+    { "name":  "Spd +1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Speed", "1"]  },
+    { "name":  "Spd +2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Speed", "2"]  },
+    { "name":  "Spd +3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Speed", "3"]  },
+
+    { "name":  "Def +1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Defense", "1"]  },
+    { "name":  "Def +2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Defense", "2"]  },
+    { "name":  "Def +3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Defense", "3"]  },
+
+    { "name":  "Res +1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Resistance", "1"]  },
+    { "name":  "Res +2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Resistance", "2"]  },
+    { "name":  "Res +3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Resistance", "3"]  },
+
+    { "name":  "HP +3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["HP", "3"]  },
+    { "name":  "HP +4",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["HP", "4"]  },
+    { "name":  "HP +5",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["HP", "5"]  },
+
+    { "name":  "Fort. Def/Res 1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Defense/Resistance", "-3/3/3"]  },
+    { "name":  "Fort. Def/Res 2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Defense/Resistance", "-3/4/4"]  },
+    { "name":  "Fort. Def/Res 3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Defense/Resistance", "-2/6/6"]  },
+    { "name":  "Fort. Def 1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Defense","-3/3"]  },
+    { "name":  "Fort. Def 2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Defense", "-3/4"]  },
+    { "name":  "Fort. Def 3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Defense", "-3/5"]  },
+    { "name":  "Fort. Res 1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Resistance", "-3/3"]  },
+    { "name":  "Fort. Res 2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Resistance", "-3/4"]  },
+    { "name":  "Fort. Res 3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Resistance", "-3/5"]  },
+
+    { "name":  "Fury 1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "1/1/1/1"]  },
+    { "name":  "Fury 2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "2/2/2/2"]  },
+    { "name":  "Fury 3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "3/3/3/3"]  },
+    { "name":  "Fury 4",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "4/4/4/4"]  },
+
+    { "name":  "Life and Death 1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "3/3/-3/-3"]  },
+    { "name":  "Life and Death 2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "4/4/-4/-4"]  },
+    { "name":  "Life and Death 3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "5/5/-5/-5"]  }
+  ]
+}

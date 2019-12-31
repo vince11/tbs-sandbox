@@ -70,7 +70,11 @@ public class SkillConditionDatabase
             {"TurnDivisible4", (u, t, b) => b.turn % 4 == 0},
             {"TurnDivisible3", (u, t, b) => b.turn % 3 == 0},
             {"TurnDivisible2", (u, t, b) => b.turn % 2 == 0},
-            {"IsTurn1", (u, t, b) => b.turn == 1}
+            {"IsTurn1", (u, t, b) => b.turn == 1},
+            {"AsheraChosenCondition", (u, t, b) => 
+                !b.unitManager.GetAllies(u, 1).Exists((ally) => ally.WeapType != WeaponType.Dragonstone && ally.WeapType != WeaponType.Beast) ||
+                b.unitManager.GetAllies(u, 1).Count == 0
+            }
         };
     }
 

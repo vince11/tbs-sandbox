@@ -5,7 +5,7 @@ using System.Collections.Generic;
 
 public class CombatManager : MonoBehaviour
 {
-    public List<CombatData> Combat(Unit attacker, Unit target)
+    public List<CombatData> Combat(Unit attacker, Unit target, BattleStateMachine bsm)
     {
         List<CombatData> combatDatas = new List<CombatData>();
 
@@ -33,6 +33,8 @@ public class CombatManager : MonoBehaviour
  
         // Counter Attack check. Before skill calculations
         if (currentDefender.AttackRange == currentAttacker.AttackRange) currentDefender.CounterAttackBuffer.Add(true);
+
+        ActivateCombatantsSkills(currentAttacker, currentDefender, bsm, ActivationType.InCombat);
 
         // Speed Check. After skill calculations
         bool? attackerFaster = currentAttacker.IsFasterThan(currentDefender);
@@ -139,5 +141,18 @@ public class CombatManager : MonoBehaviour
         };
 
         return combatData;
+    }
+
+    private void ActivateCombatantsSkills(Unit attacker, Unit defender, BattleStateMachine bsm, ActivationType activationType)
+    {
+        foreach(Skill skill in attacker.Skills.Values)
+        {
+            if(skill != null) skill.ApplyEffects(attacker, defender, activationType, bsm);
+        }
+
+        foreach (Skill skill in defender.Skills.Values)
+        {
+            if (skill != null) skill.ApplyEffects(defender, attacker, activationType, bsm);
+        }
     }
 }
