@@ -1,0 +1,5 @@
+{
+    "entries": [
+        { "name":  "Shield Pulse Dmg Reduction",  "conditions":  ["HasSpecial", "SpecialTriggers"],  "activationType": "PostDamage", "className": "UpdateDamage",  "parameters":  ["", "-5", "totaldmg"]  }
+    ]
+}

@@ -149,7 +149,18 @@
     { "name":  "Wind Boost 2",  "conditions":  ["HP>=FoeHP+3"],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Speed", "4", ""]  },
     { "name":  "Wind Boost 3",  "conditions":  ["HP>=FoeHP+3"],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Speed", "6", ""]  },
 
+    { "name":  "Lull Atk/Def 1",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Defense", "", "-1/-1"]  },
+    { "name":  "Lull Atk/Def 2",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Defense", "", "-2/-2"]  },
+    { "name":  "Lull Atk/Def 3",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Defense", "", "-3/-3"]  },
+    { "name":  "Lull Atk/Spd 1",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed", "", "-1/-1"]  },
+    { "name":  "Lull Atk/Spd 2",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed", "", "-2/-2"]  },
+    { "name":  "Lull Atk/Spd 3",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed", "", "-3/-3"]  },
+    { "name":  "Lull Spd/Def 1",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Speed/Defense", "", "-1/-1"]  },
+    { "name":  "Lull Spd/Def 2",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Speed/Defense", "", "-2/-2"]  },
+    { "name":  "Lull Spd/Def 3",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Speed/Defense", "", "-3/-3"]  },
+
     { "name":  "Laws of Sacae",  "conditions":  ["IsDefender", "NumAlliesWithin2>=2"],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed/Defense/Resistance", "4/4/4/4", ""]  },
+    { "name":  "Light and Dark",  "conditions":  [],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Speed/Defense/Resistance", "", "-2/-2/-2/-2"]  },
 
     { "name":  "Bonus Doubler 1",  "conditions":  [],  "activationType": "InCombat", "className": "BonusDoubler",  "parameters":  [".5"]  },
     { "name":  "Bonus Doubler 2",  "conditions":  [],  "activationType": "InCombat", "className": "BonusDoubler",  "parameters":  [".75"]  },
@@ -160,13 +171,92 @@
     { "name":  "Ashera Chosen",  "conditions":  ["AsheraChosenCondition"],  "activationType": "InCombat", "className": "CombatBonus",  "parameters":  ["Attack/Defense", "6/6", ""]  },
 
     { "name":  "CounterAttack (user)",  "conditions":  [],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["True", ""]  },
+    { "name":  "Binding Shield CA",  "conditions":  ["TargetHasDragonstone"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+    { "name":  "Sacae's Blessing",  "conditions":  ["TargetHas-A-S-L"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+
+    { "name":  "Watersweep 1",  "conditions":  ["Spd>=FoeSpd+5", "TargetUseMagic"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+    { "name":  "Watersweep 2",  "conditions":  ["Spd>=FoeSpd+3", "TargetUseMagic"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+    { "name":  "Watersweep 3",  "conditions":  ["Spd>=FoeSpd", "TargetUseMagic"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+    { "name":  "Windsweep 1",  "conditions":  ["Spd>=FoeSpd+5", "TargetUsePhysical"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+    { "name":  "Windsweep 2",  "conditions":  ["Spd>=FoeSpd+3", "TargetUsePhysical"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+    { "name":  "Windsweep 3",  "conditions":  ["Spd>=FoeSpd", "TargetUsePhysical"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+
+    { "name":  "Dazzling Staff 1",  "conditions":  ["HP=100%"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+    { "name":  "Dazzling Staff 2",  "conditions":  ["HP>=50%"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+    { "name":  "Dazzling Staff 3",  "conditions":  [],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  ["", "False"]  },
+
+    { "name":  "Null C-Disrupt 1",  "conditions":  ["HP=100%"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  []  },
+    { "name":  "Null C-Disrupt 2",  "conditions":  ["HP>=50%"],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  []  },
+    { "name":  "Null C-Disrupt 3",  "conditions":  [],  "activationType": "InCombat", "className": "CounterAttack",  "parameters":  []  },
 
     { "name":  "Impact",  "conditions":  ["IsInitiator"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["", "-1"]  },
+    { "name":  "Binding Shield FU",  "conditions":  ["TargetHasDragonstone"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Follow-Up Ring",  "conditions":  ["HP>=50%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+
+    { "name":  "Null Follow-Up 1",  "conditions":  ["HP=100%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  []  },
+    { "name":  "Null Follow-Up 2",  "conditions":  ["HP>=50%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  []  },
+    { "name":  "Null Follow-Up 3",  "conditions":  [],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  []  },
+
+    { "name":  "Quick Riposte 1",  "conditions":  ["HP>=90%", "IsDefender"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Quick Riposte 2",  "conditions":  ["HP>=80%", "IsDefender"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Quick Riposte 3",  "conditions":  ["HP>=70%", "IsDefender"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+
+
+    { "name":  "Brash Assault 1",  "conditions":  ["IsInitiator", "TargetCanCounter", "HP<=30%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Brash Assault 2",  "conditions":  ["IsInitiator", "TargetCanCounter", "HP<=40%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Brash Assault 3",  "conditions":  ["IsInitiator", "TargetCanCounter", "HP<=50%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+
+    { "name":  "Bold Fighter 1",  "conditions":  ["HP=100%", "IsInitiator"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Bold Fighter 2",  "conditions":  ["HP>=50%", "IsInitiator"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Bold Fighter 3",  "conditions":  ["IsInitiator"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Vengeful Fighter 1",  "conditions":  ["HP>=90%", "IsDefender"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Vengeful Fighter 2",  "conditions":  ["HP>=70%", "IsDefender"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Vengeful Fighter 3",  "conditions":  ["HP>=50%", "IsDefender"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", ""]  },
+    { "name":  "Wary Fighter 1",  "conditions":  ["HP>=90%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["-1", "-1"]  },
+    { "name":  "Wary Fighter 2",  "conditions":  ["HP>=70%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["-1", "-1"]  },
+    { "name":  "Wary Fighter 3",  "conditions":  ["HP>=50%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["-1", "-1"]  },
+
+    { "name":  "Odd Follow-Up 1",  "conditions":  ["OddTurn", "HP=100%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Odd Follow-Up 2",  "conditions":  ["OddTurn", "HP>=50%"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Odd Follow-Up 3",  "conditions":  ["OddTurn"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+
+    { "name":  "Axebreaker 1",  "conditions":  ["HP>=90%", "TargetHasAxe"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Axebreaker 2",  "conditions":  ["HP>=70%", "TargetHasAxe"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Axebreaker 3",  "conditions":  ["HP>=50%", "TargetHasAxe"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Bowbreaker 1",  "conditions":  ["HP>=90%", "TargetHasBow"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Bowbreaker 2",  "conditions":  ["HP>=70%", "TargetHasBow"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Bowbreaker 3",  "conditions":  ["HP>=50%", "TargetHasBow"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Lancebreaker 1",  "conditions":  ["HP>=90%", "TargetHasLance"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Lancebreaker 2",  "conditions":  ["HP>=70%", "TargetHasLance"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Lancebreaker 3",  "conditions":  ["HP>=50%", "TargetHasLance"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Daggerbreaker 1",  "conditions":  ["HP>=90%", "TargetHasDagger"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Daggerbreaker 2",  "conditions":  ["HP>=70%", "TargetHasDagger"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Daggerbreaker 3",  "conditions":  ["HP>=50%", "TargetHasDagger"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Swordbreaker 1",  "conditions":  ["HP>=90%", "TargetHasSword"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Swordbreaker 2",  "conditions":  ["HP>=70%", "TargetHasSword"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "Swordbreaker 3",  "conditions":  ["HP>=50%", "TargetHasSword"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "B Tomebreaker 1",  "conditions":  ["HP>=90%", "TargetIsBlue", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "B Tomebreaker 2",  "conditions":  ["HP>=70%", "TargetIsBlue", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "B Tomebreaker 3",  "conditions":  ["HP>=50%", "TargetIsBlue", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "G Tomebreaker 1",  "conditions":  ["HP>=90%", "TargetIsGreen", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "G Tomebreaker 2",  "conditions":  ["HP>=70%", "TargetIsGreen", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "G Tomebreaker 3",  "conditions":  ["HP>=50%", "TargetIsGreen", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "R Tomebreaker 1",  "conditions":  ["HP>=90%", "TargetIsRed", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "R Tomebreaker 2",  "conditions":  ["HP>=70%", "TargetIsRed", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
+    { "name":  "R Tomebreaker 3",  "conditions":  ["HP>=50%", "TargetIsRed", "TargetHasTome"],  "activationType": "InCombat", "className": "FollowUp",  "parameters":  ["1", "-1"]  },
 
     { "name":  "Neutralize All Bonus (foe)",  "conditions":  ["IsDefender", "FoeIsRange"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
     { "name":  "Neutralize Atk/Def Bonus (foe)",  "conditions":  [],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Defense", "target", "buff"]  },
     { "name":  "Neutralize Atk/Spd Bonus (foe)",  "conditions":  [],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed", "target", "buff"]  },
     { "name":  "Neutralize Spd/Def Bonus (foe)",  "conditions":  [],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Speed/Defense", "target", "buff"]  },
+    { "name":  "Beorc's Blessing (cav foe)",  "conditions":  ["TargetIsCavalry"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
+    { "name":  "Beorc's Blessing (flier foe)",  "conditions":  ["TargetIsFlier"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
+    { "name":  "Dull Close 1",  "conditions":  ["HP=100%", "FoeIsMelee"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
+    { "name":  "Dull Close 2",  "conditions":  ["HP>=50%", "FoeIsMelee"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
+    { "name":  "Dull Close 3",  "conditions":  ["FoeIsMelee"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
+    { "name":  "Dull Ranged 1",  "conditions":  ["HP=100%", "FoeIsRange"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
+    { "name":  "Dull Ranged 2",  "conditions":  ["HP>=50%", "FoeIsRange"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
+    { "name":  "Dull Ranged 3",  "conditions":  ["FoeIsRange"],  "activationType": "InCombat", "className": "NeutralizeModifiers",  "parameters":  ["Attack/Speed/Defense/Resistance", "target", "buff"]  },
 
     { "name":  "Breath",  "conditions":  ["IsDefender"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
     { "name":  "Flashing Blade 1",  "conditions":  ["Spd>=FoeSpd+5"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
@@ -177,13 +267,37 @@
     { "name":  "Heavy Blade 3",  "conditions":  ["Atk>=FoeAtk"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
     { "name":  "Stance 4",  "conditions":  ["IsDefender"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["", "-1"]  },
 
+    { "name":  "Guard 1",  "conditions":  ["HP=100%"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["", "-1"]  },
+    { "name":  "Guard 2",  "conditions":  ["HP>=90%"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["", "-1"]  },
+    { "name":  "Guard 3",  "conditions":  ["HP>=80%"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["", "-1"]  },
+
+    { "name":  "BFighter 1 SCDC",  "conditions":  ["HP=100%", "IsInitiator"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
+    { "name":  "BFighter 2 SCDC",  "conditions":  ["HP>=50%", "IsInitiator"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
+    { "name":  "BFighter 3 SCDC",  "conditions":  ["IsInitiator"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
+    { "name":  "VFighter 1 SCDC",  "conditions":  ["HP>=90%", "IsDefender"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
+    { "name":  "VFighter 2 SCDC",  "conditions":  ["HP>=70%", "IsDefender"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
+    { "name":  "VFighter 3 SCDC",  "conditions":  ["HP>=50%", "IsDefender"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", ""]  },
+    { "name":  "Special Fighter 1",  "conditions":  ["HP>=90%"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", "-1"]  },
+    { "name":  "Special Fighter 2",  "conditions":  ["HP>=70%"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", "-1"]  },
+    { "name":  "Special Fighter 3",  "conditions":  ["HP>=50%"],  "activationType": "InCombat", "className": "SpecialCharge",  "parameters":  ["1", "-1"]  },
+
     { "name":  "Sorcery Blade 1",  "conditions":  ["HP=100%", "IsAdjacentToMagic"],  "activationType": "InCombat", "className": "AdaptiveDamage",  "parameters":  ["apply"]  },
     { "name":  "Sorcery Blade 2",  "conditions":  ["HP>=50%", "IsAdjacentToMagic"],  "activationType": "InCombat", "className": "AdaptiveDamage",  "parameters":  ["apply"]  },
     { "name":  "Sorcery Blade 3",  "conditions":  ["IsAdjacentToMagic"],  "activationType": "InCombat", "className": "AdaptiveDamage",  "parameters":  ["apply"]  },
+    { "name":  "Negate Adaptive Dmg",  "conditions":  [],  "activationType": "InCombat", "className": "AdaptiveDamage",  "parameters":  ["negate"]  },
 
     { "name":  "Triangle Adept 1",  "conditions":  [],  "activationType": "InCombat", "className": "TriangleAdept",  "parameters":  [".1"]  },
     { "name":  "Triangle Adept 2",  "conditions":  [],  "activationType": "InCombat", "className": "TriangleAdept",  "parameters":  [".15"]  },
-    { "name":  "Triangle Adept 3",  "conditions":  [],  "activationType": "InCombat", "className": "TriangleAdept",  "parameters":  [".20"]  }
+    { "name":  "Triangle Adept 3",  "conditions":  [],  "activationType": "InCombat", "className": "TriangleAdept",  "parameters":  [".20"]  },
 
+    { "name":  "Desperation 1",  "conditions":  ["IsInitiator", "HP<=25%"],  "activationType": "InCombat", "className": "Priority",  "parameters":  ["True", "", "followup"]  },
+    { "name":  "Desperation 2",  "conditions":  ["IsInitiator", "HP<=50%"],  "activationType": "InCombat", "className": "Priority",  "parameters":  ["True", "", "followup"]  },
+    { "name":  "Desperation 3",  "conditions":  ["IsInitiator", "HP<=75%"],  "activationType": "InCombat", "className": "Priority",  "parameters":  ["True", "", "followup"]  },
+    { "name":  "Killing Intent Desp",  "conditions":  ["IsInitiator"],  "activationType": "InCombat", "className": "Priority",  "parameters":  ["True", "", "followup"]  },
+    { "name":  "Vantage 1",  "conditions":  ["HP<=25%", "IsDefender"],  "activationType": "InCombat", "className": "Priority",  "parameters":  ["True", "", "attack"]  },
+    { "name":  "Vantage 2",  "conditions":  ["HP<=50%", "IsDefender"],  "activationType": "InCombat", "className": "Priority",  "parameters":  ["True", "", "attack"]  },
+    { "name":  "Vantage 3",  "conditions":  ["HP<=75%", "IsDefender"],  "activationType": "InCombat", "className": "Priority",  "parameters":  ["True", "", "attack"]  },
+
+    { "name":  "Double Lion",  "conditions":  ["IsInitiator", "HP=100%"],  "activationType": "InCombat", "className": "Brave",  "parameters":  ["2", ""]  }
   ]
 }

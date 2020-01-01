@@ -1,0 +1,1636 @@
+{
+  "entries": [
+    {
+      "name": "TD Aerobatics 1",
+      "description": "If unit's HP = 100%, unit can move to a space adjacent to any infantry, armored, or cavalry ally within 2 spaces.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Aerobatics 2",
+      "description": "If unit's HP ≥ 50%, unit can move to a space adjacent to any infantry, armored, or cavalry ally within 2 spaces.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Aerobatics 3",
+      "description": "Unit can move to a space adjacent to any infantry, armored, or cavalry ally within 2 spaces.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Def Link 1",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Def+2 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Def Link 2",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Def+4 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Def Link 3",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Def+6 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk Feint 1",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Atk-3 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk Feint 2",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Atk-5 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk Feint 3",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Atk-7 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Res Link 1",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Res+2 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Res Link 2",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Res+4 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Res Link 3",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Res+6 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Spd Link 1",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Spd+2 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Spd Link 2",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Spd+4 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Spd Link 3",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Atk/Spd+6 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Spd Ruse 1",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Atk/Spd-1 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Spd Ruse 2",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Atk/Spd-3 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Atk/Spd Ruse 3",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Atk/Spd-5 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Axebreaker 1",
+      "description": "If unit's HP ≥ 90% in combat against an axe foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Axebreaker 1"]
+    },
+    {
+      "name": "Axebreaker 2",
+      "description": "If unit's HP ≥ 70% in combat against an axe foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Axebreaker 2"]
+    },
+    {
+      "name": "Axebreaker 3",
+      "description": "If unit's HP ≥ 50% in combat against an axe foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Axebreaker 3"]
+    },
+    {
+      "name": "B Tomebreaker 1",
+      "description": "If unit's HP ≥ 90% in combat against a blue tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["B Tomebreaker 1"]
+    },
+    {
+      "name": "B Tomebreaker 2",
+      "description": "If unit's HP ≥ 70% in combat against a blue tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["B Tomebreaker 2"]
+    },
+    {
+      "name": "B Tomebreaker 3",
+      "description": "If unit's HP ≥ 50% in combat against a blue tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["B Tomebreaker 3"]
+    },
+    {
+      "name": "Beorc's Blessing",
+      "description": "Neutralizes cavalry and flying foes' bonuses (from skills like Fortify, Rally, etc.) during combat. (Skill cannot be inherited.)",
+      "type": "B",
+      "effects": ["Beorc's Blessing (cav foe)", "Beorc's Blessing (flier foe)"]
+    },
+    {
+      "name": "Binding Shield",
+      "description": "In combat against a dragon foe, unit makes a guaranteed follow-up attack and foe cannot counterattack or make a follow-up attack.",
+      "type": "B",
+      "effects": ["Binding Shield FU", "Binding Shield CA"]
+    },
+    {
+      "name": "TD Blaze Dance 1",
+      "description": "If Sing or Dance is used, grants Atk+2 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Blaze Dance 2",
+      "description": "If Sing or Dance is used, grants Atk+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Blaze Dance 3",
+      "description": "If Sing or Dance is used, grants Atk+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Bold Fighter 1",
+      "description": "If unit's HP = 100% and unit initiates combat, grants Special cooldown charge +1 per unit's attack, and unit makes a guaranteed follow-up attack. (Does not stack.)",
+      "type": "B",
+      "effects": ["Bold Fighter 1", "BFighter 1 SCDC"]
+    },
+    {
+      "name": "Bold Fighter 2",
+      "description": "If unit's HP ≥ 50% and unit initiates combat, grants Special cooldown charge +1 per unit's attack, and unit makes a guaranteed follow-up attack. (Does not stack.)",
+      "type": "B",
+      "effects": ["Bold Fighter 2", "BFighter 2 SCDC"]
+    },
+    {
+      "name": "Bold Fighter 3",
+      "description": "If unit initiates combat, grants Special cooldown charge +1 per unit's attack, and unit makes a guaranteed follow-up attack. (Does not stack.)",
+      "type": "B",
+      "effects": ["Bold Fighter 3", "BFighter 3 SCDC"]
+    },
+    {
+      "name": "Bowbreaker 1",
+      "description": "If unit's HP ≥ 90% in combat against a colorless bow foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Bowbreaker 1"]
+    },
+    {
+      "name": "Bowbreaker 2",
+      "description": "If unit's HP ≥ 70% in combat against a colorless bow foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Bowbreaker 2"]
+    },
+    {
+      "name": "Bowbreaker 3",
+      "description": "If unit's HP ≥ 50% in combat against a colorless bow foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Bowbreaker 3"]
+    },
+    {
+      "name": "Brash Assault 1",
+      "description": "If unit initiates combat against a foe that can counter and unit's HP ≤ 30%, unit makes a guaranteed follow-up attack.",
+      "type": "B",
+      "effects": ["Brash Assault 1"]
+    },
+    {
+      "name": "Brash Assault 2",
+      "description": "If unit initiates combat against a foe that can counter and unit's HP ≤ 40%, unit makes a guaranteed follow-up attack.",
+      "type": "B",
+      "effects": ["Brash Assault 2"]
+    },
+    {
+      "name": "Brash Assault 3",
+      "description": "If unit initiates combat against a foe that can counter and unit's HP ≤ 50%, unit makes a guaranteed follow-up attack.",
+      "type": "B",
+      "effects": ["Brash Assault 3"]
+    },
+    {
+      "name": "Bushido",
+      "description": "Deals +10 damage when Special triggers.",
+      "type": "B",
+      "effects": ["Bushido"]
+    },
+    {
+      "name": "TD Caldera Dance 1",
+      "description": "If Sing or Dance is used, grants Atk+2 and Def+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Caldera Dance 2",
+      "description": "If Sing or Dance is used, grants Atk+3 and Def+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Cancel Affinity 1",
+      "description": "Neutralizes all weapon-triangle advantage granted by unit's and foe's skills.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Cancel Affinity 2",
+      "description": "Neutralizes weapon-triangle advantage granted by unit's skills. If unit has weapon-triangle disadvantage, neutralizes weapon-triangle advantage granted by foe's skills.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Cancel Affinity 3",
+      "description": "Neutralizes weapon-triangle advantage granted by unit's skills. If unit has weapon-triangle disadvantage, reverses weapon-triangle advantage granted by foe's skills.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Atk 1",
+      "description": "At start of turn, inflicts Atk-3 on foe on the enemy team with the highest Atk through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Atk 2",
+      "description": "At start of turn, inflicts Atk-5 on foe on the enemy team with the highest Atk through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Atk 3",
+      "description": "At start of turn, inflicts Atk-7 on foe on the enemy team with the highest Atk through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Def 1",
+      "description": "At start of turn, inflicts Def-3 on foe on the enemy team with the highest Def through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Def 2",
+      "description": "At start of turn, inflicts Def-5 on foe on the enemy team with the highest Def through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Def 3",
+      "description": "At start of turn, inflicts Def-7 on foe on the enemy team with the highest Def through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Res 1",
+      "description": "At start of turn, inflicts Res-3 on foe on the enemy team with the highest Res through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Res 2",
+      "description": "At start of turn, inflicts Res-5 on foe on the enemy team with the highest Res through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Res 3",
+      "description": "At start of turn, inflicts Res-7 on foe on the enemy team with the highest Res through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Spd 1",
+      "description": "At start of turn, inflicts Spd-3 on foe on the enemy team with the highest Spd through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Spd 2",
+      "description": "At start of turn, inflicts Spd-5 on foe on the enemy team with the highest Spd through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chill Spd 3",
+      "description": "At start of turn, inflicts Spd-7 on foe on the enemy team with the highest Spd through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Chilling Seal",
+      "description": "At start of turn, if unit's HP ≥ 50%, inflicts Atk/Spd-6 on foe on the enemy team with the lowest Def through its next action. (Skill cannot be inherited.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Close Call 1",
+      "description": "If unit's Spd > foe's Spd, reduces damage from attacks during combat and from area-of-effect Specials (excluding Røkkr area-of-effect Specials) by percentage = difference between stats × 2 (max 20%). If unit initiates combat, unit moves 1 space away after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Close Call 2",
+      "description": "If unit's Spd > foe's Spd, reduces damage from attacks during combat and from area-of-effect Specials (excluding Røkkr area-of-effect Specials) by percentage = difference between stats × 3 (max 30%). If unit initiates combat, unit moves 1 space away after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Close Call 3",
+      "description": "If unit's Spd > foe's Spd, reduces damage from attacks during combat and from area-of-effect Specials (excluding Røkkr area-of-effect Specials) by percentage = difference between stats × 4 (max 40%). If unit initiates combat, unit moves 1 space away after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Crusader's Ward",
+      "description": "If unit receives consecutive attacks and foe's Range = 2, reduces damage from foe's second attack onward by 80%. (Skill cannot be inherited.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Daggerbreaker 1",
+      "description": "If unit's HP ≥ 90% in combat against a colorless dagger foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Daggerbreaker 1"]
+    },
+    {
+      "name": "Daggerbreaker 2",
+      "description": "If unit's HP ≥ 70% in combat against a colorless dagger foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Daggerbreaker 2"]
+    },
+    {
+      "name": "Daggerbreaker 3",
+      "description": "If unit's HP ≥ 50% in combat against a colorless dagger foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Daggerbreaker 3"]
+    },
+    {
+      "name": "TDC Daring Fighter 1",
+      "description": "If unit initiates combat, neutralizes effects that prevent unit's follow-up attacks during combat. If unit's HP ≤ 40% and unit initiates combat, unit can make a follow-up attack before foe can counterattack.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Daring Fighter 2",
+      "description": "If unit initiates combat, neutralizes effects that prevent unit's follow-up attacks during combat. If unit's HP ≤ 60% and unit initiates combat, unit can make a follow-up attack before foe can counterattack.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Daring Fighter 3",
+      "description": "If unit initiates combat, neutralizes effects that prevent unit's follow-up attacks during combat. If unit's HP ≤ 80% and unit initiates combat, unit can make a follow-up attack before foe can counterattack.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Dazzling Staff 1",
+      "description": "At start of combat, if unit's HP = 100%, foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Dazzling Staff 1"]
+    },
+    {
+      "name": "Dazzling Staff 2",
+      "description": "At start of combat, if unit's HP ≥ 50%, foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Dazzling Staff 2"]
+    },
+    {
+      "name": "Dazzling Staff 3",
+      "description": "Foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Dazzling Staff 3"]
+    },
+    {
+      "name": "TD Def Feint 1",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Def-3 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Def Feint 2",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Def-5 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Def Feint 3",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Def-7 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Def/Res Link 1",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Def/Res+2 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Def/Res Link 2",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Def/Res+4 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Def/Res Link 3",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Def/Res+6 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Def/Res Ruse 1",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Def/Res-1 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Def/Res Ruse 2",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Def/Res-3 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Def/Res Ruse 3",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Def/Res-5 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Deluge Dance 1",
+      "description": "If Sing or Dance is used, grants Spd+2 and Res+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Deluge Dance 2",
+      "description": "If Sing or Dance is used, grants Spd+3 and Res+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Desperation 1",
+      "description": "If unit's HP ≤ 25% and unit initiates combat, unit can make a follow-up attack before foe can counterattack.",
+      "type": "B",
+      "effects": ["Desperation 1"]
+    },
+    {
+      "name": "Desperation 2",
+      "description": "If unit's HP ≤ 50% and unit initiates combat, unit can make a follow-up attack before foe can counterattack.",
+      "type": "B",
+      "effects": ["Desperation 2"]
+    },
+    {
+      "name": "Desperation 3",
+      "description": "If unit's HP ≤ 75% and unit initiates combat, unit can make a follow-up attack before foe can counterattack.",
+      "type": "B",
+      "effects": ["Desperation 3"]
+    },
+    {
+      "name": "TD Disarm Trap 1",
+      "description": "While attacking in Aether Raids, if unit ends movement on a space with a Bolt Trap or a Heavy Trap and that trap's level ≤ 1, cancels trap's effect.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Disarm Trap 2",
+      "description": "While attacking in Aether Raids, if unit ends movement on a space with a Bolt Trap or a Heavy Trap and that trap's level ≤ 3, cancels trap's effect.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Disarm Trap 3",
+      "description": "While attacking in Aether Raids, if unit ends movement on a space with a Bolt Trap or a Heavy Trap, cancels trap's effect.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Double Lion",
+      "description": "If unit's HP = 100% at start of combat and unit initiates combat, unit attacks twice, but deals 1 damage to unit after combat. (Does not stack.)",
+      "type": "B",
+      "effects": ["Double Lion", "Double Lion Dmg"]
+    },
+    {
+      "name": "TD Drag Back",
+      "description": "If unit initiates combat, unit moves 1 space away after combat. Target foe moves to unit's previous space.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Dull Close 1",
+      "description": "At start of combat, if unit's HP = 100% and foe uses sword, lance, axe, dragonstone, or beast damage, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Dull Close 1"]
+    },
+    {
+      "name": "Dull Close 2",
+      "description": "At start of combat, if unit's HP ≥ 50% and foe uses sword, lance, axe, dragonstone, or beast damage, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Dull Close 2"]
+    },
+    {
+      "name": "Dull Close 3",
+      "description": "If foe uses sword, lance, axe, dragonstone, or beast damage, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Dull Close 3"]
+    },
+    {
+      "name": "Dull Ranged 1",
+      "description": "At start of combat, if unit's HP = 100% and foe uses bow, dagger, magic, or staff, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Dull Ranged 1"]
+    },
+    {
+      "name": "Dull Ranged 2",
+      "description": "At start of combat, if unit's HP ≥ 50% and foe uses bow, dagger, magic, or staff, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Dull Ranged 2"]
+    },
+    {
+      "name": "Dull Ranged 3",
+      "description": "If foe uses bow, dagger, magic, or staff, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Dull Ranged 3"]
+    },
+    {
+      "name": "TD Earth Dance 1",
+      "description": "If Sing or Dance is used, grants Def+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Earth Dance 2",
+      "description": "If Sing or Dance is used, grants Def+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Earth Dance 3",
+      "description": "If Sing or Dance is used, grants Def+5 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Escape Route 1",
+      "description": "If unit's HP ≤ 30%, unit can move to a space adjacent to any ally.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Escape Route 2",
+      "description": "If unit's HP ≤ 40%, unit can move to a space adjacent to any ally.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Escape Route 3",
+      "description": "If unit's HP ≤ 50%, unit can move to a space adjacent to any ally.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Fireflood Dance 1",
+      "description": "If Sing or Dance is used, grants Atk+2 and Res+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Fireflood Dance 2",
+      "description": "If Sing or Dance is used, grants Atk+3 and Res+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Firestorm Dance 1",
+      "description": "If Sing or Dance is used, grants Atk/Spd+2 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Firestorm Dance 2",
+      "description": "If Sing or Dance is used, grants Atk/Spd+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Flier Formation 1",
+      "description": "If unit's HP = 100%, unit can move to a space adjacent to a flying ally within 2 spaces .",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Flier Formation 2",
+      "description": "If unit's HP ≥ 50%, unit can move to a space adjacent to a flying ally within 2 spaces .",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Flier Formation 3",
+      "description": "Unit can move to a space adjacent to a flying ally within 2 spaces .",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Follow-Up Ring",
+      "description": "At start of combat, if unit's HP ≥ 50%, unit makes a guaranteed follow-up attack. (Skill cannot be inherited.)",
+      "type": "B",
+      "effects": ["Follow-Up Ring"]
+    },
+    {
+      "name": "TD Freezing Seal",
+      "description": "At start of turn, if unit's HP ≥ 50%, inflicts Atk/Spd-6 on foe on the enemy team with the lowest Res through its next action. (Skill cannot be inherited.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "G Tomebreaker 1",
+      "description": "If unit's HP ≥ 90% in combat against a green tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["G Tomebreaker 1"]
+    },
+    {
+      "name": "G Tomebreaker 2",
+      "description": "If unit's HP ≥ 70% in combat against a green tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["G Tomebreaker 2"]
+    },
+    {
+      "name": "G Tomebreaker 3",
+      "description": "If unit's HP ≥ 50% in combat against a green tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["G Tomebreaker 3"]
+    },
+    {
+      "name": "TD Gale Dance 1",
+      "description": "If Sing or Dance is used, grants Spd+2 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Gale Dance 2",
+      "description": "If Sing or Dance is used, grants Spd+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Gale Dance 3",
+      "description": "If Sing or Dance is used, grants Spd+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Geyser Dance 1",
+      "description": "If Sing or Dance is used, grants Def/Res+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Geyser Dance 2",
+      "description": "If Sing or Dance is used, grants Def/Res+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Guard 1",
+      "description": "At start of combat, if unit's HP = 100%, inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": ["Guard 1"]
+    },
+    {
+      "name": "Guard 2",
+      "description": "At start of combat, if unit's HP ≥ 90%, inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": ["Guard 2"]
+    },
+    {
+      "name": "Guard 3",
+      "description": "At start of combat, if unit's HP ≥ 80%, inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": ["Guard 3"]
+    },
+    {
+      "name": "TD Hit and Run",
+      "description": "If unit initiates combat, unit moves 1 space away after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Killing Intent",
+      "description": "At start of combat, if foe's HP < 100% or if【Penalty】is active on foe, inflicts Spd/Res-5 on foe, and if unit initiates combat, unit can make a follow-up attack before foe can counterattack. 【Penalty】 All effects that last \"on foe through its next action.\" Includes penalties inflicted by a skill like Panic or Threaten and negative status effects (preventing counterattacks, restricting movement, or the effects of a skill like Triangle Adept or Guard).",
+      "type": "B",
+      "effects": ["Killing Intent Desp"]
+    },
+    {
+      "name": "TD Knock Back",
+      "description": "If unit initiates combat, target foe moves 1 space away after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Lancebreaker 1",
+      "description": "If unit's HP ≥ 90% in combat against a lance foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Lancebreaker 1"]
+    },
+    {
+      "name": "Lancebreaker 2",
+      "description": "If unit's HP ≥ 70% in combat against a lance foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Lancebreaker 2"]
+    },
+    {
+      "name": "Lancebreaker 3",
+      "description": "If unit's HP ≥ 50% in combat against a lance foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Lancebreaker 3"]
+    },
+    {
+      "name": "Light and Dark",
+      "description": "Inflicts Atk/Spd/Def/Res-2 on foe, neutralizes foe's bonuses (from skills like Fortify, Rally, etc.), and disables foe's skills that \"calculate damage using the lower of foe's Def or Res\" during combat.",
+      "type": "B",
+      "effects": ["Light and Dark", "Neutralize All Bonus (foe)", "Negate Adaptive Dmg"]
+    },
+    {
+      "name": "TD Live for Bounty",
+      "description": "If unit survives, get 1.5x shards/crystals from a Training Tower map. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Live for Honor",
+      "description": "If unit survives, get 1.5x badges from a Training Tower map. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Live to Serve 1",
+      "description": "When healing an ally with a staff, restores HP to unit = 50% of HP restored to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Live to Serve 2",
+      "description": "When healing an ally with a staff, restores HP to unit = 75% of HP restored to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Live to Serve 3",
+      "description": "When healing an ally with a staff, restores HP to unit = HP restored to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Lull Atk/Def 1",
+      "description": "Inflicts Atk/Def-1 on foe and neutralizes foe's bonuses to Atk/Def (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Atk/Def 1", "Neutralize Atk/Def Bonus (foe)"]
+    },
+    {
+      "name": "Lull Atk/Def 2",
+      "description": "Inflicts Atk/Def-2 on foe and neutralizes foe's bonuses to Atk/Def (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Atk/Def 2", "Neutralize Atk/Def Bonus (foe)"]
+    },
+    {
+      "name": "Lull Atk/Def 3",
+      "description": "Inflicts Atk/Def-3 on foe and neutralizes foe's bonuses to Atk/Def (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Atk/Def 3", "Neutralize Atk/Def Bonus (foe)"]
+    },
+    {
+      "name": "Lull Atk/Spd 1",
+      "description": "Inflicts Atk/Spd-1 on foe and neutralizes foe's bonuses to Atk/Spd (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Atk/Spd 1", "Neutralize Atk/Spd Bonus (foe)"]
+    },
+    {
+      "name": "Lull Atk/Spd 2",
+      "description": "Inflicts Atk/Spd-2 on foe and neutralizes foe's bonuses to Atk/Spd (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Atk/Spd 2", "Neutralize Atk/Spd Bonus (foe)"]
+    },
+    {
+      "name": "Lull Atk/Spd 3",
+      "description": "Inflicts Atk/Spd-3 on foe and neutralizes foe's bonuses to Atk/Spd (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Atk/Spd 3", "Neutralize Atk/Spd Bonus (foe)"]
+    },
+    {
+      "name": "Lull Spd/Def 1",
+      "description": "Inflicts Spd/Def-1 on foe and neutralizes foe's bonuses to Spd/Def (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Spd/Def 1", "Neutralize Spd/Def Bonus (foe)"]
+    },
+    {
+      "name": "Lull Spd/Def 2",
+      "description": "Inflicts Spd/Def-2 on foe and neutralizes foe's bonuses to Spd/Def (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Spd/Def 2", "Neutralize Spd/Def Bonus (foe)"]
+    },
+    {
+      "name": "Lull Spd/Def 3",
+      "description": "Inflicts Spd/Def-3 on foe and neutralizes foe's bonuses to Spd/Def (from skills like Fortify, Rally, etc.) during combat.",
+      "type": "B",
+      "effects": ["Lull Spd/Def 3", "Neutralize Spd/Def Bonus (foe)"]
+    },
+    {
+      "name": "TDC Lunar Brace",
+      "description": "Slows Special trigger (cooldown count+1). Deals damage = 50% of foe's Def when Special triggers.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Lunge",
+      "description": "If unit initiates combat, unit and target foe swap spaces after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Mystic Boost 1",
+      "description": "Disables foe's skills that \"calculate damage using the lower of foe's Def or Res\" and \"calculate damage from staff like other weapons.\" Restores 2 HP after combat.",
+      "type": "B",
+      "effects": ["Negate Adaptive Dmg", "Mystic Boost 1"]
+    },
+    {
+      "name": "Mystic Boost 2",
+      "description": "Disables foe's skills that \"calculate damage using the lower of foe's Def or Res\" and \"calculate damage from staff like other weapons.\" Restores 4 HP after combat.",
+      "type": "B",
+      "effects": ["Negate Adaptive Dmg", "Mystic Boost 2"]
+    },
+    {
+      "name": "Mystic Boost 3",
+      "description": "Disables foe's skills that \"calculate damage using the lower of foe's Def or Res\" and \"calculate damage from staff like other weapons.\" Restores 6 HP after combat.",
+      "type": "B",
+      "effects": ["Negate Adaptive Dmg", "Mystic Boost 3"]
+    },
+    {
+      "name": "Null C-Disrupt 1",
+      "description": "At start of combat, if unit's HP = 100%, neutralizes effects that prevent unit's counterattacks during combat.",
+      "type": "B",
+      "effects": ["Null C-Disrupt 1"]
+    },
+    {
+      "name": "Null C-Disrupt 2",
+      "description": "At start of combat, if unit's HP ≥ 50%, neutralizes effects that prevent unit's counterattacks during combat.",
+      "type": "B",
+      "effects": ["Null C-Disrupt 2"]
+    },
+    {
+      "name": "Null C-Disrupt 3",
+      "description": "Neutralizes effects that prevent unit's counterattacks during combat.",
+      "type": "B",
+      "effects": ["Null C-Disrupt 3"]
+    },
+    {
+      "name": "Null Follow-Up 1",
+      "description": "At start of combat, if unit's HP = 100%, neutralizes effects that guarantee foe's follow-up attacks and effects that prevent unit's follow-up attacks during combat.",
+      "type": "B",
+      "effects": ["Null Follow-Up 1"]
+    },
+    {
+      "name": "Null Follow-Up 2",
+      "description": "At start of combat, if unit's HP ≥ 50%, neutralizes effects that guarantee foe's follow-up attacks and effects that prevent unit's follow-up attacks during combat.",
+      "type": "B",
+      "effects": ["Null Follow-Up 2"]
+    },
+    {
+      "name": "Null Follow-Up 3",
+      "description": "Neutralizes effects that guarantee foe's follow-up attacks and effects that prevent unit's follow-up attacks during combat.",
+      "type": "B",
+      "effects": ["Null Follow-Up 3"]
+    },
+    {
+      "name": "TD Obstruct 1",
+      "description": "If unit's HP ≥ 90%, foes cannot move through spaces adjacent to unit. (Does not affect foes with Pass skills.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Obstruct 2",
+      "description": "If unit's HP ≥ 70%, foes cannot move through spaces adjacent to unit. (Does not affect foes with Pass skills.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Obstruct 3",
+      "description": "If unit's HP ≥ 50%, foes cannot move through spaces adjacent to unit. (Does not affect foes with Pass skills.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Odd Follow-Up 1",
+      "description": "If it is an odd-numbered turn and unit's HP = 100%, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Odd Follow-Up 1"]
+    },
+    {
+      "name": "Odd Follow-Up 2",
+      "description": "If it is an odd-numbered turn and unit's HP ≥ 50%, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Odd Follow-Up 2"]
+    },
+    {
+      "name": "Odd Follow-Up 3",
+      "description": "If it is an odd-numbered turn, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Odd Follow-Up 3"]
+    },
+    {
+      "name": "TD Pass 1",
+      "description": "If unit's HP ≥ 75%, unit can move through foes' spaces.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Pass 2",
+      "description": "If unit's HP ≥ 50%, unit can move through foes' spaces.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Pass 3",
+      "description": "If unit's HP ≥ 25%, unit can move through foes' spaces.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Poison Strike 1",
+      "description": "If unit initiates combat, deals 4 damage to foe after combat.",
+      "type": "B",
+      "effects": ["Poison Strike 1"]
+    },
+    {
+      "name": "Poison Strike 2",
+      "description": "If unit initiates combat, deals 7 damage to foe after combat.",
+      "type": "B",
+      "effects": ["Poison Strike 2"]
+    },
+    {
+      "name": "Poison Strike 3",
+      "description": "If unit initiates combat, deals 10 damage to foe after combat.",
+      "type": "B",
+      "effects": ["Poison Strike 3"]
+    },
+    {
+      "name": "Quick Riposte 1",
+      "description": "If unit's HP ≥ 90% and foe initiates combat, unit makes a guaranteed follow-up attack.",
+      "type": "B",
+      "effects": ["Quick Riposte 1"]
+    },
+    {
+      "name": "Quick Riposte 2",
+      "description": "If unit's HP ≥ 80% and foe initiates combat, unit makes a guaranteed follow-up attack.",
+      "type": "B",
+      "effects": ["Quick Riposte 2"]
+    },
+    {
+      "name": "Quick Riposte 3",
+      "description": "If unit's HP ≥ 70% and foe initiates combat, unit makes a guaranteed follow-up attack.",
+      "type": "B",
+      "effects": ["Quick Riposte 3"]
+    },
+    {
+      "name": "R Tomebreaker 1",
+      "description": "If unit's HP ≥ 90% in combat against a red tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["R Tomebreaker 1"]
+    },
+    {
+      "name": "R Tomebreaker 2",
+      "description": "If unit's HP ≥ 70% in combat against a red tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["R Tomebreaker 2"]
+    },
+    {
+      "name": "R Tomebreaker 3",
+      "description": "If unit's HP ≥ 50% in combat against a red tome foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["R Tomebreaker 3"]
+    },
+    {
+      "name": "TD Recover Ring",
+      "description": "At start of turn, restores 10 HP. (Skill cannot be inherited.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Renewal 1",
+      "description": "At the start of every fourth turn, restores 10 HP.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Renewal 2",
+      "description": "At the start of every third turn, restores 10 HP.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Renewal 3",
+      "description": "At the start of every second turn, restores 10 HP.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Res Feint 1",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Res-3 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Res Feint 2",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Res-5 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Res Feint 3",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Res-7 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Rockslide Dance 1",
+      "description": "If Sing or Dance is used, grants Spd+2 and Def+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Rockslide Dance 2",
+      "description": "If Sing or Dance is used, grants Spd+3 and Def+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD S Drink",
+      "description": "At the start of turn 1, restores 99 HP and grants Special cooldown count-1.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Atk 1",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Atk-3 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Atk 2",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Atk-5 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Atk 3",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Atk-7 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Def 1",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Def-3 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Def 2",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Def-5 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Def 3",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Def-7 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Res 1",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Res-3 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Res 2",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Res-5 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Res 3",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Res-7 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Spd 1",
+      "description": "At start of turn, if any foe's Res ≤ unit’s Res-3 and that foe is adjacent to another foe, inflicts Spd-3 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Spd 2",
+      "description": "At start of turn, if any foe's Res ≤ unit’s Res-3 and that foe is adjacent to another foe, inflicts Spd-5 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sabotage Spd 3",
+      "description": "At start of turn, if any foe's Res ≤ unit’s Res-3 and that foe is adjacent to another foe, inflicts Spd-7 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Sacae's Blessing",
+      "description": "If foe uses sword, lance, or axe, foe cannot counterattack. (Skill cannot be inherited.)",
+      "type": "B",
+      "effects": ["Sacae's Blessing"]
+    },
+    {
+      "name": "TD Seal Atk 1",
+      "description": "Inflicts Atk-3 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Atk 2",
+      "description": "Inflicts Atk-5 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Atk 3",
+      "description": "Inflicts Atk-7 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Atk/Def 1",
+      "description": "Inflicts Atk/Def-3 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Atk/Def 2",
+      "description": "Inflicts Atk/Def-5 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Atk/Spd 1",
+      "description": "Inflicts Atk/Spd-3 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Atk/Spd 2",
+      "description": "Inflicts Atk/Spd-5 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Def 1",
+      "description": "Inflicts Def-3 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Def 2",
+      "description": "Inflicts Def-5 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Def 3",
+      "description": "Inflicts Def-7 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Def/Res 1",
+      "description": "Inflicts Def/Res-3 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Def/Res 2",
+      "description": "Inflicts Def/Res-5 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Res 1",
+      "description": "Inflicts Res-3 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Res 2",
+      "description": "Inflicts Res-5 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Res 3",
+      "description": "Inflicts Res-7 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Spd 1",
+      "description": "Inflicts Spd-3 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Spd 2",
+      "description": "Inflicts Spd-5 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Spd 3",
+      "description": "Inflicts Spd-7 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Spd/Def 1",
+      "description": "Inflicts Spd/Def-3 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Seal Spd/Def 2",
+      "description": "Inflicts Spd/Def-5 on foe through its next action after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Shield Pulse 1",
+      "description": "At the start of turn 1, if foe's attack triggers Special, grants Special cooldown count-1.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Shield Pulse 2",
+      "description": "At the start of turn 1, if foe's attack triggers Special, grants Special cooldown count-1. Reduces damage dealt to unit by 5 when Special triggers.",
+      "type": "B",
+      "effects": ["Shield Pulse Dmg Reduction"]
+    },
+    {
+      "name": "TD Shield Pulse 3",
+      "description": "At the start of turn 1, if foe's attack triggers Special, grants Special cooldown count-2. Reduces damage dealt to unit by 5 when Special triggers.",
+      "type": "B",
+      "effects": ["Shield Pulse Dmg Reduction"]
+    },
+    {
+      "name": "TDC Solar Brace",
+      "description": "Restores HP = 30% of damage dealt when Special triggers. (Stacks with effects of skills like Sol .)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Soul of Zofia",
+      "description": "Neutralizes effects that guarantee foe's follow-up attacks or prevent unit's follow-up attacks during combat. If unit's HP ≤ 75% and unit initiates combat, unit can make a follow-up attack before foe can counterattack.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Def Link 1",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Def+2 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Def Link 2",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Def+4 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Def Link 3",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Def+6 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd Feint 1",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Spd-3 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd Feint 2",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Spd-5 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd Feint 3",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Spd-7 on foes in cardinal directions of unit through their next actions.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Res Link 1",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Res+2 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Res Link 2",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Res+4 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Res Link 3",
+      "description": "If a movement Assist skill (like Reposition, Shove, Pivot, etc.) is used by unit or targets unit, grants Spd/Res+6 to unit and target ally or unit and targeting ally for 1 turn.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Res Ruse 1",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Spd/Res-1 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Res Ruse 2",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Spd/Res-3 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Spd/Res Ruse 3",
+      "description": "If a Rally Assist skill is used by unit or targets unit, inflicts Spd/Res-5 and【Guard】on foes in cardinal directions of unit and target through their next actions. 【Guard】 Inflicts Special cooldown charge -1 on target per attack during combat through its next action. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Special Fighter 1",
+      "description": "At start of combat, if unit's HP ≥ 90%, grants Special cooldown charge +1 to unit and inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": ["Special Fighter 1"]
+    },
+    {
+      "name": "Special Fighter 2",
+      "description": "At start of combat, if unit's HP ≥ 70%, grants Special cooldown charge +1 to unit and inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": ["Special Fighter 2"]
+    },
+    {
+      "name": "Special Fighter 3",
+      "description": "At start of combat, if unit's HP ≥ 50%, grants Special cooldown charge +1 to unit and inflicts Special cooldown charge -1 on foe per attack. (Only highest value applied. Does not stack.)",
+      "type": "B",
+      "effects": ["Special Fighter 3"]
+    },
+    {
+      "name": "TD Special Spiral 1",
+      "description": "If unit initiates combat and unit's Special triggers before or during combat, grants Special cooldown count-1 after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Special Spiral 2",
+      "description": "If Special triggers before or during combat, grants Special cooldown count-1 after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Special Spiral 3",
+      "description": "If Special triggers before or during combat, grants Special cooldown count-2 after combat.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sudden Panic 1",
+      "description": "At start of turn, if any foe's HP ≤ unit's HP-5 and that foe is adjacent to another foe, inflicts 【Panic】on that foe. 【Panic】 Converts bonuses on target into penalties through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sudden Panic 2",
+      "description": "At start of turn, if any foe's HP ≤ unit's HP-3 and that foe is adjacent to another foe, inflicts 【Panic】on that foe. 【Panic】 Converts bonuses on target into penalties through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Sudden Panic 3",
+      "description": "At start of turn, if any foe's HP ≤ unit's HP-1 and that foe is adjacent to another foe, inflicts 【Panic】on that foe. 【Panic】 Converts bonuses on target into penalties through its next action.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Swordbreaker 1",
+      "description": "If unit's HP ≥ 90% in combat against a sword foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Swordbreaker 1"]
+    },
+    {
+      "name": "Swordbreaker 2",
+      "description": "If unit's HP ≥ 70% in combat against a sword foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Swordbreaker 2"]
+    },
+    {
+      "name": "Swordbreaker 3",
+      "description": "If unit's HP ≥ 50% in combat against a sword foe, unit makes a guaranteed follow-up attack and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Swordbreaker 3"]
+    },
+    {
+      "name": "TD Torrent Dance 1",
+      "description": "If Sing or Dance is used, grants Res+3 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Torrent Dance 2",
+      "description": "If Sing or Dance is used, grants Res+4 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Torrent Dance 3",
+      "description": "If Sing or Dance is used, grants Res+5 to target.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Vantage 1",
+      "description": "If unit's HP ≤ 25% and foe initiates combat, unit can counterattack before foe's first attack.",
+      "type": "B",
+      "effects": ["Vantage 1"]
+    },
+    {
+      "name": "Vantage 2",
+      "description": "If unit's HP ≤ 50% and foe initiates combat, unit can counterattack before foe's first attack.",
+      "type": "B",
+      "effects": ["Vantage 2"]
+    },
+    {
+      "name": "Vantage 3",
+      "description": "If unit's HP ≤ 75% and foe initiates combat, unit can counterattack before foe's first attack.",
+      "type": "B",
+      "effects": ["Vantage 3"]
+    },
+    {
+      "name": "Vengeful Fighter 1",
+      "description": "If unit's HP ≥ 90% and foe initiates combat, grants Special cooldown charge +1 per unit's attack, and unit makes a guaranteed follow-up attack. (Does not stack.)",
+      "type": "B",
+      "effects": ["VFighter 1 SCDC", "Vengeful Fighter 1"]
+    },
+    {
+      "name": "Vengeful Fighter 2",
+      "description": "If unit's HP ≥ 70% and foe initiates combat, grants Special cooldown charge +1 per unit's attack, and unit makes a guaranteed follow-up attack. (Does not stack.)",
+      "type": "B",
+      "effects": ["VFighter 2 SCDC", "Vengeful Fighter 2"]
+    },
+    {
+      "name": "Vengeful Fighter 3",
+      "description": "If unit's HP ≥ 50% and foe initiates combat, grants Special cooldown charge +1 per unit's attack, and unit makes a guaranteed follow-up attack. (Does not stack.)",
+      "type": "B",
+      "effects": ["VFighter 3 SCDC", "Vengeful Fighter 3"]
+    },
+    {
+      "name": "TD Warp Powder",
+      "description": "If unit's HP ≥ 80%, unit can move to a space adjacent to any ally within 2 spaces.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "Wary Fighter 1",
+      "description": "If unit's HP ≥ 90%, unit and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Wary Fighter 1"]
+    },
+    {
+      "name": "Wary Fighter 2",
+      "description": "If unit's HP ≥ 70%, unit and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Wary Fighter 2"]
+    },
+    {
+      "name": "Wary Fighter 3",
+      "description": "If unit's HP ≥ 50%, unit and foe cannot make a follow-up attack.",
+      "type": "B",
+      "effects": ["Wary Fighter 3"]
+    },
+    {
+      "name": "Watersweep 1",
+      "description": "If unit initiates combat , unit cannot make a follow-up attack. If unit's Spd ≥ foe's Spd+5 and foe uses magic, staff, or dragonstone, foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Watersweep 1"]
+    },
+    {
+      "name": "Watersweep 2",
+      "description": "If unit initiates combat , unit cannot make a follow-up attack. If unit's Spd ≥ foe's Spd+3 and foe uses magic, staff, or dragonstone, foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Watersweep 2"]
+    },
+    {
+      "name": "Watersweep 3",
+      "description": "If unit initiates combat , unit cannot make a follow-up attack. If unit's Spd > foe's Spd and foe uses magic, staff, or dragonstone, foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Watersweep 3"]
+    },
+    {
+      "name": "Windsweep 1",
+      "description": "If unit initiates combat, unit cannot make a follow-up attack. If unit’s Spd ≥ foe’s Spd+5 and foe uses sword, lance, axe, bow, dagger, or beast damage, foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Windsweep 1"]
+    },
+    {
+      "name": "Windsweep 2",
+      "description": "If unit initiates combat, unit cannot make a follow-up attack. If unit’s Spd ≥ foe’s Spd+3 and foe uses sword, lance, axe, bow, dagger, or beast damage, foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Windsweep 2"]
+    },
+    {
+      "name": "Windsweep 3",
+      "description": "If unit initiates combat, unit cannot make a follow-up attack. If unit’s Spd > foe’s Spd and foe uses sword, lance, axe, bow, dagger, or beast damage, foe cannot counterattack.",
+      "type": "B",
+      "effects": ["Windsweep 3"]
+    },
+    {
+      "name": "TD Wings of Mercy 1",
+      "description": "If an ally's HP ≤ 30%, unit can move to a space adjacent to that ally.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Wings of Mercy 2",
+      "description": "If an ally's HP ≤ 40%, unit can move to a space adjacent to that ally.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Wings of Mercy 3",
+      "description": "If an ally's HP ≤ 50%, unit can move to a space adjacent to that ally.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Wrath 1",
+      "description": "At start of turn, if unit's HP ≤ 25% and unit's attack triggers Special, grants Special cooldown count-1, and deals +10 damage when Special triggers.",
+      "type": "B",
+      "effects": ["Wrath True Dmg 1"]
+    },
+    {
+      "name": "TDC Wrath 2",
+      "description": "At start of turn, if unit's HP ≤ 50% and unit's attack triggers Special, grants Special cooldown count-1, and deals +10 damage when Special triggers.",
+      "type": "B",
+      "effects": ["Wrath True Dmg 2"]
+    },
+    {
+      "name": "TDC Wrath 3",
+      "description": "At start of turn, if unit's HP ≤ 75% and unit's attack triggers Special, grants Special cooldown count-1, and deals +10 damage when Special triggers.",
+      "type": "B",
+      "effects": ["Wrath True Dmg 3"]
+    },
+    {
+      "name": "TDC Wrathful Staff 1",
+      "description": "At start of combat, if unit's HP = 100%, calculates damage from staff like other weapons.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Wrathful Staff 2",
+      "description": "At start of combat, if unit's HP ≥ 50%, calculates damage from staff like other weapons.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TDC Wrathful Staff 3",
+      "description": "Calculates damage from staff like other weapons.",
+      "type": "B",
+      "effects": []
+    },
+    {
+      "name": "TD Yune's Whispers",
+      "description": "At start of turn, if any foe's Res ≤ unit's Res-3 and that foe is adjacent to another foe, inflicts Atk/Spd-6 on that foe through its next action.",
+      "type": "B",
+      "effects": []
+    }
+  ]
+}
