@@ -1,14 +1,14 @@
-﻿public class SetFollowUp : SkillEffect
+﻿public class FollowUp : SkillEffect
 {
     private readonly int? userValue;
     private readonly int? targetValue;
     private readonly string type;
 
-    public SetFollowUp()
+    public FollowUp()
     {
         type = "nullf";
     }
-    public SetFollowUp(string userValue, string targetValue)
+    public FollowUp(string userValue, string targetValue)
     {
         this.userValue = string.IsNullOrEmpty(userValue) ? (int?)null : int.Parse(userValue);
         this.targetValue = string.IsNullOrEmpty(targetValue) ? (int?)null : int.Parse(targetValue);

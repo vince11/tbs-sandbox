@@ -37,6 +37,7 @@
 
     { "name":  "Life and Death 1",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "3/3/-3/-3"]  },
     { "name":  "Life and Death 2",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "4/4/-4/-4"]  },
-    { "name":  "Life and Death 3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "5/5/-5/-5"]  }
+    { "name":  "Life and Death 3",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "5/5/-5/-5"]  },
+    { "name":  "Life and Death 4",  "conditions":  [],  "activationType": "OnEquip", "className": "EquipStat",  "parameters":  ["Attack/Speed/Defense/Resistance", "7/7/-5/-5"]  }
   ]
 }

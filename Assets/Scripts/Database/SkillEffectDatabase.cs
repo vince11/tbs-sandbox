@@ -27,6 +27,7 @@ public class SkillEffectDatabase
         LoadEffects(Path.Combine(Application.streamingAssetsPath, "Databases/Skills/SkillEffects/equip_effects.json"));
         LoadEffects(Path.Combine(Application.streamingAssetsPath, "Databases/Skills/SkillEffects/pre_combat_effects.json"));
         LoadEffects(Path.Combine(Application.streamingAssetsPath, "Databases/Skills/SkillEffects/in_combat_effects.json"));
+        LoadEffects(Path.Combine(Application.streamingAssetsPath, "Databases/Skills/SkillEffects/pre_damage_effects.json"));
         LoadEffects(Path.Combine(Application.streamingAssetsPath, "Databases/Skills/SkillEffects/post_combat_effects.json"));
     }
 

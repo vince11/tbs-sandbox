@@ -1,15 +1,15 @@
-﻿public class SetCounterAttack : SkillEffect
+﻿public class CounterAttack : SkillEffect
 {
     private readonly bool? userValue;
     private readonly bool? targetValue;
     private readonly string type;
 
-    public SetCounterAttack()
+    public CounterAttack()
     {
         type = "nullc";
     }
 
-    public SetCounterAttack(string userValue, string targetValue)
+    public CounterAttack(string userValue, string targetValue)
     {
         this.userValue = string.IsNullOrEmpty(userValue) ? (bool?)null : System.Convert.ToBoolean(userValue);
         this.targetValue = string.IsNullOrEmpty(targetValue) ? (bool?)null : System.Convert.ToBoolean(targetValue);

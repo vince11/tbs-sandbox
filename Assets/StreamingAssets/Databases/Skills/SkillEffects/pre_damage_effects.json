@@ -1,0 +1,12 @@
+{
+    "entries": [
+        { "name":  "FB True Damage",  "conditions":  ["Spd>=FoeSpd"],  "activationType": "PreDamage", "className": "UpdateDamage",  "parameters":  ["5", "", "true"]  },
+        { "name":  "HB True Damage",  "conditions":  ["Atk>=FoeAtk"],  "activationType": "PreDamage", "className": "UpdateDamage",  "parameters":  ["5", "", "true"]  },
+        { "name":  "Bushido",  "conditions":  ["SpecialIsOffensive", "HasSpecial", "SpecialTriggers"],  "activationType": "PreDamage", "className": "UpdateDamage",  "parameters":  ["10", "", "true"]  },
+
+        { "name":  "Wrath True Dmg 1",  "conditions":  ["HP<=25%", "SpecialIsOffensive", "HasSpecial", "SpecialTriggers"],  "activationType": "PreDamage", "className": "UpdateDamage",  "parameters":  ["10", "", "true"]  },
+        { "name":  "Wrath True Dmg 2",  "conditions":  ["HP<=50%", "SpecialIsOffensive", "HasSpecial", "SpecialTriggers"],  "activationType": "PreDamage", "className": "UpdateDamage",  "parameters":  ["10", "", "true"]  },
+        { "name":  "Wrath True Dmg 3",  "conditions":  ["HP<=75%", "SpecialIsOffensive", "HasSpecial", "SpecialTriggers"],  "activationType": "PreDamage", "className": "UpdateDamage",  "parameters":  ["10", "", "true"]  }
+        
+    ]
+}

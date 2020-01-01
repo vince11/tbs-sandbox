@@ -1,6 +1,23 @@
 {
   "entries": [
     { "name":  "1 PostCombatDamage (Initiator 100%)",  "conditions":  ["IsInitiator", "HP=100%"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-1", ""]  },
-    { "name":  "5 PostCombatDamage (Initiator 25%)",  "conditions":  ["IsInitiator", "HP>=25%"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-5", ""]  }
+    { "name":  "5 PostCombatDamage (Initiator 25%)",  "conditions":  ["IsInitiator", "HP>=25%"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-5", ""]  },
+
+    { "name":  "Fury 1 Dmg",  "conditions":  [],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-2", ""]  },
+    { "name":  "Fury 2 Dmg",  "conditions":  [],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-4", ""]  },
+    { "name":  "Fury 3 Dmg",  "conditions":  [],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-6", ""]  },
+    { "name":  "Fury 4 Dmg",  "conditions":  [],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-8", ""]  },
+
+    { "name":  "Mystic Boost 1",  "conditions":  [],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["2", ""]  },
+    { "name":  "Mystic Boost 2",  "conditions":  [],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["4", ""]  },
+    { "name":  "Mystic Boost 3",  "conditions":  [],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["6", ""]  },
+
+    { "name":  "Poison Strike 1",  "conditions":  ["IsInitiator"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["", "-4"]  },
+    { "name":  "Poison Strike 2",  "conditions":  ["IsInitiator"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["", "-7"]  },
+    { "name":  "Poison Strike 3",  "conditions":  ["IsInitiator"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["", "-10"]  },
+
+    { "name":  "ScendScale Dmg",  "conditions":  ["IsInitiator"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-7", ""]  },
+
+    { "name":  "Double Lion Dmg",  "conditions":  ["IsInitiator", "HP=100%"],  "activationType": "PostCombat", "className": "UpdateHealth",  "parameters":  ["-1", ""]  }
   ]
 }
